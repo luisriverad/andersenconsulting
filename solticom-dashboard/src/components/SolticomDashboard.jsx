@@ -4,13 +4,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
   Cell, LabelList,
 } from 'recharts';
-import {
-  LayoutDashboard, Target, Network, AlertTriangle, Route,
-  TrendingDown, ChevronRight, ArrowUpRight,
-  ShieldAlert, Activity, GitBranch, Megaphone, Briefcase, Cog,
-  Users, Wallet, CheckCircle2, FileSearch, ShoppingCart, FileText,
-  AlertCircle, Layers,
-} from 'lucide-react';
+import andersenLogo from '../assets/andersen_logo.png';
 
 // ============================================================
 //  PALETA · ANDERSEN CONSULTING BRAND
@@ -1600,15 +1594,66 @@ const TOP_RIESGOS = [
 ];
 
 const HEATMAP_RIESGOS = [
-  { p: 'Alta',  i: 'Alto',  count: 18, severity: 'critical' },
-  { p: 'Alta',  i: 'Medio', count: 14, severity: 'high' },
-  { p: 'Alta',  i: 'Bajo',  count: 7,  severity: 'medium' },
-  { p: 'Media', i: 'Alto',  count: 16, severity: 'high' },
-  { p: 'Media', i: 'Medio', count: 22, severity: 'medium' },
-  { p: 'Media', i: 'Bajo',  count: 11, severity: 'low' },
-  { p: 'Baja',  i: 'Alto',  count: 9,  severity: 'medium' },
-  { p: 'Baja',  i: 'Medio', count: 17, severity: 'low' },
-  { p: 'Baja',  i: 'Bajo',  count: 13, severity: 'low' },
+  { p: 'Alta',  i: 'Alto',  count: 18, severity: 'critical',
+    riesgos: [
+      { id: 'R01', nombre: 'Ausencia de Gobierno Corporativo',           area: 'SCI · Estratégico' },
+      { id: 'R02', nombre: 'Inexistencia de Control Presupuestal',       area: 'SCI · Directivo' },
+      { id: 'R03', nombre: 'Centralización Excesiva (Cuello de Botella)', area: 'SCI · Directivo' },
+      { id: 'R04', nombre: 'Operación sin KPIs por Área',                area: 'SCI · Directivo' },
+      { id: 'R12', nombre: 'Materialización de Accidentes Graves (QHSE)', area: 'M06 · QHSE' },
+    ] },
+  { p: 'Alta',  i: 'Medio', count: 14, severity: 'high',
+    riesgos: [
+      { id: 'R07', nombre: 'Dependencia de Prospección Dueño-Dependiente', area: 'M01 · Demanda' },
+      { id: 'R08', nombre: 'Falta de Onboarding y Capacitación Formal',    area: 'M04 · RRHH' },
+      { id: 'R10', nombre: 'Cartera Vencida sin Gestión Preventiva',       area: 'M09 · Cobranza' },
+      { id: 'R11', nombre: 'Dependencia de Proveedores Específicos',       area: 'M08 · Compras' },
+    ] },
+  { p: 'Alta',  i: 'Bajo',  count: 7,  severity: 'medium',
+    riesgos: [
+      { id: 'R28', nombre: 'Duplicidad en Catálogo de Artículos',         area: 'M08 · Compras' },
+      { id: 'R31', nombre: 'Retrasos en Reembolsos a Empleados',          area: 'M05 · Tesorería' },
+      { id: 'R34', nombre: 'Inconsistencias en Bitácoras de Obra',        area: 'M07 · Ejecución' },
+    ] },
+  { p: 'Media', i: 'Alto',  count: 16, severity: 'high',
+    riesgos: [
+      { id: 'R05', nombre: 'Crisis de Liquidez por Mala Estimación',      area: 'M05 · Tesorería' },
+      { id: 'R06', nombre: 'Dossier de Materialidad Inexistente',         area: 'M09 · Materialidad' },
+      { id: 'R09', nombre: 'Cultura QHSE Insuficiente',                   area: 'M06 · Calidad' },
+      { id: 'R42', nombre: 'Subestimación de Recursos en Proyecto',       area: 'M07 · Planeación' },
+    ] },
+  { p: 'Media', i: 'Medio', count: 22, severity: 'medium',
+    riesgos: [
+      { id: 'R51', nombre: 'Desfase en Ruta Crítica de Obra',             area: 'M07 · Ejecución' },
+      { id: 'R52', nombre: 'Comunicación Reactiva entre Áreas',           area: 'M03 · Operación' },
+      { id: 'R53', nombre: 'Rotación de Personal Clave sin Backup',       area: 'M04 · RRHH' },
+      { id: 'R54', nombre: 'Evaluación de Desempeño Sin Calibración',     area: 'M04 · RRHH' },
+      { id: 'R55', nombre: 'Aprobación Verbal de Compras Recurrentes',    area: 'M08 · Compras' },
+    ] },
+  { p: 'Media', i: 'Bajo',  count: 11, severity: 'low',
+    riesgos: [
+      { id: 'R70', nombre: 'Versiones Múltiples de Plantillas Internas',  area: 'M03 · Operación' },
+      { id: 'R71', nombre: 'Archivo Físico sin Resguardo Digital',        area: 'M09 · Contabilidad' },
+      { id: 'R72', nombre: 'Retrasos en Conciliaciones Menores',          area: 'M05 · Tesorería' },
+    ] },
+  { p: 'Baja',  i: 'Alto',  count: 9,  severity: 'medium',
+    riesgos: [
+      { id: 'R80', nombre: 'Fraude Interno por Manipulación de Bitácoras', area: 'M07 · Supervisión' },
+      { id: 'R81', nombre: 'Demanda Laboral Colectiva por Prácticas',     area: 'M04 · RRHH' },
+      { id: 'R82', nombre: 'Cancelación Anticipada de Contrato Mayor',    area: 'M01 · Comercial' },
+    ] },
+  { p: 'Baja',  i: 'Medio', count: 17, severity: 'low',
+    riesgos: [
+      { id: 'R95', nombre: 'Auditoría Fiscal sin Hallazgos Materiales',   area: 'M09 · Fiscal' },
+      { id: 'R96', nombre: 'Reclamos de Cliente por Detalles Menores',    area: 'M06 · Calidad' },
+      { id: 'R97', nombre: 'Errores Administrativos en Nómina',           area: 'M04 · RRHH' },
+    ] },
+  { p: 'Baja',  i: 'Bajo',  count: 13, severity: 'low',
+    riesgos: [
+      { id: 'R110', nombre: 'Daños Menores en Equipo de Oficina',        area: 'M03 · Operación' },
+      { id: 'R111', nombre: 'Retraso en Mantenimiento Preventivo Menor', area: 'M03 · Operación' },
+      { id: 'R112', nombre: 'Inconsistencias Tipográficas en Reportes',  area: 'M09 · Contabilidad' },
+    ] },
 ];
 
 // ============================================================
@@ -1674,6 +1719,17 @@ const getMaturityLabel = (score) => {
   return MATURITY_LEVELS[5].label;
 };
 
+// Paleta elegante para barras de score: rojos para inmadurez, grises para madurez.
+// El gradiente comunica "menos rojo = más maduro".
+const getBarColor = (score) => {
+  if (score < 1)   return '#7A1220'; // rojo profundo · Inexistente
+  if (score < 2)   return '#A6192E'; // rojo institucional · Insuficiente
+  if (score < 2.5) return '#8C5961'; // rojo apagado · Muchas oportunidades
+  if (score < 3.5) return '#6B6B6B'; // gris medio · Algunas oportunidades
+  if (score < 4.5) return '#3D3D3D'; // gris carbón · Bien Implementado
+  return '#1A1A1A';                  // negro corporativo · Excelencia
+};
+
 // ============================================================
 //  COMPONENTES BASE
 // ============================================================
@@ -1694,27 +1750,159 @@ const Card = ({ children, className = '', style = {} }) => (
   </div>
 );
 
-const KPICard = ({ value, label, sublabel, accent, icon: Icon }) => (
-  <Card className="p-5 transition-all duration-200 hover:-translate-y-px"
-        style={{ borderColor: accent ? `${accent}33` : COLORS.border }}>
-    <div className="flex items-start justify-between mb-4">
-      <div className="p-2 rounded" style={{ backgroundColor: `${accent || COLORS.green}14` }}>
-        <Icon size={18} style={{ color: accent || COLORS.greenDeep }} strokeWidth={1.5} />
-      </div>
+// Semáforo elegante de 3 luces (rojo / ámbar / verde) según score 0–5.
+// Tier: <2 rojo · 2–<3.5 ámbar · ≥3.5 verde. La luz activa lleva glow realista.
+const TrafficLight = ({ score, size = 'sm', orientation = 'horizontal' }) => {
+  const tier = score < 2 ? 'red' : score < 3.5 ? 'amber' : 'green';
+  const dot = size === 'lg' ? 16 : size === 'md' ? 12 : 9;
+  const pad = size === 'lg' ? 6 : size === 'md' ? 5 : 4;
+  const gap = size === 'lg' ? 8 : size === 'md' ? 6 : 5;
+  const lights = [
+    { id: 'red',   color: '#E63946', glow: '#FF5562' },
+    { id: 'amber', color: '#E5A53A', glow: '#FFC861' },
+    { id: 'green', color: '#3DAE5A', glow: '#5BD178' },
+  ];
+  return (
+    <div role="img" aria-label={`Semáforo · nivel ${tier}`}
+         style={{
+           display: 'inline-flex',
+           flexDirection: orientation === 'vertical' ? 'column' : 'row',
+           alignItems: 'center', gap,
+           padding: `${pad + 1}px ${pad + 2}px`,
+           background: 'linear-gradient(180deg, #2A2A2A 0%, #161616 100%)',
+           borderRadius: 999,
+           border: '1px solid #0A0A0A',
+           boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.10), 0 1px 2px rgba(0,0,0,0.25)',
+         }}>
+      {lights.map(l => {
+        const active = l.id === tier;
+        return (
+          <span key={l.id} aria-hidden="true"
+                style={{
+                  width: dot, height: dot, borderRadius: '50%',
+                  backgroundColor: active ? l.color : l.color,
+                  opacity: active ? 1 : 0.14,
+                  background: active
+                    ? `radial-gradient(circle at 35% 30%, ${l.glow} 0%, ${l.color} 55%, ${l.color} 100%)`
+                    : l.color,
+                  boxShadow: active
+                    ? `0 0 ${dot * 0.55}px ${dot * 0.18}px ${l.color}AA,
+                       0 0 ${dot * 1.4}px ${dot * 0.32}px ${l.glow}55,
+                       inset 0 -1px 1px rgba(0,0,0,0.45),
+                       inset 0 1px 1px rgba(255,255,255,0.55)`
+                    : 'inset 0 1px 1px rgba(0,0,0,0.55)',
+                  transition: 'all 250ms ease',
+                }} />
+        );
+      })}
     </div>
+  );
+};
+
+// Plan de trabajo simulado en 3 ventanas (0-30 / 31-60 / 61-90 días) para un riesgo dado.
+// Botón rojo · letras blancas que despliega/oculta el plan al hacer click.
+const RiskActionPlan = ({ riskName }) => {
+  const [open, setOpen] = useState(false);
+  const fases = [
+    {
+      rango: '0–30 días',
+      titulo: 'Diagnóstico y Contención',
+      color: '#A6192E',
+      tint: '#FAEFF1',
+      acciones: [
+        `Mapear stakeholders y dueños de proceso afectados por "${riskName}"`,
+        'Levantar línea base cuantitativa del impacto actual (frecuencia, costo, exposición)',
+        'Definir KPI de mitigación y meta a 90 días',
+        'Asignar responsable ejecutivo y patrocinador del plan',
+      ],
+    },
+    {
+      rango: '31–60 días',
+      titulo: 'Diseño e Implementación',
+      color: '#C68214',
+      tint: '#FBF3DC',
+      acciones: [
+        `Diseñar control, política o procedimiento específico para mitigar "${riskName}"`,
+        'Capacitar al equipo operativo en el nuevo protocolo y matriz de facultades',
+        'Pilotar el control en el área de mayor exposición durante 2 semanas',
+        'Documentar evidencia en el Sistema de Control Interno (SCI)',
+      ],
+    },
+    {
+      rango: '61–90 días',
+      titulo: 'Estabilización y Auditoría',
+      color: '#2B5A35',
+      tint: '#E4ECDF',
+      acciones: [
+        'Escalar el control al 100% de los procesos y áreas afectadas',
+        'Auditoría interna del control implementado y ajuste de desviaciones',
+        'Medir KPI de mitigación vs. línea base y reportar a la Junta de Consejo',
+        'Integrar el indicador al tablero de control mensual',
+      ],
+    },
+  ];
+  return (
+    <div className="mt-3">
+      <button
+        type="button"
+        onClick={() => setOpen(!open)}
+        className="no-print w-full px-3 py-2 text-[11px] font-bold uppercase tracking-wider rounded transition-all duration-200 hover:-translate-y-px"
+        style={{ backgroundColor: '#A6192E', color: '#FFFFFF',
+                 border: '1px solid #7A1220',
+                 boxShadow: '0 1px 2px rgba(122,18,32,0.25)' }}>
+        {open ? 'Ocultar Plan de Trabajo' : 'Generar Plan de Trabajo'}
+      </button>
+      {open && (
+        <div className="mt-3 space-y-2">
+          {fases.map((f, i) => (
+            <div key={i} className="p-3 rounded"
+                 style={{ backgroundColor: f.tint, border: `1px solid ${f.color}40` }}>
+              <div className="flex items-center justify-between mb-2 gap-2 flex-wrap">
+                <div className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+                     style={{ backgroundColor: f.color, color: '#FFFFFF' }}>
+                  Fase · {f.rango}
+                </div>
+                <div className="text-[10px] font-semibold uppercase tracking-wider" style={{ color: f.color }}>
+                  {f.titulo}
+                </div>
+              </div>
+              <ul className="space-y-1">
+                {f.acciones.map((a, j) => (
+                  <li key={j} className="flex items-start gap-2 text-[11px] leading-relaxed"
+                      style={{ color: COLORS.inkSoft }}>
+                    <span aria-hidden="true"
+                          style={{ display: 'inline-block', width: 10, height: 10, minWidth: 10,
+                                   marginTop: 3, borderRadius: 2,
+                                   border: `1.5px solid ${f.color}`,
+                                   backgroundColor: COLORS.bgCard }} />
+                    <span>{a}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const KPICard = ({ value, label, sublabel, accent }) => (
+  <Card className="p-5 transition-all duration-200 hover:-translate-y-px"
+        style={{ borderColor: accent ? `${accent}33` : COLORS.border,
+                 borderTop: `3px solid ${accent || COLORS.greenDeep}` }}>
     <div className="text-3xl font-bold tracking-tight" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>{value}</div>
     <div className="text-sm font-semibold mt-1" style={{ color: COLORS.inkSoft }}>{label}</div>
     {sublabel && <div className="text-xs mt-1" style={{ color: COLORS.textMuted }}>{sublabel}</div>}
   </Card>
 );
 
-const TabButton = ({ active, onClick, icon: Icon, label, count, separator }) => (
+const TabButton = ({ active, onClick, label, count, separator }) => (
   <>
     {separator && <div className="h-5 w-px self-center mx-1" style={{ backgroundColor: COLORS.border }} />}
     <button onClick={onClick}
             className="flex items-center gap-2 px-3.5 py-3 text-xs font-semibold transition-all duration-200 relative whitespace-nowrap"
             style={{ color: active ? COLORS.ink : COLORS.textMuted, backgroundColor: 'transparent' }}>
-      <Icon size={14} strokeWidth={1.75} style={{ color: active ? COLORS.greenDeep : COLORS.textMuted }} />
       <span>{label}</span>
       {count != null && (
         <span className="text-[10px] px-1.5 py-0.5 rounded font-mono"
@@ -1780,13 +1968,13 @@ const TabResumen = () => (
     <SectionTitle es="Resumen Ejecutivo del Diagnóstico" en="Executive Diagnostic Summary" />
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
       <KPICard value={KPIs.scoreGlobal.toFixed(2)} label="Score SCI Global"
-               sublabel="Escala 0–5 · Implementado con oportunidades" icon={Activity} accent={COLORS.amber} />
+               sublabel="Escala 0–5 · Implementado con oportunidades" accent={COLORS.amber} />
       <KPICard value={KPIs.entrevistados} label="Entrevistados"
-               sublabel="Niveles estratégico, directivo y operativo" icon={Target} accent={COLORS.greenDeep} />
+               sublabel="Niveles estratégico, directivo y operativo" accent={COLORS.greenDeep} />
       <KPICard value={KPIs.macroprocesos} label="Macroprocesos Evaluados"
-               sublabel="Cobertura integral del negocio" icon={Network} accent={COLORS.blue} />
+               sublabel="Cobertura integral del negocio" accent={COLORS.blue} />
       <KPICard value={KPIs.riesgosIdentificados} label="Riesgos Identificados"
-               sublabel="Clasificados por probabilidad e impacto" icon={ShieldAlert} accent={COLORS.red} />
+               sublabel="Clasificados por probabilidad e impacto" accent={COLORS.red} />
     </div>
 
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -1839,9 +2027,8 @@ const TabResumen = () => (
               </div>
             </div>
             <div className="text-sm font-bold mb-3" style={{ color: COLORS.ink }}>{p.nombre}</div>
-            <div className="h-1.5 rounded-full overflow-hidden mb-2" style={{ backgroundColor: COLORS.bgSoft }}>
-              <div className="h-full rounded-full transition-all duration-700"
-                   style={{ width: `${(p.score / 5) * 100}%`, backgroundColor: getMaturityColor(p.score) }} />
+            <div className="flex items-center justify-center mb-2">
+              <TrafficLight score={p.score} size="sm" />
             </div>
             <div className="flex items-center justify-between text-xs">
               <span style={{ color: COLORS.textMuted }}>{p.riesgosTotal} riesgos</span>
@@ -1868,11 +2055,14 @@ const TabResumen = () => (
           </div>
           <div className="text-xs leading-relaxed" style={{ color: COLORS.textMuted }}>{dim.resumen}</div>
           <div className="mt-4 pt-3" style={{ borderTop: `1px solid ${COLORS.borderSoft}` }}>
-            <div className="flex items-center justify-between text-xs">
+            <div className="flex items-center justify-between gap-3 text-xs">
               <span style={{ color: COLORS.textDim }}>Diagnóstico</span>
-              <span className="font-semibold" style={{ color: getMaturityColor(dim.score) }}>
-                {getMaturityLabel(dim.score)}
-              </span>
+              <div className="flex items-center gap-2 min-w-0">
+                <span className="font-semibold truncate" style={{ color: getMaturityColor(dim.score) }}>
+                  {getMaturityLabel(dim.score)}
+                </span>
+                <TrafficLight score={dim.score} size="sm" />
+              </div>
             </div>
           </div>
         </Card>
@@ -1880,12 +2070,8 @@ const TabResumen = () => (
     </div>
 
     <Card className="p-6" style={{ borderColor: `${COLORS.greenDeep}30`, backgroundColor: COLORS.greenTint }}>
-      <div className="flex items-start gap-4">
-        <div className="p-2.5 rounded" style={{ backgroundColor: COLORS.bgCard }}>
-          <Target size={20} style={{ color: COLORS.greenDeep }} strokeWidth={1.75} />
-        </div>
-        <div className="flex-1">
-          <div className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: COLORS.greenDeep }}>
+      <div>
+        <div className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: COLORS.greenDeep }}>
             Conclusión Ejecutiva
           </div>
           <h3 className="text-xl font-bold mb-3" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>
@@ -1898,7 +2084,6 @@ const TabResumen = () => (
             monitoreados", donde la estrategia, la dirección y la operación se alineen bajo un mismo
             esquema de rendición de cuentas y medición de resultados.
           </p>
-        </div>
       </div>
     </Card>
   </div>
@@ -1959,18 +2144,20 @@ const TabSCI = () => {
                   style={{ backgroundColor: selected === d.id ? COLORS.greenTint : COLORS.bgCard,
                            border: `1px solid ${selected === d.id ? COLORS.greenDeep : COLORS.border}`,
                            boxShadow: '0 1px 2px rgba(31,34,37,0.04)' }}>
-            <div className="flex items-center justify-between mb-2">
+            <div className="mb-2">
               <div className="text-xs uppercase tracking-wider" style={{ color: COLORS.textMuted }}>
                 {d.reactivos} reactivos · {d.elementos.length} elementos
               </div>
-              <ChevronRight size={14} style={{ color: selected === d.id ? COLORS.greenDeep : COLORS.textDim }} />
             </div>
             <div className="text-base font-bold mb-1" style={{ color: COLORS.ink }}>{d.nombre}</div>
-            <div className="flex items-baseline gap-2">
-              <span className="text-2xl font-bold" style={{ color: getMaturityColor(d.score) }}>
-                {d.score.toFixed(2)}
-              </span>
-              <span className="text-xs" style={{ color: COLORS.textDim }}>/ 5.00</span>
+            <div className="flex items-center justify-between gap-2">
+              <div className="flex items-baseline gap-2">
+                <span className="text-2xl font-bold" style={{ color: getMaturityColor(d.score) }}>
+                  {d.score.toFixed(2)}
+                </span>
+                <span className="text-xs" style={{ color: COLORS.textDim }}>/ 5.00</span>
+              </div>
+              <TrafficLight score={d.score} size="sm" />
             </div>
           </button>
         ))}
@@ -2005,7 +2192,7 @@ const TabSCI = () => {
                      stroke={COLORS.border} width={170} />
               <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(113,178,72,0.08)' }} />
               <Bar dataKey="score" radius={[0, 4, 4, 0]}>
-                {dim.elementos.map((e, i) => <Cell key={i} fill={getMaturityColor(e.score)} />)}
+                {dim.elementos.map((e, i) => <Cell key={i} fill={getBarColor(e.score)} />)}
                 <LabelList dataKey="score" position="right" formatter={(v) => v.toFixed(2)}
                            style={{ fill: COLORS.ink, fontSize: 11, fontWeight: 600 }} />
               </Bar>
@@ -2018,7 +2205,10 @@ const TabSCI = () => {
             style={{ borderColor: `${getMaturityColor(dim.score)}30`,
                      backgroundColor: `${getMaturityColor(dim.score)}08` }}>
         <div className="flex items-start gap-4">
-          <div className="flex-shrink-0"><ScoreGauge score={dim.score} size="md" /></div>
+          <div className="flex flex-col items-center gap-3 flex-shrink-0">
+            <ScoreGauge score={dim.score} size="md" />
+            <TrafficLight score={dim.score} size="md" />
+          </div>
           <div className="flex-1">
             <div className="text-xs font-semibold uppercase tracking-wider mb-1"
                  style={{ color: getMaturityColor(dim.score) }}>
@@ -2041,11 +2231,12 @@ const TabSCI = () => {
           return (
             <Card key={i} className="p-5">
               <div className="flex items-start gap-4">
-                <div className="flex flex-col items-center" style={{ minWidth: 70 }}>
+                <div className="flex flex-col items-center gap-1.5" style={{ minWidth: 70 }}>
                   <div className="text-2xl font-bold" style={{ color: getMaturityColor(el.score) }}>
                     {el.score.toFixed(2)}
                   </div>
-                  <div className="text-xs px-2 py-0.5 mt-1 rounded font-semibold"
+                  <TrafficLight score={el.score} size="sm" />
+                  <div className="text-xs px-2 py-0.5 mt-0.5 rounded font-semibold"
                        style={{ backgroundColor: sev.bg, color: sev.color, border: `1px solid ${sev.border}` }}>
                     {sev.label}
                   </div>
@@ -2089,14 +2280,14 @@ const MacroprocesoView = ({ proc }) => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <KPICard value={proc.score.toFixed(2)} label="Score del Macroproceso"
-                 sublabel={getMaturityLabel(proc.score)} icon={Activity} accent={getMaturityColor(proc.score)} />
+                 sublabel={getMaturityLabel(proc.score)} accent={getMaturityColor(proc.score)} />
         <KPICard value={proc.subprocesos.length} label="Subprocesos Nivel 2"
-                 sublabel={`${totalActividades} actividades evaluadas`} icon={Layers} accent={COLORS.blue} />
+                 sublabel={`${totalActividades} actividades evaluadas`} accent={COLORS.blue} />
         <KPICard value={proc.riesgosTotal} label="Riesgos Identificados"
                  sublabel={`Criticidad ${SEVERITY[proc.criticidad].label.toLowerCase()}`}
-                 icon={ShieldAlert} accent={SEVERITY[proc.criticidad].color} />
+                 accent={SEVERITY[proc.criticidad].color} />
         <KPICard value={proc.code} label="Código del Macroproceso"
-                 sublabel="Framework Andersen Consulting" icon={GitBranch} accent={COLORS.greenDeep} />
+                 sublabel="Framework Andersen Consulting" accent={COLORS.greenDeep} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
@@ -2123,7 +2314,8 @@ const MacroprocesoView = ({ proc }) => {
           </div>
           <div className="flex flex-col items-center flex-1 justify-center">
             <ScoreGauge score={proc.score} size="md" />
-            <div className="mt-4 text-center">
+            <div className="mt-4 text-center flex flex-col items-center gap-2">
+              <TrafficLight score={proc.score} size="md" />
               <div className="text-sm font-bold" style={{ color: getMaturityColor(proc.score) }}>
                 {getMaturityLabel(proc.score)}
               </div>
@@ -2148,7 +2340,7 @@ const MacroprocesoView = ({ proc }) => {
                    stroke={COLORS.border} width={200} />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(113,178,72,0.08)' }} />
             <Bar dataKey="score" radius={[0, 4, 4, 0]}>
-              {proc.subprocesos.map((s, i) => <Cell key={i} fill={getMaturityColor(s.score)} />)}
+              {proc.subprocesos.map((s, i) => <Cell key={i} fill={getBarColor(s.score)} />)}
               <LabelList dataKey="score" position="right" formatter={(v) => v.toFixed(2)}
                          style={{ fill: COLORS.ink, fontSize: 11, fontWeight: 600 }} />
             </Bar>
@@ -2185,10 +2377,7 @@ const MacroprocesoView = ({ proc }) => {
                       {sp.score.toFixed(1)}
                     </div>
                   </div>
-                  <div className="w-32 h-1.5 rounded-full overflow-hidden" style={{ backgroundColor: COLORS.bgSoft }}>
-                    <div className="h-full rounded-full transition-all duration-700"
-                         style={{ width: `${(sp.score / 5) * 100}%`, backgroundColor: getMaturityColor(sp.score) }} />
-                  </div>
+                  <TrafficLight score={sp.score} size="md" />
                 </div>
               </div>
               <div className="text-xs italic leading-relaxed pt-1" style={{ color: COLORS.inkSoft }}>
@@ -2223,9 +2412,8 @@ const MacroprocesoView = ({ proc }) => {
               </div>
 
               <div className="p-5 lg:col-span-2" style={{ backgroundColor: COLORS.bgElev }}>
-                <div className="text-xs font-semibold uppercase tracking-wider mb-3 flex items-center gap-2"
+                <div className="text-xs font-semibold uppercase tracking-wider mb-3"
                      style={{ color: COLORS.red }}>
-                  <AlertTriangle size={12} strokeWidth={2} />
                   Riesgos del Subproceso · {sp.riesgos.length}
                 </div>
                 <div className="space-y-3">
@@ -2244,6 +2432,7 @@ const MacroprocesoView = ({ proc }) => {
                       <div className="text-xs leading-relaxed pl-7" style={{ color: COLORS.inkSoft }}>
                         {r.desc}
                       </div>
+                      <RiskActionPlan riskName={r.nombre} />
                     </div>
                   ))}
                 </div>
@@ -2261,6 +2450,10 @@ const MacroprocesoView = ({ proc }) => {
 // ============================================================
 const TabRiesgos = () => {
   const total = RIESGOS_POR_CATEGORIA.reduce((s, r) => s + r.cantidad, 0);
+  const [selectedCell, setSelectedCell] = useState(null);
+  const cellDetail = selectedCell
+    ? HEATMAP_RIESGOS.find(c => c.p === selectedCell.p && c.i === selectedCell.i)
+    : null;
   return (
     <div className="space-y-6">
       <SectionTitle es="Matriz de Riesgos Empresariales"
@@ -2268,13 +2461,13 @@ const TabRiesgos = () => {
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <KPICard value={total} label="Riesgos Identificados"
-                 sublabel="Cobertura integral 9 macroprocesos" icon={ShieldAlert} accent={COLORS.red} />
+                 sublabel="Cobertura integral 9 macroprocesos" accent={COLORS.red} />
         <KPICard value="32" label="Críticos / Altos"
-                 sublabel="Atención inmediata · Fase 1" icon={AlertTriangle} accent={COLORS.amber} />
+                 sublabel="Atención inmediata · Fase 1" accent={COLORS.amber} />
         <KPICard value="60%" label="Mitigables 0–6 meses"
-                 sublabel="Con instrumentación de SCI" icon={TrendingDown} accent={COLORS.greenDeep} />
+                 sublabel="Con instrumentación de SCI" accent={COLORS.greenDeep} />
         <KPICard value="8" label="Categorías de Riesgo"
-                 sublabel="Operativos, financieros, fiscales y más" icon={GitBranch} accent={COLORS.blue} />
+                 sublabel="Operativos, financieros, fiscales y más" accent={COLORS.blue} />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -2315,23 +2508,81 @@ const TabRiesgos = () => {
                 {['Bajo', 'Medio', 'Alto'].map(imp => {
                   const cell = HEATMAP_RIESGOS.find(c => c.p === prob && c.i === imp);
                   const sev = SEVERITY[cell.severity];
+                  const isSelected = selectedCell && selectedCell.p === prob && selectedCell.i === imp;
                   return (
-                    <div key={imp}
-                         className="aspect-square rounded flex flex-col items-center justify-center transition-all hover:scale-[1.02]"
-                         style={{ backgroundColor: sev.bg, border: `1px solid ${sev.border}` }}>
+                    <button key={imp}
+                            type="button"
+                            onClick={() => setSelectedCell(isSelected ? null : { p: prob, i: imp })}
+                            className="aspect-square rounded flex flex-col items-center justify-center transition-all hover:scale-[1.02] cursor-pointer focus:outline-none"
+                            style={{ backgroundColor: sev.bg,
+                                     border: `${isSelected ? 2 : 1}px solid ${isSelected ? sev.color : sev.border}`,
+                                     boxShadow: isSelected ? `0 0 0 3px ${sev.color}25` : 'none' }}>
                       <div className="text-2xl font-bold" style={{ color: sev.color }}>{cell.count}</div>
                       <div className="text-[10px] uppercase tracking-wider mt-1 font-semibold" style={{ color: sev.color }}>
                         {sev.label}
                       </div>
-                    </div>
+                    </button>
                   );
                 })}
               </React.Fragment>
             ))}
           </div>
-          <div className="text-xs mt-4 leading-relaxed" style={{ color: COLORS.textMuted }}>
-            32 riesgos en zona crítica/alta requieren mitigación inmediata. 73 riesgos medios entran al programa de mejora continua.
-          </div>
+          {!cellDetail && (
+            <div className="text-xs mt-4 leading-relaxed" style={{ color: COLORS.textMuted }}>
+              32 riesgos en zona crítica/alta requieren mitigación inmediata. 73 riesgos medios entran al programa de mejora continua.
+              <span className="block mt-1 italic" style={{ color: COLORS.textDim }}>Haz click en cualquier celda para ver los riesgos contabilizados.</span>
+            </div>
+          )}
+          {cellDetail && (() => {
+            const sev = SEVERITY[cellDetail.severity];
+            const mostrados = cellDetail.riesgos ? cellDetail.riesgos.length : 0;
+            const restantes = cellDetail.count - mostrados;
+            return (
+              <div className="mt-4 rounded p-4"
+                   style={{ backgroundColor: sev.bg, border: `1px solid ${sev.border}` }}>
+                <div className="flex items-center justify-between mb-3 gap-2 flex-wrap">
+                  <div className="flex items-center gap-2">
+                    <div className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+                         style={{ backgroundColor: sev.color, color: '#FFFFFF' }}>
+                      Prob. {cellDetail.p} × Impacto {cellDetail.i}
+                    </div>
+                    <div className="text-xs font-semibold" style={{ color: sev.color }}>
+                      {cellDetail.count} riesgos · zona {sev.label.toLowerCase()}
+                    </div>
+                  </div>
+                  <button type="button"
+                          onClick={() => setSelectedCell(null)}
+                          className="text-[10px] font-semibold uppercase tracking-wider px-2 py-1 rounded transition-colors"
+                          style={{ color: sev.color, border: `1px solid ${sev.color}40`,
+                                   backgroundColor: 'transparent' }}>
+                    Cerrar
+                  </button>
+                </div>
+                <ul className="space-y-2">
+                  {cellDetail.riesgos && cellDetail.riesgos.map(r => (
+                    <li key={r.id} className="flex items-start gap-2 p-2 rounded"
+                        style={{ backgroundColor: COLORS.bgCard, border: `1px solid ${sev.border}` }}>
+                      <span className="text-[11px] font-mono font-bold mt-0.5"
+                            style={{ color: sev.color, minWidth: 34 }}>{r.id}</span>
+                      <div className="flex-1 min-w-0">
+                        <div className="text-xs font-bold leading-tight" style={{ color: COLORS.ink }}>
+                          {r.nombre}
+                        </div>
+                        <div className="text-[10px] mt-0.5" style={{ color: COLORS.textMuted }}>
+                          {r.area}
+                        </div>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+                {restantes > 0 && (
+                  <div className="text-[11px] mt-3 italic text-center" style={{ color: sev.color }}>
+                    +{restantes} riesgos adicionales agrupados en esta celda
+                  </div>
+                )}
+              </div>
+            );
+          })()}
         </Card>
       </div>
 
@@ -2372,36 +2623,45 @@ const TabRiesgos = () => {
 // ============================================================
 const TabRoadmap = () => (
   <div className="space-y-6">
-    <SectionTitle es="Programa de Mejora Continua" en="Strategic Improvement Roadmap · 18 Months" />
+    <div className="flex items-start justify-between gap-4">
+      <SectionTitle es="Programa de Mejora Continua" en="Strategic Improvement Roadmap · 18 Months" />
+      <button
+        type="button"
+        onClick={() => window.print()}
+        className="no-print shrink-0 px-4 py-2.5 text-xs font-semibold uppercase tracking-wider rounded transition-all duration-200 hover:-translate-y-px"
+        style={{ backgroundColor: COLORS.greenDeep, color: COLORS.bgCard,
+                 border: `1px solid ${COLORS.greenDeep}`,
+                 boxShadow: '0 1px 2px rgba(31,34,37,0.12)' }}>
+        Imprimir / PDF
+      </button>
+    </div>
 
     <Card className="p-6" style={{ borderColor: `${COLORS.greenDeep}30`, backgroundColor: COLORS.greenTint }}>
-      <div className="flex items-start gap-4">
-        <div className="p-2.5 rounded" style={{ backgroundColor: COLORS.bgCard }}>
-          <Route size={20} style={{ color: COLORS.greenDeep }} strokeWidth={1.75} />
-        </div>
-        <div className="flex-1">
-          <div className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: COLORS.greenDeep }}>
+      <div>
+        <div className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: COLORS.greenDeep }}>
             Tesis del Programa
           </div>
-          <h3 className="text-xl font-bold mb-2" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>Ganar más con las mismas ventas</h3>
+          <h3 className="text-xl font-bold mb-2" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>Reestructurar la disciplina operativa</h3>
           <p className="text-sm leading-relaxed" style={{ color: COLORS.inkSoft }}>
             La rentabilidad no llegará por más facturación, sino por eliminar los problemas ocultos
             que hoy drenan utilidad: descentralizar la autoridad, instrumentar la medición,
             institucionalizar la operación y blindar el patrimonio. Tres fases secuenciales para
             transitar de 2.12 a 4.00 en el SCI en 18 meses.
           </p>
-        </div>
       </div>
     </Card>
 
     <div className="space-y-4">
       {ROADMAP.map((r, i) => (
-        <Card key={i} className="overflow-hidden">
+        <Card key={i} className="overflow-hidden roadmap-phase">
           <div className="p-6">
             <div className="roadmap-row">
-              <div>
+              <div className="min-w-0">
                 <div className="text-xs font-mono mb-1" style={{ color: r.color }}>{r.fase}</div>
-                <h3 className="text-2xl font-bold mb-2" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>{r.titulo}</h3>
+                <h3 className="text-2xl font-bold mb-2 leading-tight break-words hyphens-auto"
+                    style={{ color: COLORS.ink, fontFamily: FONT_SERIF, wordBreak: 'break-word' }}>
+                  {r.titulo}
+                </h3>
                 <div className="inline-block text-xs px-2.5 py-1 rounded font-semibold"
                      style={{ backgroundColor: r.tint, color: r.color, border: `1px solid ${r.color}30` }}>
                   {r.horizonte}
@@ -2412,7 +2672,11 @@ const TabRoadmap = () => (
                 <div className="space-y-1.5">
                   {r.entregables.map((e, j) => (
                     <div key={j} className="flex items-start gap-2 text-xs" style={{ color: COLORS.inkSoft }}>
-                      <ArrowUpRight size={12} style={{ color: r.color, marginTop: 3 }} strokeWidth={2} />
+                      <span aria-hidden="true"
+                            style={{ display: 'inline-block', width: 12, height: 12, minWidth: 12,
+                                     marginTop: 2, borderRadius: 3,
+                                     border: `1.5px solid ${r.color}`,
+                                     backgroundColor: COLORS.bgCard }} />
                       <span>{e}</span>
                     </div>
                   ))}
@@ -2463,19 +2727,14 @@ const TabRoadmap = () => (
 // ============================================================
 //  ROOT
 // ============================================================
-const ICON_BY_PROC = {
-  m01: Megaphone, m02: Briefcase, m03: Cog, m04: Users, m05: Wallet,
-  m06: CheckCircle2, m07: FileSearch, m08: ShoppingCart, m09: FileText,
-};
-
 const TABS = [
-  { id: 'resumen', label: 'Resumen', icon: LayoutDashboard, group: 'overview' },
-  { id: 'sci', label: 'SCI', icon: Activity, count: 3, group: 'overview' },
+  { id: 'resumen', label: 'Resumen', group: 'overview' },
+  { id: 'sci', label: 'SCI', count: 3, group: 'overview' },
   ...MACROPROCESOS.map(m => ({
-    id: m.id, label: m.nombreCorto, icon: ICON_BY_PROC[m.id], count: m.subprocesos.length, group: 'process',
+    id: m.id, label: m.nombreCorto, count: m.subprocesos.length, group: 'process',
   })),
-  { id: 'riesgos', label: 'Riesgos', icon: ShieldAlert, count: 127, group: 'closing' },
-  { id: 'roadmap', label: 'Roadmap', icon: Route, count: 3, group: 'closing' },
+  { id: 'riesgos', label: 'Riesgos', count: 127, group: 'closing' },
+  { id: 'roadmap', label: 'Roadmap', count: 3, group: 'closing' },
 ];
 
 export default function SolticomDashboard() {
@@ -2497,20 +2756,27 @@ export default function SolticomDashboard() {
       <style>{`
         .roadmap-row { display: grid; grid-template-columns: 1fr; gap: 1rem; }
         @media (min-width: 1024px) {
-          .roadmap-row { grid-template-columns: 200px 1fr 240px; gap: 1.5rem; }
+          .roadmap-row { grid-template-columns: 260px 1fr 240px; gap: 2rem; }
+        }
+        @media print {
+          .no-print { display: none !important; }
+          nav { display: none !important; }
+          main { padding: 0 !important; }
+          .roadmap-row { grid-template-columns: 220px 1fr 200px !important; gap: 1.25rem !important; }
+          .roadmap-phase { break-inside: avoid; page-break-inside: avoid; break-before: page; page-break-before: always; }
+          .roadmap-phase:first-of-type { break-before: auto; page-break-before: auto; }
+          @page { size: A4 landscape; margin: 14mm; }
+          body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
         }
       `}</style>
       {/* Header · Andersen Consulting Branding */}
-      <header className="px-8 pt-10 pb-6 relative"
+      <header className="px-8 pt-8 pb-6 relative"
               style={{ borderBottom: `1px solid ${COLORS.border}`, backgroundColor: COLORS.bgCard }}>
-        {/* Swoosh decorativo Andersen */}
-        <svg width="180" height="22" viewBox="0 0 180 22"
-             style={{ position: 'absolute', top: 12, left: 32, opacity: 0.95 }}>
-          <path d="M 5 18 Q 90 -8 175 14"
-                fill="none" stroke={COLORS.green} strokeWidth="6" strokeLinecap="round" />
-        </svg>
+        {/* Logo oficial Andersen */}
+        <img src={andersenLogo} alt="Andersen"
+             style={{ height: 52, width: 'auto', display: 'block', marginBottom: 24 }} />
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pt-6">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <div>
             <div className="flex items-center gap-3 mb-4 flex-wrap">
               <div className="text-[10px] font-mono px-2.5 py-1 rounded-sm font-bold tracking-wider"
@@ -2535,17 +2801,20 @@ export default function SolticomDashboard() {
             </p>
           </div>
           <div className="flex items-center gap-6">
-            <div className="text-right">
-              <div className="text-[10px] uppercase tracking-widest font-bold"
-                   style={{ color: COLORS.textMuted }}>
-                Score SCI Global
+            <div className="flex items-center gap-3">
+              <div className="text-right">
+                <div className="text-[10px] uppercase tracking-widest font-bold"
+                     style={{ color: COLORS.textMuted }}>
+                  Score SCI Global
+                </div>
+                <div className="text-4xl font-bold tracking-tight"
+                     style={{ color: getMaturityColor(KPIs.scoreGlobal), fontFamily: FONT_SERIF }}>
+                  {KPIs.scoreGlobal.toFixed(2)}
+                  <span className="text-base font-normal ml-1"
+                        style={{ color: COLORS.textMuted, fontFamily: FONT_SANS }}>/ 5.00</span>
+                </div>
               </div>
-              <div className="text-4xl font-bold tracking-tight"
-                   style={{ color: getMaturityColor(KPIs.scoreGlobal), fontFamily: FONT_SERIF }}>
-                {KPIs.scoreGlobal.toFixed(2)}
-                <span className="text-base font-normal ml-1"
-                      style={{ color: COLORS.textMuted, fontFamily: FONT_SANS }}>/ 5.00</span>
-              </div>
+              <TrafficLight score={KPIs.scoreGlobal} size="lg" />
             </div>
             <div className="h-14 w-px" style={{ backgroundColor: COLORS.border }} />
             <div className="text-right">
@@ -2570,7 +2839,7 @@ export default function SolticomDashboard() {
             const showSeparator = prevGroup && prevGroup !== t.group;
             return (
               <TabButton key={t.id} active={tab === t.id} onClick={() => setTab(t.id)}
-                         icon={t.icon} label={t.label} count={t.count} separator={showSeparator} />
+                         label={t.label} count={t.count} separator={showSeparator} />
             );
           })}
         </div>
@@ -2584,11 +2853,8 @@ export default function SolticomDashboard() {
               style={{ borderTop: `2px solid ${COLORS.green}`, backgroundColor: COLORS.bgCard }}>
         <div className="flex flex-col md:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-3">
-            <div className="text-sm font-bold tracking-tight"
-                 style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>
-              A N D E R S E N
-              <span style={{ color: COLORS.green }}>  C O N S U L T I N G</span>
-            </div>
+            <img src={andersenLogo} alt="Andersen"
+                 style={{ height: 28, width: 'auto', display: 'block' }} />
             <div className="h-4 w-px" style={{ backgroundColor: COLORS.border }} />
             <div className="text-xs italic" style={{ color: COLORS.textMuted, fontFamily: FONT_SERIF }}>
               Sistema de Inteligencia Empresarial · Junta de Consejo
