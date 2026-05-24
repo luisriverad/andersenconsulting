@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd solticom-dashboard && npm install",
+  "buildCommand": "cd solticom-dashboard && npm run build",
+  "outputDirectory": "solticom-dashboard/dist",
+  "framework": "vite",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
