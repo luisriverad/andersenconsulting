@@ -5,6 +5,7 @@ import {
   Cell, LabelList,
 } from 'recharts';
 import andersenLogo from '../assets/andersen_logo.png';
+import rcForumsLogo from '../assets/rc_forums_logo.png';
 import { extractText, extractDashboardData } from '../utils/fileExtractor.js';
 
 // ============================================================
@@ -6338,9 +6339,14 @@ export default function SolticomDashboard() {
           )}
         </div>
 
-        {/* Logo oficial Andersen */}
-        <img src={andersenLogo} alt="Andersen"
-             style={{ height: 52, width: 'auto', display: 'block', marginBottom: 24 }} />
+        {/* Logos oficiales · Andersen + RC Forums */}
+        <div className="flex items-center gap-5" style={{ marginBottom: 24 }}>
+          <img src={andersenLogo} alt="Andersen"
+               style={{ height: 52, width: 'auto', display: 'block' }} />
+          <div className="self-stretch w-px" style={{ backgroundColor: COLORS.border }} />
+          <img src={rcForumsLogo} alt="RC Forums · Business Boards"
+               style={{ height: 46, width: 'auto', display: 'block' }} />
+        </div>
 
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6">
           <div>
@@ -6421,6 +6427,9 @@ export default function SolticomDashboard() {
           <div className="flex items-center gap-3">
             <img src={andersenLogo} alt="Andersen"
                  style={{ height: 28, width: 'auto', display: 'block' }} />
+            <div className="h-5 w-px" style={{ backgroundColor: COLORS.border }} />
+            <img src={rcForumsLogo} alt="RC Forums · Business Boards"
+                 style={{ height: 26, width: 'auto', display: 'block' }} />
             <div className="h-4 w-px" style={{ backgroundColor: COLORS.border }} />
             <div className="text-xs italic" style={{ color: COLORS.textMuted, fontFamily: FONT_SERIF }}>
               Sistema de Inteligencia Empresarial · Junta de Consejo
