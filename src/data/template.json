@@ -1,0 +1,85 @@
+{
+  "meta": {
+    "cliente": "NOMBRE_CLIENTE",
+    "razonSocial": "Razón social completa del cliente",
+    "evaluacion": "2026",
+    "sector": "SECTOR INDUSTRIAL",
+    "framework": "ANDERSEN CONSULTING",
+    "tituloDashboard": "Diagnóstico de",
+    "tituloAcento": "Gobierno Corporativo",
+    "subtitulo": "Cliente · Descripción breve del negocio"
+  },
+  "kpis": {
+    "hallazgosTotal": 0,
+    "criticosMuerte": 0,
+    "altos": 0,
+    "medios": 0,
+    "bajos": 0,
+    "procesos": 0,
+    "ejesCorporativos": 7,
+    "celdasMapa": 42
+  },
+  "conclusionEjecutiva": {
+    "titulo": "Título principal de la conclusión ejecutiva",
+    "texto": "Párrafo de 4-6 líneas con la conclusión ejecutiva del diagnóstico."
+  },
+  "mapaValor": [
+    {
+      "eje": "EJE DEL GOBIERNO CORPORATIVO",
+      "id": "eje_id",
+      "celdas": [
+        { "nombre": "Celda 1", "sev": "high" },
+        { "nombre": "Celda 2", "sev": "medium" }
+      ]
+    }
+  ],
+  "topCriticos": [
+    {
+      "id": "H01",
+      "titulo": "Título corto del hallazgo crítico",
+      "area": "Proceso / Área",
+      "riesgo": "Descripción del riesgo en una línea."
+    }
+  ],
+  "tiposRiesgo": [
+    { "tipo": "Familia de Riesgo 1", "cantidad": 0, "color": "#A6192E" }
+  ],
+  "roadmap": [
+    {
+      "fase": "FASE 1",
+      "titulo": "Nombre de la Fase",
+      "horizonte": "0–3 meses",
+      "color": "#6B2D8C",
+      "tint": "#F3EBF7",
+      "objetivo": "Objetivo principal de la fase.",
+      "entregables": [
+        "Entregable 1",
+        "Entregable 2"
+      ],
+      "impacto": "Impacto esperado · Métrica concreta"
+    }
+  ],
+  "decisionEstrategica": {
+    "conclusion": "Lo que el diagnóstico concluye.",
+    "decision": "Lo que se decide hacer.",
+    "eliminacion": "Lo que se cancela / elimina."
+  },
+  "procesos": [
+    {
+      "id": "proceso_id",
+      "code": "P01",
+      "nombre": "Nombre Completo del Proceso",
+      "nombreCorto": "Nombre Corto",
+      "iconKey": "Cog",
+      "sintesis": "Síntesis ejecutiva de 2-3 líneas sobre el proceso.",
+      "hallazgos": [
+        {
+          "id": "H01",
+          "sev": "high",
+          "desc": "Descripción detallada del hallazgo.",
+          "tipo": "Tipo de riesgo institucional"
+        }
+      ]
+    }
+  ]
+}

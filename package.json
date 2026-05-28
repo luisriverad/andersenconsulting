@@ -1,19 +1,16 @@
 {
-  "name": "solticom-dashboard",
+  "name": "andersen-dashboard-saas",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
-  "description": "Diagnóstico Estratégico Empresarial · Hello SOLTICOM · Framework Andersen Consulting · Powered by AXON B2B",
+  "description": "Diagnóstico ejecutivo de Gobierno Corporativo · Arquitectura data-driven · Framework Andersen Consulting · Powered by AXON B2B",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "jszip": "^3.10.1",
     "lucide-react": "^0.460.0",
-    "pdfjs-dist": "^5.7.284",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.13.0"

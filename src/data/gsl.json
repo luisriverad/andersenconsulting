@@ -1,0 +1,2015 @@
+{
+  "meta": {
+    "cliente": "GSL",
+    "razonSocial": "Servicios de almacenamiento y logística especializada",
+    "evaluacion": "2026",
+    "sector": "LOGÍSTICA PESADA",
+    "framework": "ANDERSEN CONSULTING",
+    "tituloDashboard": "Diagnóstico de",
+    "tituloAcento": "Gobierno Corporativo",
+    "subtitulo": "GSL · Servicios de almacenamiento y logística especializada"
+  },
+  "kpis": {
+    "hallazgosTotal": 61,
+    "criticosMuerte": 6,
+    "altos": 27,
+    "medios": 25,
+    "bajos": 3,
+    "procesos": 20,
+    "ejesCorporativos": 7,
+    "celdasMapa": 42
+  },
+  "conclusionEjecutiva": {
+    "titulo": "De una empresa familiar reactiva a una corporación gobernada",
+    "texto": "GSL acumula 61 hallazgos distribuidos en 20 procesos críticos del negocio. Seis de ellos representan riesgo de muerte patrimonial: tres concentrados en Operaciones (mantenimiento omitido, rutas foráneas sin blindaje, inspección preoperativa basada en 'confianza ciega'), uno en Administración de Riesgos (maniobras Tandem sin AST), uno en Finanzas (CFO externalizado al despacho contable), y uno en Ventas (concentración del 80% del ingreso). El relevo generacional sin reglas escritas amplifica todos estos riesgos. La hoja de ruta de 18 meses prioriza primero el blindaje de activos y vidas humanas, después la institucionalización del gobierno, y finalmente la diversificación comercial y la profesionalización de la marca."
+  },
+  "mapaValor": [
+    {
+      "eje": "SOCIOS Y ORGANIZACIÓN CORPORATIVA",
+      "id": "socios",
+      "celdas": [
+        {
+          "nombre": "Acuerdos y requerimientos de socios",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): no existen acuerdos de socios formales que regulen aportaciones, salidas y resolución de disputas; su ausencia expone el control accionario y exige atención prioritaria."
+        },
+        {
+          "nombre": "Centro de Servicios compartidos",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): la función opera, pero centralizar servicios entre las empresas del grupo elevaría eficiencia y control. Es una oportunidad, no un riesgo inmediato."
+        },
+        {
+          "nombre": "Precios de transferencia",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): hay operaciones entre partes relacionadas sin una política de precios de transferencia documentada; conviene formalizarla para blindar el frente fiscal."
+        },
+        {
+          "nombre": "Partes relacionadas y conflictos de interés",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): existen operaciones con partes relacionadas sin un protocolo de revelación y aprobación, lo que genera conflictos de interés que deben atenderse de forma prioritaria."
+        },
+        {
+          "nombre": "Código de ética y conducta (valores corporativos)",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): falta un código de ética formal que fije los valores corporativos; implementarlo fortalece la gobernanza sin representar un riesgo patrimonial inmediato."
+        },
+        {
+          "nombre": "Organización grupo holding SAPI–SAPIB–SAB",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): la estructura societaria del grupo puede optimizarse hacia un esquema holding (SAPI/SAPIB/SAB) que ordene el control y facilite la atracción de capital."
+        }
+      ]
+    },
+    {
+      "eje": "CONTROL, AUDITORÍA Y RIESGOS",
+      "id": "control",
+      "celdas": [
+        {
+          "nombre": "Control interno estratégico, directivo y operativo",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): no existe un sistema de control interno; la operación es reactiva (\"al bomberazo\"), lo que amenaza directamente la continuidad del negocio y exige acción inmediata."
+        },
+        {
+          "nombre": "Auditoría interna",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): no hay función de auditoría interna que vigile procesos y riesgos. Esta ausencia de control puede materializar pérdidas patrimoniales graves."
+        },
+        {
+          "nombre": "Auditoría externa",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): se cuenta con auditoría externa, pero su alcance puede ampliarse para agregar mayor aseguramiento; oportunidad de mejora, no riesgo crítico."
+        },
+        {
+          "nombre": "Evaluación y Mitigación de Riesgos",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): no existe un comité ni metodología para evaluar y mitigar riesgos; la exposición operativa (p. ej. maniobras sin AST) requiere atención prioritaria."
+        },
+        {
+          "nombre": "Estados financieros",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): los estados financieros se generan, pero su oportunidad y nivel de detalle pueden mejorarse para soportar mejores decisiones."
+        },
+        {
+          "nombre": "Cumplimiento regulatorio y fiscal",
+          "sev": "ok",
+          "explicacion": "Verde (Sin observaciones): el cumplimiento regulatorio y fiscal opera de forma adecuada; sin hallazgos relevantes en esta evaluación."
+        }
+      ]
+    },
+    {
+      "eje": "PRÁCTICAS SOCIETARIAS",
+      "id": "practicas",
+      "celdas": [
+        {
+          "nombre": "Operaciones relevantes e inusuales",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): conviene formalizar un protocolo para identificar y aprobar operaciones relevantes o inusuales; mejora de control, no riesgo inmediato."
+        },
+        {
+          "nombre": "Control y gestión de indicadores",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): faltan tableros e indicadores (KPIs) formales para dirigir el negocio con datos; oportunidad de mejora en la gestión."
+        },
+        {
+          "nombre": "Planeación estratégica",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): no hay un plan estratégico formal con objetivos y seguimiento; dirigir sin rumbo documentado es una debilidad importante."
+        },
+        {
+          "nombre": "Definición y Seguimiento a Presupuesto",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): operar sin presupuesto ni seguimiento financiero impide anticipar faltantes de liquidez y compromete la continuidad; requiere acción inmediata."
+        },
+        {
+          "nombre": "Nominación, remuneración y evaluación de ejecutivos relevantes",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): no existen procesos formales de nominación y evaluación de ejecutivos clave, lo que concentra decisiones y riesgos; atención prioritaria."
+        },
+        {
+          "nombre": "Políticas de dirección y facultades",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): faltan políticas que definan facultades y límites de la dirección; sin esos límites formales, las decisiones quedan sin contrapeso."
+        }
+      ]
+    },
+    {
+      "eje": "MÁS INGRESO",
+      "id": "ingreso",
+      "celdas": [
+        {
+          "nombre": "Nuevos mercados, segmentos, productos, sectores, clientes",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): la dependencia de pocos clientes y segmentos sin diversificación amenaza los ingresos y la continuidad; la expansión es urgente."
+        },
+        {
+          "nombre": "Análisis de Precios",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): los precios pueden gestionarse con mayor análisis de rentabilidad por servicio; oportunidad de mejora en el margen."
+        },
+        {
+          "nombre": "Alianzas, fusiones y adquisiciones",
+          "sev": "ok",
+          "explicacion": "Verde (Sin observaciones): no se identificaron riesgos en este frente durante la evaluación."
+        },
+        {
+          "nombre": "Portafolio de Productos Óptimo",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): el portafolio de productos y servicios puede optimizarse para enfocar los de mayor valor; oportunidad de mejora."
+        },
+        {
+          "nombre": "Análisis de ventas",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): el área de ventas opera, pero le falta análisis sistemático (pipeline, conversión); mejora de gestión comercial."
+        },
+        {
+          "nombre": "Mejores prácticas en ventas",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): la función comercial carece de procesos y mejores prácticas formales, poniendo en riesgo la generación sostenida de ingresos."
+        }
+      ]
+    },
+    {
+      "eje": "MAYOR RENTABILIDAD",
+      "id": "rentabilidad",
+      "celdas": [
+        {
+          "nombre": "Oportunidades en gastos",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): el gasto opera sin control ni presupuesto, erosionando la rentabilidad y la caja; requiere intervención inmediata."
+        },
+        {
+          "nombre": "Oportunidades en costos de los proyectos",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): hay margen para optimizar el costo por proyecto con mejor costeo y seguimiento; oportunidad de mejora."
+        },
+        {
+          "nombre": "Seguimiento a proyecto vs presupuesto",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): conviene comparar sistemáticamente lo ejecutado contra lo presupuestado por proyecto; mejora del control de rentabilidad."
+        },
+        {
+          "nombre": "Oportunidades en costos y gastos financieros",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): el costo financiero (deuda, intereses) no se gestiona activamente, lo que afecta la rentabilidad de forma importante."
+        },
+        {
+          "nombre": "Mejora de efectividad y eficiencia en procesos",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): la ausencia de procesos documentados genera ineficiencias que comprometen márgenes y continuidad; prioridad máxima."
+        },
+        {
+          "nombre": "Alternativas de fondeo de capital / pasivos",
+          "sev": "ok",
+          "explicacion": "Verde (Sin observaciones): la estructura de fondeo de capital y pasivos no presenta hallazgos relevantes en esta evaluación."
+        }
+      ]
+    },
+    {
+      "eje": "EXCELENCIA",
+      "id": "excelencia",
+      "celdas": [
+        {
+          "nombre": "Equipo motivado y alto desempeño",
+          "sev": "ok",
+          "explicacion": "Verde (Sin observaciones): el equipo muestra compromiso y desempeño adecuados; sin hallazgos relevantes."
+        },
+        {
+          "nombre": "Uso eficiente de activos",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): los activos (flota, grúas, inmuebles) pueden aprovecharse con mayor eficiencia; oportunidad de mejora operativa."
+        },
+        {
+          "nombre": "Valuación, custodia, control y plan de activos e inmuebles",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): conviene formalizar inventario, valuación y custodia de activos e inmuebles; mejora de control patrimonial."
+        },
+        {
+          "nombre": "Nuevos negocios, capitalización e inversiones",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): existe potencial de nuevos negocios e inversiones que conviene evaluar con criterios formales; oportunidad estratégica."
+        },
+        {
+          "nombre": "Ventajas comp., innovación, desarrollo y benchmarking",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): no se monitorea a la competencia ni se invierte en innovación de forma estructurada, lo que debilita la posición competitiva; atención prioritaria."
+        },
+        {
+          "nombre": "Derechos y marcas",
+          "sev": "critical",
+          "explicacion": "Morado (Crítico / Muerte): marcas y derechos de propiedad intelectual sin protección ni registro formal exponen un activo clave a una pérdida irreversible; acción inmediata."
+        }
+      ]
+    },
+    {
+      "eje": "LOGÍSTICA DEL CONSEJO DE ADMINISTRACIÓN",
+      "id": "consejo",
+      "celdas": [
+        {
+          "nombre": "Actas y libro de registro",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): los libros corporativos y las actas no están al corriente, lo que vulnera la validez de las decisiones y el cumplimiento societario; atención prioritaria."
+        },
+        {
+          "nombre": "Proceso de convocatoria e integración de memorias",
+          "sev": "medium",
+          "explicacion": "Ámbar (Mejora): el proceso de convocatoria y documentación de sesiones puede formalizarse; mejora de gobernanza."
+        },
+        {
+          "nombre": "Seguimiento y comunicación con dirección y socios",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): falta un canal formal de seguimiento y rendición de cuentas entre consejo, dirección y socios; debilidad importante de gobierno."
+        },
+        {
+          "nombre": "Coaching directivo y evaluación de los Comités",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): no existe evaluación del desempeño del consejo ni de sus comités, lo que limita su efectividad como órgano de gobierno; atención prioritaria."
+        },
+        {
+          "nombre": "Información y estudio previo, soporte automatizado del comité Directivo",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): el consejo decide sin información previa estructurada ni soporte sistematizado, lo que debilita la calidad de sus decisiones."
+        },
+        {
+          "nombre": "Dinámica de voto y juntas efectivas",
+          "sev": "high",
+          "explicacion": "Rojo (Grave): las juntas carecen de reglas claras de quórum y voto que aseguren decisiones válidas y efectivas; debilidad de gobierno a atender."
+        }
+      ]
+    }
+  ],
+  "topCriticos": [
+    {
+      "id": "H30",
+      "titulo": "Mantenimiento Omitido por \"Emergencias\"",
+      "area": "Operaciones",
+      "riesgo": "Liberación de grúas y tractocamiones a ruta sin verificar condiciones óptimas de seguridad."
+    },
+    {
+      "id": "H31",
+      "titulo": "Tramos Ciegos en Carreteras Foráneas",
+      "area": "Operaciones",
+      "riesgo": "Despacho empírico sin protocolo de blindaje ante robo y siniestralidad vial 2026."
+    },
+    {
+      "id": "H32",
+      "titulo": "\"Confianza Ciega\" en Inspección Preoperativa",
+      "area": "Operaciones",
+      "riesgo": "Sin checklists obligatorios: omisión sistemática de revisión de fluidos, presiones y desgaste."
+    },
+    {
+      "id": "H01",
+      "titulo": "Maniobras Tandem sin AST",
+      "area": "Administración de Riesgos",
+      "riesgo": "Izajes de alta complejidad ejecutados sin Análisis de Seguridad en el Trabajo firmado."
+    },
+    {
+      "id": "H16",
+      "titulo": "Despacho Contable como CFO de Facto",
+      "area": "Finanzas y Contabilidad",
+      "riesgo": "Juez y parte: diseña el ERP, registra, calcula costos y firma estados financieros."
+    },
+    {
+      "id": "H57",
+      "titulo": "Concentración del 80% en Clientes Casa",
+      "area": "Ventas y Posventa",
+      "riesgo": "Ingreso comercial concentrado en pocas cuentas cuyas especificaciones residen en memoria senior."
+    }
+  ],
+  "tiposRiesgo": [
+    {
+      "tipo": "Gobernanza y Sucesión Familiar",
+      "cantidad": 11,
+      "color": "#6B2D8C"
+    },
+    {
+      "tipo": "Continuidad Operativa",
+      "cantidad": 14,
+      "color": "#A6192E"
+    },
+    {
+      "tipo": "Contingencia Fiscal y Legal",
+      "cantidad": 7,
+      "color": "#7A1220"
+    },
+    {
+      "tipo": "Asfixia Financiera",
+      "cantidad": 10,
+      "color": "#D9941E"
+    },
+    {
+      "tipo": "Patrimonial y de Activos",
+      "cantidad": 8,
+      "color": "#2D4F73"
+    },
+    {
+      "tipo": "Comercial y Concentración",
+      "cantidad": 7,
+      "color": "#5A9136"
+    },
+    {
+      "tipo": "Capital Humano",
+      "cantidad": 4,
+      "color": "#B89A2E"
+    }
+  ],
+  "roadmap": [
+    {
+      "fase": "FASE 1",
+      "titulo": "Blindaje Crítico",
+      "horizonte": "0–3 meses",
+      "color": "#6B2D8C",
+      "tint": "#F3EBF7",
+      "objetivo": "Detener los riesgos de muerte patrimonial. Instalar candados básicos de seguridad operativa y gobierno corporativo.",
+      "entregables": [
+        "Lista de verificación obligatoria pre-ruta para toda la flota (sistemas de rastreo, comunicación redundante)",
+        "Protocolo institucional de mantenimiento preventivo con prioridad sobre \"emergencias\" comerciales",
+        "AST firmado obligatorio para toda maniobra de izaje Tandem",
+        "Contralor interno independiente del despacho contable externo",
+        "Validación automática de listas negras SAT (EFOS/EDOS) en alta de proveedores"
+      ],
+      "impacto": "Eliminación de 6 hallazgos críticos · Reducción del 80% de exposición civil y penal"
+    },
+    {
+      "fase": "FASE 2",
+      "titulo": "Institucionalización del Gobierno",
+      "horizonte": "3–9 meses",
+      "color": "#A6192E",
+      "tint": "#FAEFF1",
+      "objetivo": "Formalizar el órgano de gobierno y los sistemas de medición. Crear los comités especializados que la sucesión generacional demanda.",
+      "entregables": [
+        "Reglamento del Consejo: actas formales, agenda previa, dinámica de voto, comités (auditoría, riesgos, sucesión)",
+        "Plan Estratégico formal con KPIs mensuales de rentabilidad por unidad de negocio",
+        "Manuales de procedimientos institucionalizados (Operaciones, Compras, RH, Facturación)",
+        "Tabulador salarial y meritocracia documentada para ingreso de siguiente generación",
+        "Sistema de cobranza preventiva con políticas de crédito y penalización por morosidad"
+      ],
+      "impacto": "Reducción del 70% de los 27 hallazgos graves · Trazabilidad documental completa"
+    },
+    {
+      "fase": "FASE 3",
+      "titulo": "Optimización y Crecimiento",
+      "horizonte": "9–18 meses",
+      "color": "#D9941E",
+      "tint": "#FBF3DC",
+      "objetivo": "Pasar de control a rentabilidad. Diversificar la cartera, profesionalizar la marca y blindar el patrimonio familiar.",
+      "entregables": [
+        "Diversificación de cartera: reducir concentración del 80% en clientes casa a < 50%",
+        "Estrategia digital y prospección activa: recuperar cuota frente a competidores",
+        "Plan de retiro formalizado para el fundador y esposa (separado del flujo del taller)",
+        "Programa de RSE y posicionamiento como referente técnico de izaje industrial",
+        "TI interna y plan de continuidad ante dependencia del ERP Fusion"
+      ],
+      "impacto": "Crecimiento sostenible con base diversificada · Antifragilidad patrimonial y comercial"
+    }
+  ],
+  "decisionEstrategica": {
+    "conclusion": "GSL es una empresa familiar valiosa operando sin las reglas que su escala patrimonial y operativa exige. La sucesión generacional sin formalización amplifica todos los riesgos.",
+    "decision": "Iniciar Fase 1 en los próximos 30 días con el blindaje operativo de flota, el AST obligatorio para Tandem y la contratación de un contralor interno independiente del despacho contable.",
+    "eliminacion": "Se cancela la práctica de liberar unidades a ruta sin lista de verificación, las maniobras Tandem sin AST y la triangulación de mandos por chats privados de los directores."
+  },
+  "procesos": [
+    {
+      "id": "admin_riesgos",
+      "code": "P01",
+      "nombre": "Administración de Riesgos",
+      "nombreCorto": "Admin. Riesgos",
+      "iconKey": "AlertOctagon",
+      "sintesis": "GSL opera bajo una gestión enteramente reactiva (\"al bomberazo\"). No existen manuales de procedimientos unificados, descriptivos de puestos ni un comité interno que evalúe los riesgos. La materialización crítica está en la Unidad de Grúas, donde se ejecutan maniobras Tandem omitiendo el AST obligatorio.",
+      "hallazgos": [
+        {
+          "id": "H01",
+          "sev": "critical",
+          "desc": "Ausencia de Procesos, Evaluación de Riesgos Preventivos y Auditoría Interna. GSL opera bajo gestión enteramente reactiva (\"al bomberazo\"). No existen manuales de procedimientos unificados, descriptivos de puestos ni un comité interno que evalúe los riesgos de la operación. Esta falta institucional de control se materializa críticamente en la Unidad de Grúas, donde se ejecutan maniobras simultáneas de izaje de alta complejidad (Tandem) de forma común, omitiendo por completo y de manera sistemática el llenado y firma obligatoria del Análisis de Seguridad en el Trabajo (AST).",
+          "tipo": "Integridad Patrimonial, Conflicto de Gobernanza y Parálisis de la Continuidad del Negocio",
+          "plan": {
+            "d30": [
+              "Hacer obligatorio y auditar el AST firmado en toda maniobra Tandem",
+              "Nombrar un responsable interino de control de riesgos operativos",
+              "Levantar inventario de procesos críticos sin manual"
+            ],
+            "d60": [
+              "Documentar manuales de procedimientos y descriptivos de puesto prioritarios",
+              "Constituir un comité de riesgos con sesiones mensuales",
+              "Definir matriz de riesgos y controles por proceso"
+            ],
+            "d90": [
+              "Implementar auditoría interna periódica del cumplimiento del AST",
+              "Capacitar y certificar al personal en los nuevos procedimientos",
+              "Establecer KPIs de control y un tablero de seguimiento"
+            ]
+          }
+        },
+        {
+          "id": "H02",
+          "sev": "high",
+          "desc": "Enfoque Corporativo Enteramente Reactivo (\"Bomberazos\"). Carencia de comités de riesgo, procesos documentados o planes de contingencia ante la salida de personas clave que concentran el \"know-how\".",
+          "tipo": "Continuidad de Negocio por Dependencia de Personal Clave",
+          "plan": {
+            "d30": [
+              "Identificar puestos y personas que concentran el know-how",
+              "Documentar las funciones críticas de cada persona clave",
+              "Designar respaldos internos para los roles críticos"
+            ],
+            "d60": [
+              "Crear planes de contingencia y sucesión por puesto clave",
+              "Constituir un comité de riesgos con cadencia mensual",
+              "Iniciar la transferencia documentada de conocimiento"
+            ],
+            "d90": [
+              "Formalizar manuales y políticas de continuidad del negocio",
+              "Cruzar-entrenar al personal en funciones críticas",
+              "Monitorear riesgos con tablero y revisión trimestral"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aud_externa",
+      "code": "P02",
+      "nombre": "Auditoría Externa",
+      "nombreCorto": "Aud. Externa",
+      "iconKey": "ShieldAlert",
+      "sintesis": "El mismo despacho contable externo opera como juez y parte: parametriza el sistema, revisa liquidaciones y dictamina los estados financieros, invalidando el principio de imparcialidad financiera.",
+      "hallazgos": [
+        {
+          "id": "H03",
+          "sev": "high",
+          "desc": "Invalidación del principio de imparcialidad; el mismo despacho contable externo parametriza el sistema, revisa liquidaciones y dictamina estados financieros.",
+          "tipo": "Conflicto de Interés Corporativo y Falta de Imparcialidad Financiera",
+          "plan": {
+            "d30": [
+              "Mapear las funciones incompatibles que hoy ejerce el despacho externo",
+              "Separar de inmediato la parametrización del sistema de la dictaminación",
+              "Definir política de independencia del auditor externo"
+            ],
+            "d60": [
+              "Contratar un dictaminador externo distinto al despacho operativo",
+              "Crear una contraloría interna que revise liquidaciones",
+              "Documentar el flujo de revisión y aprobación financiera"
+            ],
+            "d90": [
+              "Institucionalizar la rotación y evaluación del auditor externo",
+              "Auditar la imparcialidad del proceso de cierre",
+              "Reportar la independencia financiera a la asamblea"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "aud_interna",
+      "code": "P03",
+      "nombre": "Auditoría Interna",
+      "nombreCorto": "Aud. Interna",
+      "iconKey": "ShieldCheck",
+      "sintesis": "No existe una contraparte o contraloría interna propia de la empresa que audite la veracidad de la información financiera procesada por el despacho externo. El control queda enteramente delegado a un tercero con intereses cruzados.",
+      "hallazgos": [
+        {
+          "id": "H04",
+          "sev": "high",
+          "desc": "Inexistencia de una contraparte o contraloría interna propia de la empresa que audite la veracidad de la información financiera que procesa el despacho.",
+          "tipo": "Vacíos de Control Interno Concurrentes y Falta de Fiscalización",
+          "plan": {
+            "d30": [
+              "Designar un responsable interno de contraloría",
+              "Definir el alcance mínimo de fiscalización interna",
+              "Solicitar al despacho acceso completo a la información financiera"
+            ],
+            "d60": [
+              "Implementar revisiones internas de la información que procesa el despacho",
+              "Documentar controles de conciliación y validación",
+              "Establecer reportes de hallazgos a dirección"
+            ],
+            "d90": [
+              "Consolidar la función de auditoría interna permanente",
+              "Definir plan anual de auditoría basado en riesgos",
+              "Medir cobertura de control con KPIs trimestrales"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "calidad_fact",
+      "code": "P04",
+      "nombre": "Calidad y Servicio a Clientes – Facturación",
+      "nombreCorto": "Calidad / Facturación",
+      "iconKey": "FileText",
+      "sintesis": "El ciclo de ingresos se ralentiza por procesos administrativos manuales en obra: recolección física de evidencias, firmas múltiples y autorizaciones presenciales. Adicionalmente, GSL pierde fletes corporativos al enviar plataformas con desperfectos físicos por negligencia de supervisión.",
+      "hallazgos": [
+        {
+          "id": "H05",
+          "sev": "high",
+          "desc": "Retraso crónico en el ciclo de pre-facturación debido a que ventas depende de la recolección manual de evidencias con operaciones en obra.",
+          "tipo": "Ciclo de Ingresos Lento, Retraso de Facturación y Retención de Caja",
+          "plan": {
+            "d30": [
+              "Mapear el ciclo de pre-facturación y sus cuellos de botella",
+              "Digitalizar la captura de evidencias en obra (app/foto)",
+              "Fijar SLA máximo entre servicio prestado y facturación"
+            ],
+            "d60": [
+              "Automatizar el flujo evidencia → pre-factura → factura",
+              "Capacitar a ventas en la carga digital de evidencias",
+              "Eliminar pasos manuales redundantes del ciclo"
+            ],
+            "d90": [
+              "Integrar el flujo con el ERP y monitorear días de facturación",
+              "Implementar tablero de antigüedad de pre-facturas",
+              "Revisar y optimizar el ciclo de ingresos trimestralmente"
+            ]
+          }
+        },
+        {
+          "id": "H06",
+          "sev": "high",
+          "desc": "Fricción administrativa extrema por procesos de autorización múltiple y firmas de conformidad exigidas de forma física en obra.",
+          "tipo": "Saturación Administrativa Comercial y Plazos de Cobro Extendidos",
+          "plan": {
+            "d30": [
+              "Inventariar las autorizaciones y firmas físicas exigidas hoy",
+              "Identificar firmas eliminables o consolidables",
+              "Habilitar firma electrónica de conformidad en obra"
+            ],
+            "d60": [
+              "Rediseñar el flujo de autorización con menos pasos",
+              "Pilotar firma digital con clientes clave",
+              "Definir niveles de aprobación por monto"
+            ],
+            "d90": [
+              "Desplegar la autorización digital a toda la operación",
+              "Medir el plazo de cobro antes/después del rediseño",
+              "Estandarizar el proceso en manual operativo"
+            ]
+          }
+        },
+        {
+          "id": "H07",
+          "sev": "high",
+          "desc": "Rechazo total de fletes de palets corporativos por enviar plataformas propias de GSL con desperfectos físicos en la madera por negligencia de supervisión.",
+          "tipo": "Desgaste de Marca, Negligencia Operativa y Rechazo de Servicio",
+          "plan": {
+            "d30": [
+              "Inspeccionar y retirar de servicio las plataformas con desperfectos",
+              "Definir checklist de inspección de equipo previo al flete",
+              "Asignar responsable de supervisión de calidad de equipo"
+            ],
+            "d60": [
+              "Implementar mantenimiento preventivo de plataformas",
+              "Capacitar a supervisión en estándares de aceptación",
+              "Documentar protocolo de rechazo y reposición"
+            ],
+            "d90": [
+              "Auditar periódicamente el estado físico de la flota de palets",
+              "Medir tasa de rechazo de fletes como KPI",
+              "Recuperar la confianza del cliente con reporte de mejoras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "compras",
+      "code": "P05",
+      "nombre": "Compras",
+      "nombreCorto": "Compras",
+      "iconKey": "ShoppingCart",
+      "sintesis": "El área de compras acumula tareas cruzadas (taller, refacciones, verificaciones, agua) y opera sin cuadros comparativos ni planeación presupuestal. La contratación informal de talleres mecánicos foráneos \"a ciegas\" en ruta drena caja sin control.",
+      "hallazgos": [
+        {
+          "id": "H08",
+          "sev": "high",
+          "desc": "Efecto Embudo e Ingreso Informal de Proveedores Mecánicos. El encargado de compras acumula tareas operativas cruzadas (taller, refacciones, verificaciones, agua). Se omiten los cuadros comparativos de tres cotizaciones formales ante las fallas mecánicas en ruta.",
+          "tipo": "Fuga de Efectivo, Deficiencia de Suministro y Falta de Transparencia Comercial",
+          "plan": {
+            "d30": [
+              "Redistribuir las tareas cruzadas acumuladas en compras",
+              "Formalizar el alta y evaluación de proveedores mecánicos",
+              "Exigir cotizaciones y orden de compra a proveedores"
+            ],
+            "d60": [
+              "Implementar un padrón de proveedores autorizados",
+              "Definir políticas de tres cotizaciones por compra relevante",
+              "Separar funciones de solicitud, autorización y pago"
+            ],
+            "d90": [
+              "Automatizar el flujo de compras en el ERP",
+              "Medir ahorro y transparencia con KPIs de compras",
+              "Auditar el padrón de proveedores periódicamente"
+            ]
+          }
+        },
+        {
+          "id": "H09",
+          "sev": "high",
+          "desc": "Contratación informal de talleres mecánicos externos en ruta foránea \"a ciegas\" ante contingencias y varadas viales de las unidades.",
+          "tipo": "Fuga de Caja en Ruta y Deficiencia de Proveeduría Foránea",
+          "plan": {
+            "d30": [
+              "Crear un directorio de talleres foráneos pre-autorizados por ruta",
+              "Definir un protocolo de atención ante varadas viales",
+              "Fijar topes de gasto y autorización para reparaciones en ruta"
+            ],
+            "d60": [
+              "Negociar tarifas y convenios con talleres en rutas frecuentes",
+              "Implementar registro y comprobación de gastos en ruta",
+              "Capacitar a operadores en el protocolo de contingencia"
+            ],
+            "d90": [
+              "Integrar el control de gastos foráneos al ERP",
+              "Medir fuga de caja en ruta antes/después",
+              "Revisar y ampliar la red de proveedores foráneos"
+            ]
+          }
+        },
+        {
+          "id": "H10",
+          "sev": "high",
+          "desc": "Compras sin planeación ni optimización de costos por el total desconocimiento de los presupuestos anuales históricos de la firma por el personal.",
+          "tipo": "Descontrol Presupuestal, Falta de Visión del Gasto e Inflación Operativa",
+          "plan": {
+            "d30": [
+              "Recuperar y difundir los presupuestos históricos al personal de compras",
+              "Construir un presupuesto anual base por categoría de gasto",
+              "Definir responsable de control presupuestal"
+            ],
+            "d60": [
+              "Implementar planeación de compras contra presupuesto",
+              "Negociar volúmenes y condiciones con proveedores clave",
+              "Crear reportes de desviación presupuestal"
+            ],
+            "d90": [
+              "Automatizar el control presupuestal en el ERP",
+              "Medir inflación operativa y ahorros logrados",
+              "Institucionalizar la revisión presupuestal mensual"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "credito_cobranza",
+      "code": "P06",
+      "nombre": "Crédito a Clientes y Cobranza",
+      "nombreCorto": "Crédito y Cobranza",
+      "iconKey": "CreditCard",
+      "sintesis": "GSL financia el capital de trabajo de sus clientes: retención de hasta 4 meses en cuentas por cobrar, tolerada de palabra, con vendedores senior quemando tiempo en cobranza. Las líneas de crédito se otorgan de forma intuitiva.",
+      "hallazgos": [
+        {
+          "id": "H11",
+          "sev": "high",
+          "desc": "Financiamiento desmedido del capital de trabajo de los clientes. Retención de fondos en Cuentas por Cobrar de hasta 4 meses de retraso, tolerada de palabra. Vendedores senior queman tiempo persiguiendo cobros.",
+          "tipo": "Asfixia de Flujo de Caja y Degradación de la Rentabilidad Neta",
+          "plan": {
+            "d30": [
+              "Levantar la antigüedad real de la cartera por cliente",
+              "Suspender nuevas tolerancias verbales de crédito",
+              "Iniciar gestión de cobro de las cuentas más vencidas"
+            ],
+            "d60": [
+              "Definir política formal de crédito y cobranza con plazos y penalizaciones",
+              "Implementar recordatorios y escalamiento de cobranza",
+              "Negociar planes de pago con clientes morosos clave"
+            ],
+            "d90": [
+              "Automatizar la cobranza y el monitoreo de cartera en el ERP",
+              "Medir días de cartera (DSO) como KPI",
+              "Recuperar flujo de caja y reducir financiamiento al cliente"
+            ]
+          }
+        },
+        {
+          "id": "H12",
+          "sev": "medium",
+          "desc": "Otorgamiento discrecional e intuitivo de líneas de crédito corporativas tras cumplir solo de 5 a 10 servicios de contado.",
+          "tipo": "Otorgamiento Discrecional de Créditos y Cuentas Incobrables",
+          "plan": {
+            "d30": [
+              "Definir criterios objetivos para otorgar líneas de crédito",
+              "Suspender el otorgamiento discrecional vigente",
+              "Solicitar información financiera básica a clientes a crédito"
+            ],
+            "d60": [
+              "Implementar un comité o flujo de aprobación de crédito",
+              "Asignar límites de crédito por análisis de riesgo",
+              "Documentar el expediente mínimo del cliente"
+            ],
+            "d90": [
+              "Automatizar el scoring y los límites en el ERP",
+              "Medir cuentas incobrables como KPI",
+              "Revisar la política de crédito periódicamente"
+            ]
+          }
+        },
+        {
+          "id": "H13",
+          "sev": "medium",
+          "desc": "Tolerancia extrema a la morosidad en cuentas de confianza, registrando retrasos de flujo de 3 a 4 meses sin penalizaciones operativas.",
+          "tipo": "Tolerancia a la Morosidad, Falta de Penalizaciones y Caja Castigada",
+          "plan": {
+            "d30": [
+              "Identificar las cuentas de confianza con mayor retraso",
+              "Comunicar formalmente nuevas reglas de morosidad",
+              "Definir penalizaciones por atraso de pago"
+            ],
+            "d60": [
+              "Aplicar penalizaciones e intereses por morosidad",
+              "Establecer bloqueo de servicio por incumplimiento",
+              "Negociar regularización con cuentas críticas"
+            ],
+            "d90": [
+              "Automatizar alertas de morosidad en el ERP",
+              "Medir cartera castigada como KPI",
+              "Institucionalizar la disciplina de cobranza"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "cumplimiento",
+      "code": "P07",
+      "nombre": "Cumplimiento Regulatorio y Área Legal",
+      "nombreCorto": "Cumplimiento Legal",
+      "iconKey": "Gavel",
+      "sintesis": "Exposición regulatoria por incumplimiento de NOM-035 (salud mental) y pérdida de trazabilidad sobre permisos especiales de pesos y dimensiones ante la SCT/SICT, con riesgo de multas y retención de equipos.",
+      "hallazgos": [
+        {
+          "id": "H14",
+          "sev": "medium",
+          "desc": "Vulnerabilidad ante la STPS e imposición de multas por carecer de un programa formal de salud mental basado en la NOM-035.",
+          "tipo": "Incumplimiento Normativo STPS y Sanciones Económicas",
+          "plan": {
+            "d30": [
+              "Diagnosticar el cumplimiento actual de la NOM-035",
+              "Designar responsable del programa de salud mental",
+              "Aplicar el cuestionario de factores de riesgo psicosocial"
+            ],
+            "d60": [
+              "Diseñar e implementar el programa formal NOM-035",
+              "Capacitar al personal y documentar evidencias",
+              "Definir medidas de control y atención"
+            ],
+            "d90": [
+              "Auditar el cumplimiento y resguardar evidencias ante STPS",
+              "Medir cobertura del programa como KPI",
+              "Programar revisiones y actualizaciones anuales"
+            ]
+          }
+        },
+        {
+          "id": "H15",
+          "sev": "medium",
+          "desc": "Pérdida de rastreabilidad sobre el estatus y vigencia de los permisos de pesos y dimensiones especiales ante la SCT/SICT.",
+          "tipo": "Trámites Vehiculares Omisos, Multas de Tránsito y Retención de Equipos",
+          "plan": {
+            "d30": [
+              "Levantar el inventario de permisos de pesos y dimensiones y su vigencia",
+              "Designar responsable del seguimiento de trámites SCT/SICT",
+              "Identificar permisos vencidos o por vencer"
+            ],
+            "d60": [
+              "Implementar un calendario de renovación de permisos",
+              "Digitalizar el resguardo y la trazabilidad de permisos",
+              "Regularizar los trámites pendientes"
+            ],
+            "d90": [
+              "Automatizar alertas de vigencia de permisos",
+              "Medir multas y retenciones evitadas como KPI",
+              "Auditar periódicamente el estatus regulatorio vehicular"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "finanzas",
+      "code": "P08",
+      "nombre": "Finanzas y Contabilidad",
+      "nombreCorto": "Finanzas",
+      "iconKey": "Calculator",
+      "sintesis": "El despacho contable externo opera como CFO de facto: diseña el ERP, registra transacciones, calcula costos y firma los estados financieros. No existe contralor interno propio. Los cierres mensuales se extienden hasta el día 14 por evidencias manuales.",
+      "hallazgos": [
+        {
+          "id": "H16",
+          "sev": "critical",
+          "desc": "Conflicto de Interés Crítico y Externalización del CFO. El despacho contable externo ejerce la posición de Administrador General (implant). Diseña el ERP, registra transacciones, calcula los desgloses de costos y firma los Estados Financieros. No hay un contralor interno propio que vigile los intereses de la familia.",
+          "tipo": "Transparencia, Gobierno Corporativo y Conflicto de Interés Financiero",
+          "plan": {
+            "d30": [
+              "Acotar las funciones del despacho externo y separar el rol de Administrador General",
+              "Definir un plan de internalización de la función financiera",
+              "Resguardar accesos críticos del ERP bajo control interno"
+            ],
+            "d60": [
+              "Contratar o designar un responsable financiero interno",
+              "Transferir registros y controles del despacho a la empresa",
+              "Documentar segregación de funciones financieras"
+            ],
+            "d90": [
+              "Consolidar la contraloría interna y gobierno financiero",
+              "Reportar la transición a la asamblea de socios",
+              "Auditar la independencia del proceso financiero"
+            ]
+          }
+        },
+        {
+          "id": "H17",
+          "sev": "high",
+          "desc": "Debilidad de gobernanza estructural al operar la contabilidad diaria de GSL sin un organigrama financiero interno validado por la asamblea.",
+          "tipo": "Estructura Organizacional y Vacíos de Control en Contraloría",
+          "plan": {
+            "d30": [
+              "Definir el organigrama financiero interno propuesto",
+              "Identificar funciones de contraloría hoy ausentes",
+              "Presentar la estructura para validación de asamblea"
+            ],
+            "d60": [
+              "Validar y formalizar el organigrama ante la asamblea",
+              "Asignar responsables internos de control contable",
+              "Documentar políticas y manuales financieros"
+            ],
+            "d90": [
+              "Operar la contabilidad bajo gobierno interno validado",
+              "Medir cobertura de controles financieros",
+              "Auditar el cumplimiento de la estructura"
+            ]
+          }
+        },
+        {
+          "id": "H18",
+          "sev": "medium",
+          "desc": "Cierres contables mensuales lentos (del 10 al 14 de cada mes) derivados de conciliaciones de evidencias enteramente manuales.",
+          "tipo": "Cierre Extemporáneo, Falta de Información Concurrente y Control de Caja",
+          "plan": {
+            "d30": [
+              "Mapear las conciliaciones manuales que retrasan el cierre",
+              "Fijar la meta de cierre contable (día hábil objetivo)",
+              "Digitalizar la captura de evidencias para conciliación"
+            ],
+            "d60": [
+              "Automatizar conciliaciones bancarias y por proyecto",
+              "Estandarizar el calendario de cierre mensual",
+              "Capacitar al equipo en el nuevo proceso"
+            ],
+            "d90": [
+              "Lograr cierres contables concurrentes y oportunos",
+              "Medir días de cierre como KPI",
+              "Auditar la calidad y oportunidad de la información"
+            ]
+          }
+        },
+        {
+          "id": "H19",
+          "sev": "medium",
+          "desc": "Resistencia del despacho externo a transferir el control histórico de las cuentas por proyecto argumentando \"complejidad técnica\".",
+          "tipo": "Dependencia de Proveedor Contable y Retraso de la Autonomía de Gobierno",
+          "plan": {
+            "d30": [
+              "Solicitar formalmente al despacho la entrega del histórico por proyecto",
+              "Documentar la dependencia y los riesgos asociados",
+              "Definir el plan y calendario de transferencia"
+            ],
+            "d60": [
+              "Migrar el control histórico de cuentas a la empresa",
+              "Capacitar al personal interno en la operación de cuentas",
+              "Establecer respaldos y accesos propios"
+            ],
+            "d90": [
+              "Operar con autonomía contable plena",
+              "Reducir la dependencia del proveedor contable",
+              "Auditar la integridad de la información migrada"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "fiscal",
+      "code": "P09",
+      "nombre": "Fiscal",
+      "nombreCorto": "Fiscal",
+      "iconKey": "DollarSign",
+      "sintesis": "Tres exposiciones fiscales graves: pagos provisionales incompletos por parches de liquidez, bloqueo automático en portales de clientes globales por opiniones negativas ante el SAT, y riesgo penal por no validar listas negras EFOS/EDOS.",
+      "hallazgos": [
+        {
+          "id": "H20",
+          "sev": "high",
+          "desc": "Práctica de realizar pagos provisionales de declaraciones mensuales incompletas ante el SAT por parches de liquidez en el flujo de caja.",
+          "tipo": "Contingencia Fiscal y Parálisis de la Cobranza Comercial",
+          "plan": {
+            "d30": [
+              "Cuantificar el rezago de declaraciones provisionales incompletas",
+              "Suspender la práctica de pagos parciales por liquidez",
+              "Definir un plan de regularización fiscal"
+            ],
+            "d60": [
+              "Regularizar declaraciones y diferencias con el SAT",
+              "Vincular la cobranza con la planeación fiscal",
+              "Implementar control de obligaciones mensuales"
+            ],
+            "d90": [
+              "Automatizar el calendario y alertas fiscales",
+              "Medir el cumplimiento fiscal como KPI",
+              "Auditar la situación fiscal trimestralmente"
+            ]
+          }
+        },
+        {
+          "id": "H21",
+          "sev": "high",
+          "desc": "Bloqueo inmediato de facturación en portales de clientes globales por registrar opiniones de cumplimiento fiscales negativas ante la autoridad.",
+          "tipo": "Continuidad Comercial y Congelamiento de Flujo por Incumplimiento",
+          "plan": {
+            "d30": [
+              "Revisar la opinión de cumplimiento fiscal vigente",
+              "Identificar las obligaciones que generan opinión negativa",
+              "Comunicar el riesgo a dirección y clientes globales"
+            ],
+            "d60": [
+              "Regularizar las obligaciones que afectan la opinión",
+              "Monitorear la opinión de cumplimiento periódicamente",
+              "Negociar plazos con clientes ante bloqueos"
+            ],
+            "d90": [
+              "Mantener opinión positiva de forma sostenida",
+              "Automatizar alertas de cumplimiento fiscal",
+              "Asegurar la continuidad de facturación en portales"
+            ]
+          }
+        },
+        {
+          "id": "H22",
+          "sev": "high",
+          "desc": "Exposición a delitos penales de defraudación fiscal por carecer de una herramienta que valide de forma automática las listas negras del SAT (EFOS/EDOS).",
+          "tipo": "Legal Penal y Responsabilidad Solidaria de Socios",
+          "plan": {
+            "d30": [
+              "Implementar validación de proveedores contra listas EFOS/EDOS del SAT",
+              "Revisar proveedores actuales contra listas negras",
+              "Definir política de no operar con EFOS"
+            ],
+            "d60": [
+              "Automatizar la validación de listas negras en altas de proveedor",
+              "Documentar la materialidad de operaciones",
+              "Capacitar a compras y contabilidad en el riesgo penal"
+            ],
+            "d90": [
+              "Auditar periódicamente la cartera de proveedores",
+              "Medir exposición a riesgo penal como KPI",
+              "Resguardar evidencia de cumplimiento"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "log_inventarios",
+      "code": "P10",
+      "nombre": "Logística de Inventarios",
+      "nombreCorto": "Inventarios",
+      "iconKey": "Package",
+      "sintesis": "Ausencia absoluta de stocks mínimos, bitácoras y puntos de reorden automatizados. Las llaves del almacén de herramientas críticas de izaje (lonas, eslingas, escaleras) se delegan al personal de vigilancia nocturna sin registros en sistema.",
+      "hallazgos": [
+        {
+          "id": "H23",
+          "sev": "high",
+          "desc": "Inexistencia de Controles Físicos y Contables en Almacén. Ausencia absoluta de stocks mínimos, bitácoras de inventarios y puntos de reorden automatizados. Las llaves del almacén de herramientas se delegan al personal de vigilancia nocturna de forma informal.",
+          "tipo": "Pérdida de Activos, Desabasto Operativo y Dilución de Utilidad Bruta",
+          "plan": {
+            "d30": [
+              "Realizar inventario físico inicial del almacén",
+              "Definir stocks mínimos y puntos de reorden de insumos críticos",
+              "Asignar responsable de control de almacén"
+            ],
+            "d60": [
+              "Implementar bitácoras y control de entradas/salidas",
+              "Automatizar puntos de reorden en el ERP",
+              "Conciliar inventario físico contra contable"
+            ],
+            "d90": [
+              "Operar control de inventarios permanente y auditable",
+              "Medir merma y exactitud de inventario como KPI",
+              "Realizar conteos cíclicos programados"
+            ]
+          }
+        },
+        {
+          "id": "H24",
+          "sev": "high",
+          "desc": "Riesgo de merma nocturna de herramientas críticas de izaje (lonas, eslingas, escaleras) por delegar las llaves de patio al personal de vigilancia sin registros en sistema.",
+          "tipo": "Pérdida Patrimonial de Activos de Trabajo e Informalidad en Patios",
+          "plan": {
+            "d30": [
+              "Implementar registro y firma de entrega de llaves de patio",
+              "Inventariar herramientas críticas de izaje",
+              "Restringir accesos al patio fuera de horario"
+            ],
+            "d60": [
+              "Instalar control de acceso y resguardo de herramienta crítica",
+              "Definir responsable de custodia por turno",
+              "Documentar protocolo de entrada/salida de activos"
+            ],
+            "d90": [
+              "Auditar periódicamente el inventario de izaje",
+              "Medir merma de activos como KPI",
+              "Integrar el control con videovigilancia y bitácoras"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "marketing",
+      "code": "P11",
+      "nombre": "Marketing / Redes Sociales / Publicidad",
+      "nombreCorto": "Marketing",
+      "iconKey": "Megaphone",
+      "sintesis": "GSL pierde terreno digital frente a competidores ágiles (ej. Grúas Azteca) que acaparan el mercado abierto. El crecimiento depende exclusivamente de recomendaciones de la red actual, sin prospección en frío ni participación de ventas en el diseño de campañas.",
+      "hallazgos": [
+        {
+          "id": "H25",
+          "sev": "high",
+          "desc": "Ventaja competitiva nula en llamadas en frío frente a competidores de menor infraestructura (ej. Grúas Azteca) que acaparan el mercado digital.",
+          "tipo": "Desplazamiento Comercial, Monocliente y Pérdida de Cuota Abierta",
+          "plan": {
+            "d30": [
+              "Diagnosticar la presencia digital frente a competidores",
+              "Crear/optimizar la ficha y sitio web de GSL",
+              "Definir propuesta de valor diferenciada"
+            ],
+            "d60": [
+              "Lanzar campañas digitales segmentadas (SEO/SEM)",
+              "Generar contenido que evidencie infraestructura y seguridad",
+              "Capacitar a ventas en cierre de leads digitales"
+            ],
+            "d90": [
+              "Medir cuota de mercado y leads digitales como KPI",
+              "Optimizar campañas por desempeño",
+              "Reducir la dependencia de un solo cliente"
+            ]
+          }
+        },
+        {
+          "id": "H26",
+          "sev": "medium",
+          "desc": "Inexistencia de prospección comercial en frío; el crecimiento de GSL se encuentra limitado al flujo de recomendaciones de su red actual.",
+          "tipo": "Dependencia Comercial, Falta de Campañas Activas y Monocliente",
+          "plan": {
+            "d30": [
+              "Definir el perfil de cliente objetivo para prospección",
+              "Construir una base de prospectos en frío",
+              "Asignar metas de prospección al equipo de ventas"
+            ],
+            "d60": [
+              "Implementar campañas activas de prospección",
+              "Establecer un CRM básico para seguimiento",
+              "Capacitar a ventas en prospección en frío"
+            ],
+            "d90": [
+              "Medir nuevos clientes por prospección como KPI",
+              "Diversificar la cartera más allá de recomendaciones",
+              "Optimizar el embudo comercial"
+            ]
+          }
+        },
+        {
+          "id": "H27",
+          "sev": "medium",
+          "desc": "Exposición al estancamiento de marca por la nula participación del equipo de ventas dentro del diseño de las campañas web.",
+          "tipo": "Desconexión Comercial-Marketing y Pautas Publicitarias Ineficientes",
+          "plan": {
+            "d30": [
+              "Integrar a ventas en la planeación de campañas web",
+              "Definir mensajes alineados a la realidad comercial",
+              "Revisar las pautas publicitarias vigentes"
+            ],
+            "d60": [
+              "Coordinar reuniones periódicas ventas-marketing",
+              "Rediseñar campañas con insumos comerciales",
+              "Medir efectividad de pautas por conversión"
+            ],
+            "d90": [
+              "Institucionalizar el comité ventas-marketing",
+              "Optimizar la inversión publicitaria por resultados",
+              "Fortalecer el posicionamiento de marca"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mercados_int",
+      "code": "P12",
+      "nombre": "Mercados Internacionales",
+      "nombreCorto": "Mercados Int.",
+      "iconKey": "Globe",
+      "sintesis": "Las competencias técnicas especializadas en aduanas y comercio exterior del sucesor menor están subutilizadas. La Unidad de Distribución opera con riesgo de parálisis ante un canal cerrado entre el director y el fundador.",
+      "hallazgos": [
+        {
+          "id": "H28",
+          "sev": "medium",
+          "desc": "Subutilización de las competencias técnicas especializadas en aduanas y comercio exterior del sucesor menor (socio).",
+          "tipo": "Estructura de Relevo Generacional y Subutilización de Perfil Corporativo",
+          "plan": {
+            "d30": [
+              "Mapear las competencias del sucesor en aduanas y comercio exterior",
+              "Definir un rol que aproveche ese perfil",
+              "Identificar oportunidades en mercados internacionales"
+            ],
+            "d60": [
+              "Asignar proyectos de comercio exterior al sucesor",
+              "Documentar procesos de la unidad internacional",
+              "Definir plan de desarrollo del relevo generacional"
+            ],
+            "d90": [
+              "Consolidar la unidad internacional con el perfil idóneo",
+              "Medir ingresos de comercio exterior como KPI",
+              "Formalizar el plan de sucesión"
+            ]
+          }
+        },
+        {
+          "id": "H29",
+          "sev": "medium",
+          "desc": "Riesgo de parálisis total en la Unidad de Distribución ante fallas de comunicación por el canal cerrado entre el director y el fundador.",
+          "tipo": "Hermetismo Directivo, Falta de Trazabilidad Sucesoria y Monocliente Oculto",
+          "plan": {
+            "d30": [
+              "Documentar los canales de comunicación director-fundador",
+              "Definir respaldos y protocolos ante fallas de comunicación",
+              "Mapear el riesgo de parálisis en Distribución"
+            ],
+            "d60": [
+              "Formalizar canales y minutas de decisiones clave",
+              "Establecer planes de contingencia de continuidad",
+              "Transparentar la trazabilidad sucesoria"
+            ],
+            "d90": [
+              "Institucionalizar la comunicación de gobierno",
+              "Reducir el hermetismo directivo",
+              "Monitorear la continuidad de la unidad"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "operaciones",
+      "code": "P13",
+      "nombre": "Operaciones",
+      "nombreCorto": "Operaciones",
+      "iconKey": "Cog",
+      "sintesis": "El proceso con mayor concentración de riesgo de muerte patrimonial: tres hallazgos críticos en operaciones de izaje y transporte de carga pesada. Mantenimiento preventivo omitido por \"emergencias comerciales\", rutas foráneas sin protocolos de blindaje ante robo, y listas de verificación inexistentes para inspección preoperativa.",
+      "hallazgos": [
+        {
+          "id": "H30",
+          "sev": "critical",
+          "desc": "Inexistencia de Auditoría Interna y Control sobre las Condiciones Óptimas del Activo Principal. Ante la exigencia y presión del mercado por disponer de \"capacidad infinita\", las ventanas de mantenimiento preventivo son omitidas sistemáticamente por \"emergencias\" comerciales, liberando a ruta grúas industriales y tractocamiones sin verificar si operan en condiciones óptimas de seguridad.",
+          "tipo": "Integridad Patrimonial, Responsabilidad Civil e Inexistencia de Gobierno Operativo",
+          "plan": {
+            "d30": [
+              "Inspeccionar condiciones óptimas del activo principal (grúas)",
+              "Implementar checklist de operatividad antes de cada servicio",
+              "Designar responsable de control del activo core"
+            ],
+            "d60": [
+              "Crear programa de mantenimiento preventivo del activo principal",
+              "Documentar gobierno operativo y responsabilidades",
+              "Iniciar auditoría interna de condiciones del equipo"
+            ],
+            "d90": [
+              "Auditar periódicamente la integridad del activo core",
+              "Medir disponibilidad y siniestralidad como KPI",
+              "Institucionalizar el gobierno operativo"
+            ]
+          }
+        },
+        {
+          "id": "H31",
+          "sev": "critical",
+          "desc": "Inexistencia de un Protocolo Institucional de Control de Ruta y Blindaje de Activos en Tramos de Alto Riesgo (Robo y Siniestralidad 2026). La organización carece de un sistema de control interno, auditoría de patio o checklists obligatorios de preventa de ruta que mitiguen la exposición de la flota ante la ola de robos de transporte de carga y siniestralidad vial. Las unidades son despachadas de forma empírica, permitiendo tramos ciegos de incomunicación, teléfonos de operadores sin batería redundante y la total ausencia de una validación física en patio de los sistemas de rastreo y bitácoras de seguridad.",
+          "tipo": "Integridad de Capital Humano, Pérdida de Activos Core por Inseguridad Vial y Vacíos de Gobernanza Operativa",
+          "plan": {
+            "d30": [
+              "Definir un protocolo de control de ruta y tramos de alto riesgo",
+              "Implementar monitoreo GPS y reporte de incidencias",
+              "Capacitar a operadores en blindaje de activos en ruta"
+            ],
+            "d60": [
+              "Establecer convenios de seguridad y rutas seguras",
+              "Implementar contratación de custodia en tramos críticos",
+              "Documentar gobernanza operativa de transporte"
+            ],
+            "d90": [
+              "Auditar el cumplimiento del protocolo de ruta",
+              "Medir siniestralidad y robo como KPI",
+              "Optimizar rutas y seguros por riesgo"
+            ]
+          }
+        },
+        {
+          "id": "H32",
+          "sev": "critical",
+          "desc": "Ausencia de Control Interno y Gestión Operativa Basada en la Confianza (Falta de Listas de Verificación). GSL carece de un sistema de control interno estructurado y de listas de verificación (checklists) obligatorias para la liberación y resguardo físico de las unidades en patio. El proceso de inspección mecánica preoperativa se delega de forma laxa bajo un esquema de \"confianza ciega\" en la autonomía del operador. Esta informalidad institucional fomenta la negligencia operativa por costumbre, exponiendo de forma continua a la flota core a un sobredesgaste crítico y a deterioros mecánicos severos antes de salir a la ruta.",
+          "tipo": "Desvalorización de Activos, Negligencia por Costumbre e Inexistencia de Procesos de Auditoría Interna",
+          "plan": {
+            "d30": [
+              "Implementar listas de verificación en procesos operativos clave",
+              "Definir un sistema de control interno estructurado",
+              "Asignar responsables de control por proceso"
+            ],
+            "d60": [
+              "Documentar procedimientos operativos estándar",
+              "Capacitar al personal en el uso de checklists",
+              "Iniciar auditoría interna operativa"
+            ],
+            "d90": [
+              "Auditar el cumplimiento de procesos periódicamente",
+              "Medir desvalorización de activos evitada",
+              "Institucionalizar la cultura de control"
+            ]
+          }
+        },
+        {
+          "id": "H33",
+          "sev": "high",
+          "desc": "Graves fallas técnicas en el traspaso de información comercial a patio.",
+          "tipo": "Ineficiencia Operativa, Capacidad Ociosa y Accidentes en Sitio",
+          "plan": {
+            "d30": [
+              "Mapear el traspaso de información comercial a patio",
+              "Estandarizar el formato de orden de servicio a patio",
+              "Identificar las fallas técnicas recurrentes"
+            ],
+            "d60": [
+              "Digitalizar el flujo comercial → patio",
+              "Capacitar a patio y ventas en el nuevo flujo",
+              "Definir validaciones para evitar errores"
+            ],
+            "d90": [
+              "Integrar el flujo al sistema y medir capacidad ociosa",
+              "Reducir accidentes en sitio como KPI",
+              "Optimizar la coordinación comercial-operativa"
+            ]
+          }
+        },
+        {
+          "id": "H34",
+          "sev": "high",
+          "desc": "Retrasos mecánicos mayores por operar un taller pesado con una plantilla reducida a un solo mecánico y un eléctrico para toda la flota.",
+          "tipo": "Infraestructura de Taller Insuficiente y Cuellos de Botella Mecánicos",
+          "plan": {
+            "d30": [
+              "Dimensionar la carga de trabajo del taller pesado",
+              "Definir necesidades de plantilla mecánica y eléctrica",
+              "Priorizar mantenimientos críticos de flota"
+            ],
+            "d60": [
+              "Contratar/contratar temporalmente personal de taller",
+              "Implementar programa de mantenimiento preventivo",
+              "Tercerizar picos de demanda con talleres aliados"
+            ],
+            "d90": [
+              "Medir disponibilidad de flota y cuellos de botella",
+              "Optimizar la capacidad del taller",
+              "Auditar el cumplimiento de mantenimientos"
+            ]
+          }
+        },
+        {
+          "id": "H35",
+          "sev": "medium",
+          "desc": "Incumplimiento sistemático de los programas del taller mecánico por desvíos en ruta foránea no autorizados por mantenimiento.",
+          "tipo": "Desalineación Ventas-Taller, Desgaste de Flota y Órdenes de Trabajo Omisas",
+          "plan": {
+            "d30": [
+              "Documentar los programas del taller y su incumplimiento",
+              "Prohibir desvíos en ruta no autorizados por mantenimiento",
+              "Definir flujo de autorización ventas-taller"
+            ],
+            "d60": [
+              "Implementar órdenes de trabajo obligatorias",
+              "Alinear ventas y taller en la programación",
+              "Monitorear desgaste de flota por desvíos"
+            ],
+            "d90": [
+              "Auditar el cumplimiento de los programas de taller",
+              "Medir órdenes de trabajo cumplidas como KPI",
+              "Reducir el desgaste prematuro de la flota"
+            ]
+          }
+        },
+        {
+          "id": "H36",
+          "sev": "medium",
+          "desc": "Desgaste físico del personal de monitoreo por extender sus tareas de control de forma remota las 24 horas fuera de oficina.",
+          "tipo": "Fatiga Crónica de Personal, Desgaste de Línea y Seguridad Física",
+          "plan": {
+            "d30": [
+              "Diagnosticar la carga horaria del personal de monitoreo",
+              "Definir turnos y límites de jornada",
+              "Habilitar respaldos para el monitoreo 24h"
+            ],
+            "d60": [
+              "Reorganizar los turnos de monitoreo",
+              "Implementar herramientas que reduzcan carga remota",
+              "Capacitar respaldos de monitoreo"
+            ],
+            "d90": [
+              "Medir fatiga y rotación del personal como KPI",
+              "Institucionalizar esquema de turnos saludable",
+              "Auditar la seguridad física del personal"
+            ]
+          }
+        },
+        {
+          "id": "H37",
+          "sev": "medium",
+          "desc": "Inexistencia de un inventario físico de activos viales, baños, patios y oficinas para programar obra civil preventiva en la planta.",
+          "tipo": "Infraestructura Civil Deficiente, Falta de Inventario de Planta y Egresos Imprevistos",
+          "plan": {
+            "d30": [
+              "Levantar inventario físico de activos viales, baños, patios y oficinas",
+              "Identificar necesidades de obra civil preventiva",
+              "Priorizar reparaciones críticas de planta"
+            ],
+            "d60": [
+              "Definir programa de obra civil preventiva",
+              "Presupuestar el mantenimiento de planta",
+              "Asignar responsable de infraestructura"
+            ],
+            "d90": [
+              "Ejecutar el plan de mantenimiento preventivo",
+              "Medir egresos imprevistos evitados",
+              "Actualizar el inventario de planta periódicamente"
+            ]
+          }
+        },
+        {
+          "id": "H38",
+          "sev": "medium",
+          "desc": "Duplicidad de tiempos en patio por falta de estandarización e inspección previa en el armado técnico de eslingas de izaje especializadas.",
+          "tipo": "Ingeniería de Izaje Empírica y Tiempos Muertos de Preparación",
+          "plan": {
+            "d30": [
+              "Estandarizar el armado técnico de eslingas de izaje",
+              "Implementar inspección previa al armado",
+              "Documentar tiempos de preparación actuales"
+            ],
+            "d60": [
+              "Capacitar al personal en ingeniería de izaje estándar",
+              "Crear guías técnicas de armado por tipo de maniobra",
+              "Reducir tiempos muertos de preparación"
+            ],
+            "d90": [
+              "Auditar el cumplimiento del estándar de izaje",
+              "Medir tiempos muertos como KPI",
+              "Optimizar la productividad en patio"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "partes_relacionadas",
+      "code": "P14",
+      "nombre": "Partes Relacionadas y Conflictos de Interés",
+      "nombreCorto": "Partes Relacionadas",
+      "iconKey": "Users",
+      "sintesis": "La sucesión generacional opera sin formalización: el lazo familiar suplanta a las reglas escritas. Los hermanos directores triangulan mando por chats privados, los mandos intermedios pierden autoridad, y las juntas de socios se ejecutan sin minutas formalizadas. La inseguridad patrimonial alcanza incluso a la esposa del fundador.",
+      "hallazgos": [
+        {
+          "id": "H39",
+          "sev": "high",
+          "desc": "Vacío de autoridad en la Dirección General por relevo sucesorio informal sustentado solo en el lazo familiar. Choferes triangulan mandos con los chats privados de los hermanos directores.",
+          "tipo": "Gobernanza Familiar, Pérdida de Autoridad y Fricción de Sucesión",
+          "plan": {
+            "d30": [
+              "Formalizar la autoridad de la Dirección General",
+              "Definir la cadena de mando y comunicación oficial",
+              "Prohibir la triangulación de mandos por chats privados"
+            ],
+            "d60": [
+              "Documentar el plan de sucesión y relevo generacional",
+              "Comunicar formalmente la estructura de autoridad",
+              "Establecer canales oficiales de instrucción"
+            ],
+            "d90": [
+              "Institucionalizar el gobierno familiar y la sucesión",
+              "Medir fricciones de mando como KPI cualitativo",
+              "Auditar el respeto a la cadena de mando"
+            ]
+          }
+        },
+        {
+          "id": "H40",
+          "sev": "high",
+          "desc": "Opacidad en la rendición de cuentas operativa entre los hermanos directores por temor a quebrar la armonía familiar de sobremesa.",
+          "tipo": "Gestión Familiar, Falta de Rendición de Cuentas e Ineficiencia Corporativa",
+          "plan": {
+            "d30": [
+              "Definir mecanismos de rendición de cuentas entre directores",
+              "Establecer reportes operativos periódicos",
+              "Separar la dinámica familiar de la corporativa"
+            ],
+            "d60": [
+              "Implementar reuniones formales de dirección con minutas",
+              "Crear indicadores por área de responsabilidad",
+              "Documentar acuerdos y compromisos"
+            ],
+            "d90": [
+              "Institucionalizar la rendición de cuentas corporativa",
+              "Medir cumplimiento de compromisos como KPI",
+              "Auditar la eficiencia de la gestión familiar"
+            ]
+          }
+        },
+        {
+          "id": "H41",
+          "sev": "high",
+          "desc": "Anarquía y desacreditación de mandos intermedios debido a que los operadores triangulan permisos con los chats privados de los directores.",
+          "tipo": "Disciplina Laboral, Duplicidad de Instrucciones y Fuga de Autoridad",
+          "plan": {
+            "d30": [
+              "Reforzar la autoridad de los mandos intermedios",
+              "Prohibir la triangulación de permisos con directores",
+              "Definir el flujo oficial de autorización de permisos"
+            ],
+            "d60": [
+              "Comunicar y capacitar en la cadena de mando",
+              "Implementar registro de permisos y autorizaciones",
+              "Sancionar la duplicidad de instrucciones"
+            ],
+            "d90": [
+              "Auditar la disciplina laboral y la cadena de mando",
+              "Medir incidencias de fuga de autoridad",
+              "Consolidar la estructura de mandos intermedios"
+            ]
+          }
+        },
+        {
+          "id": "H42",
+          "sev": "high",
+          "desc": "Pérdida de la figura de Gobierno Corporativo al operar las sesiones de junta de socios de forma empírica y sin minutas de acuerdos formalizadas.",
+          "tipo": "Informalidad en Gobernanza, Ausencia de Actas y Vacíos de Acuerdo",
+          "plan": {
+            "d30": [
+              "Reinstaurar las sesiones formales de junta de socios",
+              "Definir el calendario y el orden del día de sesiones",
+              "Designar responsable de actas y acuerdos"
+            ],
+            "d60": [
+              "Levantar minutas y actas de todos los acuerdos",
+              "Formalizar el reglamento de la junta de socios",
+              "Resguardar el libro de actas"
+            ],
+            "d90": [
+              "Institucionalizar el órgano de gobierno corporativo",
+              "Auditar el cumplimiento de acuerdos",
+              "Medir la efectividad de las sesiones"
+            ]
+          }
+        },
+        {
+          "id": "H43",
+          "sev": "medium",
+          "desc": "Ausencia de requisitos y perfiles mínimos de meritocracia para el ingreso de miembros de la siguiente generación a la nómina.",
+          "tipo": "Nepotismo Organizacional, Falta de Meritocracia y Gasto de Personal Inflado",
+          "plan": {
+            "d30": [
+              "Definir perfiles y requisitos mínimos por puesto",
+              "Establecer criterios de meritocracia para ingreso familiar",
+              "Documentar la política de incorporación a nómina"
+            ],
+            "d60": [
+              "Implementar evaluación de perfil para nuevos ingresos",
+              "Aplicar la política a la siguiente generación",
+              "Revisar la nómina por valor aportado"
+            ],
+            "d90": [
+              "Auditar el cumplimiento de la meritocracia",
+              "Medir gasto de personal optimizado como KPI",
+              "Institucionalizar la política de talento familiar"
+            ]
+          }
+        },
+        {
+          "id": "H44",
+          "sev": "medium",
+          "desc": "Inseguridad patrimonial para la esposa del fundador ante un esquema de pensión informal que depende enteramente de la liquidez del taller.",
+          "tipo": "Plan de Retiro Informal, Fricciones Fratricidas y Caja Comprometida",
+          "plan": {
+            "d30": [
+              "Diagnosticar el esquema de pensión informal del fundador",
+              "Cuantificar el riesgo patrimonial para la esposa",
+              "Definir alternativas formales de retiro"
+            ],
+            "d60": [
+              "Diseñar un plan de retiro formal y financiado",
+              "Separar el retiro de la liquidez del taller",
+              "Documentar el acuerdo con los socios"
+            ],
+            "d90": [
+              "Formalizar e instrumentar el plan de retiro",
+              "Asegurar la fuente de fondeo del plan",
+              "Revisar el plan periódicamente"
+            ]
+          }
+        },
+        {
+          "id": "H45",
+          "sev": "medium",
+          "desc": "Resistencia psicológica al cambio por parte de los operadores de patio antiguos ante los nuevos manuales del área de procesos.",
+          "tipo": "Cultura Organizacional Precaria, Boicot a Procesos e Informalidad de Patio",
+          "plan": {
+            "d30": [
+              "Diagnosticar la resistencia al cambio en patio",
+              "Comunicar el propósito de los nuevos manuales",
+              "Identificar líderes de opinión entre operadores"
+            ],
+            "d60": [
+              "Implementar gestión del cambio y capacitación",
+              "Involucrar a operadores en la mejora de procesos",
+              "Reconocer la adopción de los nuevos procesos"
+            ],
+            "d90": [
+              "Medir la adopción de procesos como KPI",
+              "Consolidar la cultura organizacional",
+              "Auditar el cumplimiento de manuales"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "planeacion",
+      "code": "P15",
+      "nombre": "Planeación Estratégica",
+      "nombreCorto": "Planeación",
+      "iconKey": "Target",
+      "sintesis": "La empresa opera enteramente en modo reactivo al bomberazo diario. No existe rumbo de negocio institucional documentado ni KPIs mensuales de rentabilidad consolidados que permitan medir el desempeño corporativo.",
+      "hallazgos": [
+        {
+          "id": "H46",
+          "sev": "high",
+          "desc": "Gestión enteramente reactiva al \"bomberazo\" diario; la empresa opera sin rumbo de negocio institucional documentado ni KPIs mensuales de rentabilidad consolidados.",
+          "tipo": "Operación Reactiva, Falta de Visión Corporativa y Desalineación Operativa",
+          "plan": {
+            "d30": [
+              "Definir el rumbo de negocio y objetivos institucionales",
+              "Construir un set inicial de KPIs mensuales de rentabilidad",
+              "Establecer reuniones de seguimiento operativo"
+            ],
+            "d60": [
+              "Documentar el plan estratégico con metas y responsables",
+              "Implementar el tablero de KPIs consolidados",
+              "Alinear las áreas con los objetivos"
+            ],
+            "d90": [
+              "Institucionalizar la planeación estratégica anual",
+              "Monitorear KPIs y desviaciones mensualmente",
+              "Ajustar la estrategia por resultados"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "productos",
+      "code": "P16",
+      "nombre": "Productos y Servicios",
+      "nombreCorto": "Productos",
+      "iconKey": "Box",
+      "sintesis": "El portafolio carece de definición técnica: fletes de proyectos altamente complejos se comercializan bajo el concepto básico de \"renta por evento\". La subcontratación de transportistas económicos no certificados para el \"Producto B\" amenaza la marca.",
+      "hallazgos": [
+        {
+          "id": "H47",
+          "sev": "medium",
+          "desc": "Indefinición técnica en el portafolio; se comercializan fletes de proyectos altamente complejos bajo el concepto básico de simple \"renta por evento\".",
+          "tipo": "Estructuración de Catálogo Comercial y Omisión de Cargos Técnicos",
+          "plan": {
+            "d30": [
+              "Definir técnicamente el portafolio de servicios",
+              "Diferenciar fletes de proyecto de la renta básica por evento",
+              "Mapear los cargos técnicos hoy omitidos"
+            ],
+            "d60": [
+              "Estructurar un catálogo comercial con tarifas por complejidad",
+              "Incorporar cargos técnicos a las cotizaciones",
+              "Capacitar a ventas en el nuevo catálogo"
+            ],
+            "d90": [
+              "Medir el margen recuperado por cargos técnicos",
+              "Optimizar el portafolio por rentabilidad",
+              "Auditar la aplicación del catálogo"
+            ]
+          }
+        },
+        {
+          "id": "H48",
+          "sev": "medium",
+          "desc": "Riesgo reputacional y pérdida del estatus de \"garantía de seguridad\" al subcontratar transportistas económicos del \"Producto B\" sin certificar.",
+          "tipo": "Canibalización de Marca, Tercerización Informal y Calidad de Flota Aliada",
+          "plan": {
+            "d30": [
+              "Definir criterios de certificación de transportistas aliados",
+              "Auditar la flota de los subcontratistas del \"Producto B\"",
+              "Suspender la subcontratación de aliados sin certificar"
+            ],
+            "d60": [
+              "Implementar un padrón de aliados certificados",
+              "Establecer estándares de seguridad y calidad",
+              "Documentar el protocolo de tercerización"
+            ],
+            "d90": [
+              "Auditar periódicamente a los aliados",
+              "Proteger el estatus de garantía de seguridad",
+              "Medir incidencias de aliados como KPI"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rrhh",
+      "code": "P17",
+      "nombre": "Recursos Humanos",
+      "nombreCorto": "RRHH",
+      "iconKey": "UserCheck",
+      "sintesis": "El área de RH opera con una sola persona saturada de tareas rutinarias. El reclutamiento es descentralizado y empírico: los jefes de área contratan operarios de grúas pesadas basándose en recomendaciones informales. No hay programa formal de inducción ni capacitación estructurada.",
+      "hallazgos": [
+        {
+          "id": "H49",
+          "sev": "high",
+          "desc": "Cuello de botella y sobrecarga administrativa al operar el área de personal con una sola persona saturada de tareas rutinarias e incidencias.",
+          "tipo": "Saturación Administrativa de Capital Humano y Errores de Registro",
+          "plan": {
+            "d30": [
+              "Dimensionar la carga administrativa del área de personal",
+              "Priorizar y redistribuir tareas rutinarias",
+              "Digitalizar el registro de incidencias"
+            ],
+            "d60": [
+              "Automatizar procesos de RRHH (incidencias, nómina)",
+              "Reforzar el área con apoyo o herramientas",
+              "Estandarizar los procedimientos de personal"
+            ],
+            "d90": [
+              "Medir errores de registro y carga como KPI",
+              "Optimizar la estructura de capital humano",
+              "Auditar la calidad de la información de personal"
+            ]
+          }
+        },
+        {
+          "id": "H50",
+          "sev": "high",
+          "desc": "Reclutamiento descentralizado y empírico; el jefe de área contrata operarios de grúas pesadas basándose en recomendaciones informales de boca en boca.",
+          "tipo": "Deficiencia Operativa, Falta de Especialización y Fricción de Línea",
+          "plan": {
+            "d30": [
+              "Definir perfiles técnicos para operadores de grúas pesadas",
+              "Centralizar el reclutamiento en RRHH",
+              "Documentar el proceso de selección"
+            ],
+            "d60": [
+              "Implementar filtros y pruebas técnicas de selección",
+              "Crear una bolsa de candidatos calificados",
+              "Capacitar a jefes de área en selección"
+            ],
+            "d90": [
+              "Auditar la calidad de las contrataciones",
+              "Medir rotación y desempeño como KPI",
+              "Institucionalizar el reclutamiento por competencias"
+            ]
+          }
+        },
+        {
+          "id": "H51",
+          "sev": "medium",
+          "desc": "Inexistencia de un programa formal de inducción (Onboarding) bajo la premisa subjetiva de que el personal recomendado \"ya sabe\".",
+          "tipo": "Inducción Informal, Falta de Alineación y Siniestralidad Menor en Patio",
+          "plan": {
+            "d30": [
+              "Diseñar un programa formal de inducción (onboarding)",
+              "Definir contenidos mínimos de seguridad y operación",
+              "Asignar responsable del onboarding"
+            ],
+            "d60": [
+              "Implementar el onboarding para nuevos ingresos",
+              "Documentar y estandarizar el material de inducción",
+              "Evaluar la inducción de cada nuevo colaborador"
+            ],
+            "d90": [
+              "Medir siniestralidad de nuevos ingresos como KPI",
+              "Auditar el cumplimiento del onboarding",
+              "Mejorar el programa por retroalimentación"
+            ]
+          }
+        },
+        {
+          "id": "H52",
+          "sev": "medium",
+          "desc": "Fallas constantes en la capacitación técnica y regulatoria debido a la dispersión horaria de la operación logística 24/7.",
+          "tipo": "Capacitación Extemporánea, Horarios Cruzados e Ineficiencia Técnica",
+          "plan": {
+            "d30": [
+              "Mapear las necesidades de capacitación técnica y regulatoria",
+              "Definir un calendario que contemple la operación 24/7",
+              "Priorizar capacitaciones críticas"
+            ],
+            "d60": [
+              "Implementar capacitación por turnos y modalidades flexibles",
+              "Documentar evidencias de capacitación",
+              "Capacitar en normas técnicas y regulatorias"
+            ],
+            "d90": [
+              "Medir cobertura de capacitación como KPI",
+              "Auditar competencias técnicas del personal",
+              "Institucionalizar el plan anual de capacitación"
+            ]
+          }
+        },
+        {
+          "id": "H53",
+          "sev": "low",
+          "desc": "Exposición a la contratación de perfiles ineficientes por delegar las entrevistas técnicas exclusivamente a los jefes de área de patio.",
+          "tipo": "Filtros Técnicos Laxos, Vicios de Manejo de Flota e Inflación de Diésel",
+          "plan": {
+            "d30": [
+              "Definir filtros técnicos estandarizados de entrevista",
+              "Complementar la entrevista de jefes con evaluación técnica",
+              "Documentar criterios de contratación"
+            ],
+            "d60": [
+              "Implementar pruebas de manejo y desempeño de flota",
+              "Capacitar a entrevistadores en filtros técnicos",
+              "Monitorear vicios de manejo y consumo de diésel"
+            ],
+            "d90": [
+              "Medir eficiencia de conductores y diésel como KPI",
+              "Auditar la calidad de los filtros técnicos",
+              "Optimizar el proceso de selección operativa"
+            ]
+          }
+        },
+        {
+          "id": "H54",
+          "sev": "low",
+          "desc": "Incremento en la rotación imprevista de la plantilla operativa en Distribución ante bajas de volumen de fletes del cliente ancla.",
+          "tipo": "Despidos por Capacidad Ociosa y Pérdida de Memoria Operativa",
+          "plan": {
+            "d30": [
+              "Analizar la rotación ligada a bajas de volumen del cliente ancla",
+              "Definir esquemas de flexibilidad de plantilla",
+              "Mapear el conocimiento operativo en riesgo"
+            ],
+            "d60": [
+              "Diversificar la base de clientes para estabilizar volumen",
+              "Documentar la memoria operativa crítica",
+              "Implementar esquemas de retención de personal clave"
+            ],
+            "d90": [
+              "Medir rotación operativa como KPI",
+              "Reducir la dependencia del cliente ancla",
+              "Preservar la memoria operativa"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "rse",
+      "code": "P18",
+      "nombre": "Responsabilidad Social y Filantropía",
+      "nombreCorto": "RSE",
+      "iconKey": "Heart",
+      "sintesis": "Carencia de un programa formal de Responsabilidad Social Empresarial que regionalice los impactos industriales del taller pesado con el entorno comunitario.",
+      "hallazgos": [
+        {
+          "id": "H55",
+          "sev": "low",
+          "desc": "Carencia de un programa de Responsabilidad Social Empresarial (RSE) que regionalice los impactos industriales del taller pesado con el entorno.",
+          "tipo": "Imagen Corporativa, Falta de Programa RSE y Desalineación Social",
+          "plan": {
+            "d30": [
+              "Diagnosticar los impactos industriales del taller en el entorno",
+              "Definir un programa básico de RSE",
+              "Identificar acciones de bajo costo y alto impacto"
+            ],
+            "d60": [
+              "Implementar las primeras iniciativas de RSE",
+              "Comunicar el programa a la comunidad y al personal",
+              "Documentar evidencias de impacto"
+            ],
+            "d90": [
+              "Medir el impacto del programa de RSE",
+              "Alinear la RSE con la imagen corporativa",
+              "Institucionalizar el programa anualmente"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sistemas",
+      "code": "P19",
+      "nombre": "Sistemas",
+      "nombreCorto": "Sistemas",
+      "iconKey": "Server",
+      "sintesis": "Vulnerabilidad y dependencia total ante la empresa proveedora del software ERP (Fusion), agravada por la inexistencia de un área de soporte de TI propia que pueda mitigar contingencias o validar parametrizaciones.",
+      "hallazgos": [
+        {
+          "id": "H56",
+          "sev": "medium",
+          "desc": "Vulnerabilidad y dependencia total ante la empresa proveedora del software ERP (Fusion) al carecer de un área de soporte de TI propia.",
+          "tipo": "Dependencia Tecnológica de Terceros y Vacíos de Soporte de TI",
+          "plan": {
+            "d30": [
+              "Diagnosticar la dependencia del proveedor del ERP (Fusion)",
+              "Definir respaldos y accesos críticos del sistema",
+              "Identificar competencias de TI necesarias"
+            ],
+            "d60": [
+              "Crear capacidad de soporte de TI interna o contratada",
+              "Documentar la administración del ERP",
+              "Negociar SLA con el proveedor del software"
+            ],
+            "d90": [
+              "Reducir la dependencia tecnológica de terceros",
+              "Medir continuidad y tiempos de soporte como KPI",
+              "Auditar la seguridad y respaldos del ERP"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "ventas",
+      "code": "P20",
+      "nombre": "Ventas y Posventa",
+      "nombreCorto": "Ventas",
+      "iconKey": "TrendingUp",
+      "sintesis": "Concentración crítica: el 80% del ingreso comercial reside en una base reducida de \"clientes casa\" cuyas especificaciones operativas viven solo en la memoria de los vendedores senior. Las cotizaciones se elaboran con \"machotes\" de Excel individuales, generando opacidad y fuga de margen.",
+      "hallazgos": [
+        {
+          "id": "H57",
+          "sev": "critical",
+          "desc": "Alta concentración del ingreso comercial (80%) en una base reducida de \"clientes casa\" cuyas especificaciones operativas residen solo en la memoria de los vendedores senior.",
+          "tipo": "Concentración de Ingresos y Desplazamiento de Mercado",
+          "plan": {
+            "d30": [
+              "Documentar las especificaciones de los \"clientes casa\" fuera de la memoria de vendedores",
+              "Cuantificar la concentración de ingresos (80%)",
+              "Definir una estrategia de diversificación comercial"
+            ],
+            "d60": [
+              "Trasladar el know-how comercial a expedientes/CRM",
+              "Lanzar prospección para nuevos clientes",
+              "Reducir gradualmente la concentración"
+            ],
+            "d90": [
+              "Medir la concentración de ingresos como KPI",
+              "Diversificar la cartera de clientes",
+              "Asegurar la continuidad ante salida de vendedores"
+            ]
+          }
+        },
+        {
+          "id": "H58",
+          "sev": "high",
+          "desc": "Opacidad y fuga de margen por el uso de \"machotes\" de Excel individuales e independientes para la formulación de cotizaciones viales.",
+          "tipo": "Discrecionalidad en Tarifas, Opacidad de Precios y Fuga de Margen Bruto",
+          "plan": {
+            "d30": [
+              "Inventariar los \"machotes\" de Excel de cotización individuales",
+              "Definir una plantilla y tarifario estándar de cotización",
+              "Centralizar la formulación de cotizaciones"
+            ],
+            "d60": [
+              "Implementar un cotizador estándar con tarifas validadas",
+              "Capacitar a ventas en el nuevo cotizador",
+              "Eliminar la discrecionalidad de precios"
+            ],
+            "d90": [
+              "Integrar el cotizador al sistema y monitorear márgenes",
+              "Medir fuga de margen bruto como KPI",
+              "Auditar el cumplimiento del tarifario"
+            ]
+          }
+        },
+        {
+          "id": "H59",
+          "sev": "medium",
+          "desc": "Centralización del \"know-how\" de cubicación e ingeniería de izaje industrial en la memoria empírica de los vendedores senior.",
+          "tipo": "Centralización de Conocimiento e Informalidad en Capacitación de Ventas",
+          "plan": {
+            "d30": [
+              "Documentar el know-how de cubicación e ingeniería de izaje",
+              "Identificar a los vendedores senior con conocimiento crítico",
+              "Iniciar la transferencia de conocimiento"
+            ],
+            "d60": [
+              "Crear guías y herramientas de cubicación estándar",
+              "Capacitar al equipo comercial en ingeniería de izaje",
+              "Reducir la dependencia de la memoria empírica"
+            ],
+            "d90": [
+              "Institucionalizar el conocimiento técnico de ventas",
+              "Medir cobertura de capacitación como KPI",
+              "Auditar la consistencia de cotizaciones técnicas"
+            ]
+          }
+        },
+        {
+          "id": "H60",
+          "sev": "medium",
+          "desc": "Pérdida de trazabilidad por asignación aleatoria y manual de llamadas de re-contratación (leads) en el conmutador de la oficina.",
+          "tipo": "Trazabilidad Comercial, Desatención de Leads y Fricción de Fuerza de Ventas",
+          "plan": {
+            "d30": [
+              "Mapear el flujo de asignación de leads en el conmutador",
+              "Definir reglas de asignación de re-contrataciones",
+              "Registrar los leads entrantes"
+            ],
+            "d60": [
+              "Implementar un CRM para trazabilidad de leads",
+              "Asignar leads por reglas claras y medibles",
+              "Capacitar a ventas en el seguimiento de leads"
+            ],
+            "d90": [
+              "Medir conversión y atención de leads como KPI",
+              "Reducir leads desatendidos",
+              "Optimizar la fuerza de ventas por trazabilidad"
+            ]
+          }
+        },
+        {
+          "id": "H61",
+          "sev": "medium",
+          "desc": "Rezago en prospección técnica de cuentas de infraestructura pesada por enfocar a los perfiles gerenciales senior únicamente en labor de campo.",
+          "tipo": "Estructura de Ventas Ineficiente y Talento Senior Subutilizado",
+          "plan": {
+            "d30": [
+              "Liberar a perfiles senior de labor de campo para prospección técnica",
+              "Definir cuentas de infraestructura pesada objetivo",
+              "Asignar metas de prospección técnica"
+            ],
+            "d60": [
+              "Implementar prospección técnica estructurada",
+              "Reorganizar funciones para aprovechar talento senior",
+              "Crear pipeline de cuentas de infraestructura"
+            ],
+            "d90": [
+              "Medir cuentas nuevas de infraestructura como KPI",
+              "Optimizar la estructura de ventas",
+              "Aprovechar plenamente el talento senior"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
