@@ -1,8 +1,4 @@
 import React, { useState, useMemo, useRef, useEffect } from 'react';
-import {
-  BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  Cell, LabelList,
-} from 'recharts';
 import { COLORS, FONT_SERIF, FONT_SANS } from './theme';
 
 // ============================================================
@@ -74,8 +70,26 @@ const PlanButton = ({ open, onClick }) => (
 );
 
 // Box con el plan de acción 30/60/90 (reutilizado en ambas vistas)
-const ActionPlan = ({ plan }) => {
-  if (!plan) {
+const fmtK = (n) => `$${Math.round(n / 1000)}K`;
+const fmtFull = (n) => `$${n.toLocaleString('es-MX')}`;
+
+const ESTADO_COLOR = {
+  'Pendiente de acción': COLORS.amber,
+  'Notificado': COLORS.blue,
+  'En seguimiento': COLORS.ok,
+  'Por escalar': COLORS.red,
+};
+
+const PanelLabel = ({ children, extra }) => (
+  <div className="flex items-center gap-2 mb-2.5 flex-wrap">
+    <div className="text-[10px] font-bold uppercase tracking-widest" style={{ color: COLORS.greenDeep }}>{children}</div>
+    {extra}
+  </div>
+);
+
+// Panel ejecutivo de plan de acción (análisis asistido por IA, datos horneados)
+const ActionPlan = ({ plan, analisis: a }) => {
+  if (!plan && !a) {
     return (
       <p className="text-xs italic" style={{ color: COLORS.textMuted }}>
         Plan de acción no disponible para este hallazgo.
@@ -83,83 +97,165 @@ const ActionPlan = ({ plan }) => {
     );
   }
   return (
-    <>
-      <div className="text-[10px] font-bold uppercase tracking-widest mb-3" style={{ color: COLORS.greenDeep }}>
-        Plan de acción · 30 · 60 · 90 días
+    <div className="space-y-5">
+      {/* Banner IA */}
+      <div className="flex items-center justify-between flex-wrap gap-2 rounded-lg px-3 py-2"
+           style={{ backgroundColor: COLORS.ink }}>
+        <div className="flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest"
+             style={{ color: COLORS.bgCard }}>
+          <span className="inline-block w-1.5 h-1.5 rounded-full" style={{ backgroundColor: COLORS.green }} />
+          Plan de acción asistido por IA
+        </div>
+        {a && (
+          <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded"
+                style={{ backgroundColor: 'rgba(255,255,255,0.15)', color: COLORS.bgCard }}>
+            {a.confianza}% confianza
+          </span>
+        )}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-        {[['0 – 30 días', plan.d30, COLORS.death],
-          ['30 – 60 días', plan.d60, COLORS.amber],
-          ['60 – 90 días', plan.d90, COLORS.ok]].map(([titulo, acciones, color]) => (
-          <div key={titulo} className="rounded-lg p-3"
-               style={{ backgroundColor: COLORS.bgElev, border: `1px solid ${COLORS.borderSoft}` }}>
-            <div className="flex items-center gap-2 mb-2">
-              <div className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
-              <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: COLORS.ink }}>{titulo}</div>
+
+      {a && (
+        <>
+          {/* Impacto financiero */}
+          <div>
+            <PanelLabel>Impacto financiero proyectado</PanelLabel>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div className="rounded-lg p-4" style={{ backgroundColor: COLORS.redTint, border: `1px solid ${COLORS.redBorder}` }}>
+                <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: COLORS.red }}>Costo de no actuar</div>
+                <div className="text-3xl font-bold tracking-tight" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>{fmtK(a.impacto.costoNoActuar)}</div>
+                <div className="text-[11px] mt-1" style={{ color: COLORS.textMuted }}>En los próximos {a.impacto.ventanaDias} días</div>
+              </div>
+              <div className="rounded-lg p-4" style={{ backgroundColor: COLORS.bgSoft, border: `1px solid ${COLORS.border}` }}>
+                <div className="text-[10px] font-bold uppercase tracking-wider mb-1" style={{ color: COLORS.textMuted }}>{a.impacto.costoSecundarioLabel}</div>
+                <div className="text-3xl font-bold tracking-tight" style={{ color: COLORS.inkSoft, fontFamily: FONT_SERIF }}>{fmtK(a.impacto.costoSecundario)}</div>
+              </div>
             </div>
-            <ul className="space-y-1.5">
-              {(acciones || []).map((a, i) => (
-                <li key={i} className="flex items-start gap-2 text-xs leading-relaxed" style={{ color: COLORS.inkSoft }}>
-                  <span style={{ color }}>•</span><span>{a}</span>
-                </li>
-              ))}
-            </ul>
           </div>
-        ))}
-      </div>
-    </>
-  );
-};
 
-const SeverityDonut = ({ data, total }) => {
-  const radius = 70;
-  const stroke = 22;
-  const circ = 2 * Math.PI * radius;
-  const segments = data.map(d => ({ ...d, frac: total > 0 ? d.value / total : 0 }));
-  let acc = 0;
-  return (
-    <div className="relative inline-flex items-center justify-center" style={{ width: 200, height: 200 }}>
-      <svg width="200" height="200" className="transform -rotate-90">
-        <circle cx="100" cy="100" r={radius} fill="none" stroke={COLORS.bgSoft} strokeWidth={stroke} />
-        {segments.map((s, i) => {
-          const len = s.frac * circ;
-          const offset = circ - acc;
-          acc += len;
-          return (
-            <circle key={i} cx="100" cy="100" r={radius} fill="none"
-                    stroke={s.color} strokeWidth={stroke}
-                    strokeDasharray={`${len} ${circ - len}`}
-                    strokeDashoffset={offset}
-                    style={{ transition: 'stroke-dashoffset 0.8s ease-out' }} />
-          );
-        })}
-      </svg>
-      <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <div className="text-4xl font-bold tracking-tight" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>
-          {total}
-        </div>
-        <div className="text-[10px] uppercase tracking-widest mt-1" style={{ color: COLORS.textMuted }}>
-          Hallazgos
-        </div>
-      </div>
-    </div>
-  );
-};
+          {/* Causa raíz */}
+          <div>
+            <PanelLabel extra={<span className="text-[9px] font-bold px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.greenTint, color: COLORS.greenDeep }}>{a.confianza}% confianza</span>}>
+              Análisis de causa raíz
+            </PanelLabel>
+            <div className="rounded-lg p-4" style={{ backgroundColor: COLORS.bgElev, border: `1px solid ${COLORS.borderSoft}` }}>
+              <div className="text-sm font-bold mb-2" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>{a.causaRaiz.titulo}</div>
+              <div className="text-[10px] font-semibold uppercase tracking-wider mb-1.5" style={{ color: COLORS.textMuted }}>Factores correlacionados</div>
+              <ul className="space-y-1">
+                {a.causaRaiz.factores.map((f, i) => (
+                  <li key={i} className="flex items-start gap-2 text-xs" style={{ color: COLORS.inkSoft }}>
+                    <span style={{ color: COLORS.greenDeep }}>•</span><span>{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </>
+      )}
 
-const CustomTooltip = ({ active, payload, label }) => {
-  if (!active || !payload || !payload.length) return null;
-  return (
-    <div className="px-3 py-2 rounded text-xs"
-         style={{ backgroundColor: COLORS.bgCard, border: `1px solid ${COLORS.greenDeep}`,
-                  boxShadow: '0 8px 24px rgba(31,34,37,0.12)' }}>
-      <div className="font-semibold mb-1" style={{ color: COLORS.ink }}>{label}</div>
-      {payload.map((p, i) => (
-        <div key={i} className="flex items-center gap-2">
-          <div className="w-2 h-2 rounded-full" style={{ backgroundColor: p.color || p.fill }} />
-          <span style={{ color: COLORS.textMuted }}>{p.name}:</span>
-          <span style={{ color: COLORS.ink }} className="font-semibold">{p.value}</span>
+      {/* Plan 30/60/90 */}
+      {plan && (
+        <div>
+          <PanelLabel>Plan de acción · 30 · 60 · 90 días</PanelLabel>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {[['0 – 30 días', plan.d30, COLORS.death],
+              ['30 – 60 días', plan.d60, COLORS.amber],
+              ['60 – 90 días', plan.d90, COLORS.ok]].map(([titulo, acciones, color]) => (
+              <div key={titulo} className="rounded-lg p-3" style={{ backgroundColor: COLORS.bgElev, border: `1px solid ${COLORS.borderSoft}` }}>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-2 h-2 rounded-full" style={{ backgroundColor: color }} />
+                  <div className="text-[11px] font-bold uppercase tracking-wider" style={{ color: COLORS.ink }}>{titulo}</div>
+                </div>
+                <ul className="space-y-1.5">
+                  {(acciones || []).map((x, i) => (
+                    <li key={i} className="flex items-start gap-2 text-xs leading-relaxed" style={{ color: COLORS.inkSoft }}>
+                      <span style={{ color }}>•</span><span>{x}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
+      )}
+
+      {a && (
+        <>
+          {/* Escenarios simulados */}
+          <div>
+            <PanelLabel>Escenarios simulados</PanelLabel>
+            <div className="space-y-2">
+              {a.escenarios.map((e) => (
+                <div key={e.nombre} className="flex items-center justify-between gap-3 rounded-lg px-4 py-2.5"
+                     style={{ backgroundColor: e.recomendado ? COLORS.okTint : COLORS.bgElev,
+                              border: `1px solid ${e.recomendado ? COLORS.okBorder : COLORS.borderSoft}` }}>
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className="text-xs font-bold" style={{ color: e.recomendado ? COLORS.ok : COLORS.inkSoft }}>{e.nombre}</span>
+                    {e.recomendado && <span className="text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.ok, color: COLORS.bgCard }}>Recomendado</span>}
+                  </div>
+                  <div className="flex items-center gap-4 flex-shrink-0">
+                    <span className="text-sm font-bold tracking-tight" style={{ color: COLORS.ink, fontFamily: FONT_SERIF }}>{fmtFull(e.monto)}</span>
+                    <span className="text-[11px]" style={{ color: COLORS.textMuted }}>{e.dias} días</span>
+                    <span className="text-[11px] font-bold" style={{ color: COLORS.inkSoft }}>{e.prob}% prob.</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Responsables por área */}
+          <div>
+            <PanelLabel extra={<span className="text-[9px] font-semibold px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.bgSoft, color: COLORS.textMuted }}>{a.responsables.length} asignaciones</span>}>
+              Responsables sugeridos · por área
+            </PanelLabel>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {a.responsables.map((r, i) => (
+                <div key={i} className="rounded-lg p-3" style={{ backgroundColor: COLORS.bgCard, border: `1px solid ${COLORS.borderSoft}` }}>
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <span className="text-xs font-bold" style={{ color: COLORS.ink }}>{r.area}</span>
+                    <span className="text-[8px]" style={{ color: COLORS.textDim }}>{r.t}</span>
+                  </div>
+                  <span className="inline-block text-[8px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded"
+                        style={{ backgroundColor: `${ESTADO_COLOR[r.estado] || COLORS.textMuted}22`, color: ESTADO_COLOR[r.estado] || COLORS.textMuted }}>
+                    {r.estado}
+                  </span>
+                  <div className="text-[11px] leading-relaxed mt-1.5" style={{ color: COLORS.inkSoft }}>{r.accion}</div>
+                  <div className="flex gap-1 mt-2 flex-wrap">
+                    {r.canales.map((c) => (
+                      <span key={c} className="text-[9px] px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.bgSoft, color: COLORS.textMuted }}>{c}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Acciones recomendadas */}
+          <div>
+            <PanelLabel>Acciones recomendadas</PanelLabel>
+            <div className="space-y-1.5">
+              {a.acciones.map((ac, i) => (
+                <div key={i} className="flex items-center gap-3 rounded-lg px-3 py-2" style={{ backgroundColor: COLORS.bgElev }}>
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center text-[10px] font-bold"
+                        style={{ backgroundColor: COLORS.greenDeep, color: COLORS.bgCard }}>{i + 1}</span>
+                  <span className="text-xs" style={{ color: COLORS.ink }}>{ac}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Notificación generada */}
+          <div>
+            <PanelLabel extra={<span className="text-[9px] font-semibold px-1.5 py-0.5 rounded" style={{ backgroundColor: COLORS.greenTint, color: COLORS.greenDeep }}>vía {a.alerta.canal}</span>}>
+              Notificación automática · borrador
+            </PanelLabel>
+            <div className="rounded-lg p-4" style={{ backgroundColor: COLORS.ink }}>
+              <div className="text-[11px] font-bold mb-1.5" style={{ color: COLORS.green }}>{a.alerta.titulo}</div>
+              <div className="text-xs leading-relaxed" style={{ color: '#E8E3D9' }}>{a.alerta.cuerpo}</div>
+              <div className="text-[9px] mt-2 text-right" style={{ color: COLORS.textDim }}>Borrador generado por IA · no enviado</div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
@@ -534,7 +630,7 @@ const ProcessView = ({ proc }) => {
 
                   {planOpen && (
                     <div className="mt-4">
-                      <ActionPlan plan={h.plan} />
+                      <ActionPlan plan={h.plan} analisis={h.analisis} />
                     </div>
                   )}
                 </div>
@@ -640,7 +736,7 @@ const TabRiesgos = ({ data }) => {
 
                 {planOpen && (
                   <div className="mt-4" style={{ marginLeft: 46 }}>
-                    <ActionPlan plan={h.plan} />
+                    <ActionPlan plan={h.plan} analisis={h.analisis} />
                   </div>
                 )}
               </div>

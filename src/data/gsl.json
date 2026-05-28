@@ -437,6 +437,89 @@
               "Capacitar y certificar al personal en los nuevos procedimientos",
               "Establecer KPIs de control y un tablero de seguimiento"
             ]
+          },
+          "analisis": {
+            "confianza": 83,
+            "impacto": {
+              "costoNoActuar": 715000,
+              "ventanaDias": 30,
+              "costoSecundario": 235000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Ausencia de Procesos, Evaluación de Riesgos Preventivos y Auditoría Interna",
+              "factores": [
+                "Integridad Patrimonial",
+                "Conflicto de Gobernanza",
+                "Parálisis de la Continuidad del Negocio"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 329000,
+                "dias": 60,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 515000,
+                "dias": 30,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 679500,
+                "dias": 21,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Hacer obligatorio y auditar el AST firmado en toda maniobra Tandem",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Auditoría Interna",
+                "accion": "Documentar manuales de procedimientos y descriptivos de puesto prioritarios",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Implementar auditoría interna periódica del cumplimiento del AST",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Hacer obligatorio y auditar el AST firmado en toda maniobra Tandem",
+              "Nombrar un responsable interino de control de riesgos operativos",
+              "Levantar inventario de procesos críticos sin manual",
+              "Documentar manuales de procedimientos y descriptivos de puesto prioritarios"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Admin. Riesgos",
+              "cuerpo": "Hallazgo H01 (CRÍTICO) en Administración de Riesgos. Exposición estimada de $715K en 30 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -460,6 +543,88 @@
               "Cruzar-entrenar al personal en funciones críticas",
               "Monitorear riesgos con tablero y revisión trimestral"
             ]
+          },
+          "analisis": {
+            "confianza": 91,
+            "impacto": {
+              "costoNoActuar": 305000,
+              "ventanaDias": 60,
+              "costoSecundario": 110000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Enfoque Corporativo Enteramente Reactivo (\"Bomberazos\")",
+              "factores": [
+                "Continuidad de Negocio por Dependencia de Personal Clave",
+                "Debilidad de control interno"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 140500,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 219500,
+                "dias": 60,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 290000,
+                "dias": 48,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Identificar puestos y personas que concentran el know-how",
+                "estado": "En seguimiento",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Auditoría Interna",
+                "accion": "Crear planes de contingencia y sucesión por puesto clave",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Formalizar manuales y políticas de continuidad del negocio",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Identificar puestos y personas que concentran el know-how",
+              "Documentar las funciones críticas de cada persona clave",
+              "Designar respaldos internos para los roles críticos",
+              "Crear planes de contingencia y sucesión por puesto clave"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Admin. Riesgos",
+              "cuerpo": "Hallazgo H02 (GRAVE) en Administración de Riesgos. Exposición estimada de $305K en 60 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         }
       ]
@@ -493,6 +658,87 @@
               "Auditar la imparcialidad del proceso de cierre",
               "Reportar la independencia financiera a la asamblea"
             ]
+          },
+          "analisis": {
+            "confianza": 82,
+            "impacto": {
+              "costoNoActuar": 290000,
+              "ventanaDias": 60,
+              "costoSecundario": 75000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Invalidación del principio de imparcialidad; el mismo despacho contable externo parametriza…",
+              "factores": [
+                "Conflicto de Interés Corporativo",
+                "Falta de Imparcialidad Financiera"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 133500,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 209000,
+                "dias": 60,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 275500,
+                "dias": 48,
+                "prob": 61,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Mapear las funciones incompatibles que hoy ejerce el despacho externo",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Auditoría Interna",
+                "accion": "Contratar un dictaminador externo distinto al despacho operativo",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Institucionalizar la rotación y evaluación del auditor externo",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear las funciones incompatibles que hoy ejerce el despacho externo",
+              "Separar de inmediato la parametrización del sistema de la dictaminación",
+              "Definir política de independencia del auditor externo",
+              "Contratar un dictaminador externo distinto al despacho operativo"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Aud. Externa",
+              "cuerpo": "Hallazgo H03 (GRAVE) en Auditoría Externa. Exposición estimada de $290K en 60 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         }
       ]
@@ -526,6 +772,87 @@
               "Definir plan anual de auditoría basado en riesgos",
               "Medir cobertura de control con KPIs trimestrales"
             ]
+          },
+          "analisis": {
+            "confianza": 74,
+            "impacto": {
+              "costoNoActuar": 250000,
+              "ventanaDias": 60,
+              "costoSecundario": 65000,
+              "costoSecundarioLabel": "Multas y recargos potenciales"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de una contraparte o contraloría interna propia de la empresa que audite la…",
+              "factores": [
+                "Vacíos de Control Interno Concurrentes",
+                "Falta de Fiscalización"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 115000,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 180000,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 237500,
+                "dias": 48,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Auditoría Interna",
+                "accion": "Designar un responsable interno de contraloría",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Implementar revisiones internas de la información que procesa el despacho",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Consolidar la función de auditoría interna permanente",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Designar un responsable interno de contraloría",
+              "Definir el alcance mínimo de fiscalización interna",
+              "Solicitar al despacho acceso completo a la información financiera",
+              "Implementar revisiones internas de la información que procesa el despacho"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Aud. Interna",
+              "cuerpo": "Hallazgo H04 (GRAVE) en Auditoría Interna. Exposición estimada de $250K en 60 días. Activar plan de mitigación con Área de Auditoría Interna."
+            }
           }
         }
       ]
@@ -559,6 +886,88 @@
               "Implementar tablero de antigüedad de pre-facturas",
               "Revisar y optimizar el ciclo de ingresos trimestralmente"
             ]
+          },
+          "analisis": {
+            "confianza": 91,
+            "impacto": {
+              "costoNoActuar": 260000,
+              "ventanaDias": 60,
+              "costoSecundario": 85000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Retraso crónico en el ciclo de pre-facturación debido a que ventas depende de la…",
+              "factores": [
+                "Ciclo de Ingresos Lento",
+                "Retraso de Facturación",
+                "Retención de Caja"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 119500,
+                "dias": 90,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 187000,
+                "dias": 60,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 247000,
+                "dias": 48,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Mapear el ciclo de pre-facturación y sus cuellos de botella",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Automatizar el flujo evidencia → pre-factura → factura",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Integrar el flujo con el ERP y monitorear días de facturación",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear el ciclo de pre-facturación y sus cuellos de botella",
+              "Digitalizar la captura de evidencias en obra (app/foto)",
+              "Fijar SLA máximo entre servicio prestado y facturación",
+              "Automatizar el flujo evidencia → pre-factura → factura"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Calidad / Facturación",
+              "cuerpo": "Hallazgo H05 (GRAVE) en Calidad y Servicio a Clientes – Facturación. Exposición estimada de $260K en 60 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -582,6 +991,87 @@
               "Medir el plazo de cobro antes/después del rediseño",
               "Estandarizar el proceso en manual operativo"
             ]
+          },
+          "analisis": {
+            "confianza": 73,
+            "impacto": {
+              "costoNoActuar": 215000,
+              "ventanaDias": 60,
+              "costoSecundario": 75000,
+              "costoSecundarioLabel": "Multas y recargos potenciales"
+            },
+            "causaRaiz": {
+              "titulo": "Fricción administrativa extrema por procesos de autorización múltiple y firmas de…",
+              "factores": [
+                "Saturación Administrativa Comercial",
+                "Plazos de Cobro Extendidos"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 99000,
+                "dias": 90,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 155000,
+                "dias": 60,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 204500,
+                "dias": 48,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Inventariar las autorizaciones y firmas físicas exigidas hoy",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Rediseñar el flujo de autorización con menos pasos",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Desplegar la autorización digital a toda la operación",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Inventariar las autorizaciones y firmas físicas exigidas hoy",
+              "Identificar firmas eliminables o consolidables",
+              "Habilitar firma electrónica de conformidad en obra",
+              "Rediseñar el flujo de autorización con menos pasos"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Calidad / Facturación",
+              "cuerpo": "Hallazgo H06 (GRAVE) en Calidad y Servicio a Clientes – Facturación. Exposición estimada de $215K en 60 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -605,6 +1095,89 @@
               "Medir tasa de rechazo de fletes como KPI",
               "Recuperar la confianza del cliente con reporte de mejoras"
             ]
+          },
+          "analisis": {
+            "confianza": 90,
+            "impacto": {
+              "costoNoActuar": 295000,
+              "ventanaDias": 60,
+              "costoSecundario": 110000,
+              "costoSecundarioLabel": "Daño reputacional estimado"
+            },
+            "causaRaiz": {
+              "titulo": "Rechazo total de fletes de palets corporativos por enviar plataformas propias de GSL con…",
+              "factores": [
+                "Desgaste de Marca",
+                "Negligencia Operativa",
+                "Rechazo de Servicio"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 135500,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 212500,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 280500,
+                "dias": 48,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Inspeccionar y retirar de servicio las plataformas con desperfectos",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar mantenimiento preventivo de plataformas",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Auditar periódicamente el estado físico de la flota de palets",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Inspeccionar y retirar de servicio las plataformas con desperfectos",
+              "Definir checklist de inspección de equipo previo al flete",
+              "Asignar responsable de supervisión de calidad de equipo",
+              "Implementar mantenimiento preventivo de plataformas"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Calidad / Facturación",
+              "cuerpo": "Hallazgo H07 (GRAVE) en Calidad y Servicio a Clientes – Facturación. Exposición estimada de $295K en 60 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         }
       ]
@@ -638,6 +1211,88 @@
               "Medir ahorro y transparencia con KPIs de compras",
               "Auditar el padrón de proveedores periódicamente"
             ]
+          },
+          "analisis": {
+            "confianza": 76,
+            "impacto": {
+              "costoNoActuar": 240000,
+              "ventanaDias": 60,
+              "costoSecundario": 60000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Efecto Embudo e Ingreso Informal de Proveedores Mecánicos",
+              "factores": [
+                "Fuga de Efectivo",
+                "Deficiencia de Suministro",
+                "Falta de Transparencia Comercial"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 110500,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 173000,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 228000,
+                "dias": 48,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Compras",
+                "accion": "Redistribuir las tareas cruzadas acumuladas en compras",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Implementar un padrón de proveedores autorizados",
+                "estado": "Notificado",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Automatizar el flujo de compras en el ERP",
+                "estado": "En seguimiento",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Redistribuir las tareas cruzadas acumuladas en compras",
+              "Formalizar el alta y evaluación de proveedores mecánicos",
+              "Exigir cotizaciones y orden de compra a proveedores",
+              "Implementar un padrón de proveedores autorizados"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Compras",
+              "cuerpo": "Hallazgo H08 (GRAVE) en Compras. Exposición estimada de $240K en 60 días. Activar plan de mitigación con Área de Compras."
+            }
           }
         },
         {
@@ -661,6 +1316,87 @@
               "Medir fuga de caja en ruta antes/después",
               "Revisar y ampliar la red de proveedores foráneos"
             ]
+          },
+          "analisis": {
+            "confianza": 79,
+            "impacto": {
+              "costoNoActuar": 260000,
+              "ventanaDias": 60,
+              "costoSecundario": 65000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Contratación informal de talleres mecánicos externos en ruta foránea \"a ciegas\" ante…",
+              "factores": [
+                "Fuga de Caja en Ruta",
+                "Deficiencia de Proveeduría Foránea"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 119500,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 187000,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 247000,
+                "dias": 48,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Compras",
+                "accion": "Crear un directorio de talleres foráneos pre-autorizados por ruta",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Negociar tarifas y convenios con talleres en rutas frecuentes",
+                "estado": "En seguimiento",
+                "canales": [
+                  "WhatsApp",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Integrar el control de gastos foráneos al ERP",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Crear un directorio de talleres foráneos pre-autorizados por ruta",
+              "Definir un protocolo de atención ante varadas viales",
+              "Fijar topes de gasto y autorización para reparaciones en ruta",
+              "Negociar tarifas y convenios con talleres en rutas frecuentes"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Compras",
+              "cuerpo": "Hallazgo H09 (GRAVE) en Compras. Exposición estimada de $260K en 60 días. Activar plan de mitigación con Área de Compras."
+            }
           }
         },
         {
@@ -684,6 +1420,88 @@
               "Medir inflación operativa y ahorros logrados",
               "Institucionalizar la revisión presupuestal mensual"
             ]
+          },
+          "analisis": {
+            "confianza": 76,
+            "impacto": {
+              "costoNoActuar": 260000,
+              "ventanaDias": 60,
+              "costoSecundario": 85000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Compras sin planeación ni optimización de costos por el total desconocimiento de los…",
+              "factores": [
+                "Descontrol Presupuestal",
+                "Falta de Visión del Gasto e Inflación Operativa"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 119500,
+                "dias": 90,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 187000,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 247000,
+                "dias": 48,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Compras",
+                "accion": "Recuperar y difundir los presupuestos históricos al personal de compras",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Implementar planeación de compras contra presupuesto",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Automatizar el control presupuestal en el ERP",
+                "estado": "Por escalar",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Recuperar y difundir los presupuestos históricos al personal de compras",
+              "Construir un presupuesto anual base por categoría de gasto",
+              "Definir responsable de control presupuestal",
+              "Implementar planeación de compras contra presupuesto"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Compras",
+              "cuerpo": "Hallazgo H10 (GRAVE) en Compras. Exposición estimada de $260K en 60 días. Activar plan de mitigación con Área de Compras."
+            }
           }
         }
       ]
@@ -717,6 +1535,88 @@
               "Medir días de cartera (DSO) como KPI",
               "Recuperar flujo de caja y reducir financiamiento al cliente"
             ]
+          },
+          "analisis": {
+            "confianza": 82,
+            "impacto": {
+              "costoNoActuar": 215000,
+              "ventanaDias": 60,
+              "costoSecundario": 65000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Financiamiento desmedido del capital de trabajo de los clientes",
+              "factores": [
+                "Asfixia de Flujo de Caja",
+                "Degradación de la Rentabilidad Neta"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 99000,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 155000,
+                "dias": 60,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 204500,
+                "dias": 48,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Levantar la antigüedad real de la cartera por cliente",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Comercial",
+                "accion": "Definir política formal de crédito y cobranza con plazos y penalizaciones",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Automatizar la cobranza y el monitoreo de cartera en el ERP",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Levantar la antigüedad real de la cartera por cliente",
+              "Suspender nuevas tolerancias verbales de crédito",
+              "Iniciar gestión de cobro de las cuentas más vencidas",
+              "Definir política formal de crédito y cobranza con plazos y penalizaciones"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Crédito y Cobranza",
+              "cuerpo": "Hallazgo H11 (GRAVE) en Crédito a Clientes y Cobranza. Exposición estimada de $215K en 60 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         },
         {
@@ -740,6 +1640,88 @@
               "Medir cuentas incobrables como KPI",
               "Revisar la política de crédito periódicamente"
             ]
+          },
+          "analisis": {
+            "confianza": 90,
+            "impacto": {
+              "costoNoActuar": 90000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Otorgamiento discrecional e intuitivo de líneas de crédito corporativas tras cumplir solo…",
+              "factores": [
+                "Otorgamiento Discrecional de Créditos",
+                "Cuentas Incobrables"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 41500,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 65000,
+                "dias": 90,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 85500,
+                "dias": 78,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Definir criterios objetivos para otorgar líneas de crédito",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Comercial",
+                "accion": "Implementar un comité o flujo de aprobación de crédito",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Automatizar el scoring y los límites en el ERP",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir criterios objetivos para otorgar líneas de crédito",
+              "Suspender el otorgamiento discrecional vigente",
+              "Solicitar información financiera básica a clientes a crédito",
+              "Implementar un comité o flujo de aprobación de crédito"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Crédito y Cobranza",
+              "cuerpo": "Hallazgo H12 (MEDIO) en Crédito a Clientes y Cobranza. Exposición estimada de $90K en 90 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         },
         {
@@ -763,6 +1745,88 @@
               "Medir cartera castigada como KPI",
               "Institucionalizar la disciplina de cobranza"
             ]
+          },
+          "analisis": {
+            "confianza": 80,
+            "impacto": {
+              "costoNoActuar": 80000,
+              "ventanaDias": 90,
+              "costoSecundario": 30000,
+              "costoSecundarioLabel": "Contingencia legal estimada"
+            },
+            "causaRaiz": {
+              "titulo": "Tolerancia extrema a la morosidad en cuentas de confianza, registrando retrasos de flujo de…",
+              "factores": [
+                "Tolerancia a la Morosidad",
+                "Falta de Penalizaciones",
+                "Caja Castigada"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 37000,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 57500,
+                "dias": 90,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 76000,
+                "dias": 78,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Identificar las cuentas de confianza con mayor retraso",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Comercial",
+                "accion": "Aplicar penalizaciones e intereses por morosidad",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Automatizar alertas de morosidad en el ERP",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Identificar las cuentas de confianza con mayor retraso",
+              "Comunicar formalmente nuevas reglas de morosidad",
+              "Definir penalizaciones por atraso de pago",
+              "Aplicar penalizaciones e intereses por morosidad"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Crédito y Cobranza",
+              "cuerpo": "Hallazgo H13 (MEDIO) en Crédito a Clientes y Cobranza. Exposición estimada de $80K en 90 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         }
       ]
@@ -796,6 +1860,87 @@
               "Medir cobertura del programa como KPI",
               "Programar revisiones y actualizaciones anuales"
             ]
+          },
+          "analisis": {
+            "confianza": 87,
+            "impacto": {
+              "costoNoActuar": 70000,
+              "ventanaDias": 90,
+              "costoSecundario": 25000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Vulnerabilidad ante la STPS e imposición de multas por carecer de un programa formal de…",
+              "factores": [
+                "Incumplimiento Normativo STPS",
+                "Sanciones Económicas"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 32000,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 50500,
+                "dias": 90,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 66500,
+                "dias": 78,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Legal",
+                "accion": "Diagnosticar el cumplimiento actual de la NOM-035",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Cumplimiento",
+                "accion": "Diseñar e implementar el programa formal NOM-035",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Fiscal",
+                "accion": "Auditar el cumplimiento y resguardar evidencias ante STPS",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar el cumplimiento actual de la NOM-035",
+              "Designar responsable del programa de salud mental",
+              "Aplicar el cuestionario de factores de riesgo psicosocial",
+              "Diseñar e implementar el programa formal NOM-035"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Cumplimiento Legal",
+              "cuerpo": "Hallazgo H14 (MEDIO) en Cumplimiento Regulatorio y Área Legal. Exposición estimada de $70K en 90 días. Activar plan de mitigación con Área Legal."
+            }
           }
         },
         {
@@ -819,6 +1964,88 @@
               "Medir multas y retenciones evitadas como KPI",
               "Auditar periódicamente el estatus regulatorio vehicular"
             ]
+          },
+          "analisis": {
+            "confianza": 73,
+            "impacto": {
+              "costoNoActuar": 95000,
+              "ventanaDias": 90,
+              "costoSecundario": 25000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Pérdida de rastreabilidad sobre el estatus y vigencia de los permisos de pesos y…",
+              "factores": [
+                "Trámites Vehiculares Omisos",
+                "Multas de Tránsito",
+                "Retención de Equipos"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 43500,
+                "dias": 120,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 68500,
+                "dias": 90,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 90500,
+                "dias": 78,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Legal",
+                "accion": "Levantar el inventario de permisos de pesos y dimensiones y su vigencia",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Cumplimiento",
+                "accion": "Implementar un calendario de renovación de permisos",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Fiscal",
+                "accion": "Automatizar alertas de vigencia de permisos",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Levantar el inventario de permisos de pesos y dimensiones y su vigencia",
+              "Designar responsable del seguimiento de trámites SCT/SICT",
+              "Identificar permisos vencidos o por vencer",
+              "Implementar un calendario de renovación de permisos"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Cumplimiento Legal",
+              "cuerpo": "Hallazgo H15 (MEDIO) en Cumplimiento Regulatorio y Área Legal. Exposición estimada de $95K en 90 días. Activar plan de mitigación con Área Legal."
+            }
           }
         }
       ]
@@ -852,6 +2079,89 @@
               "Reportar la transición a la asamblea de socios",
               "Auditar la independencia del proceso financiero"
             ]
+          },
+          "analisis": {
+            "confianza": 87,
+            "impacto": {
+              "costoNoActuar": 630000,
+              "ventanaDias": 30,
+              "costoSecundario": 140000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Conflicto de Interés Crítico y Externalización del CFO",
+              "factores": [
+                "Transparencia",
+                "Gobierno Corporativo",
+                "Conflicto de Interés Financiero"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 290000,
+                "dias": 60,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 453500,
+                "dias": 30,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 598500,
+                "dias": 21,
+                "prob": 61,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Acotar las funciones del despacho externo y separar el rol de Administrador General",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams",
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Contratar o designar un responsable financiero interno",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Consolidar la contraloría interna y gobierno financiero",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Acotar las funciones del despacho externo y separar el rol de Administrador General",
+              "Definir un plan de internalización de la función financiera",
+              "Resguardar accesos críticos del ERP bajo control interno",
+              "Contratar o designar un responsable financiero interno"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Finanzas",
+              "cuerpo": "Hallazgo H16 (CRÍTICO) en Finanzas y Contabilidad. Exposición estimada de $630K en 30 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         },
         {
@@ -875,6 +2185,87 @@
               "Medir cobertura de controles financieros",
               "Auditar el cumplimiento de la estructura"
             ]
+          },
+          "analisis": {
+            "confianza": 83,
+            "impacto": {
+              "costoNoActuar": 255000,
+              "ventanaDias": 60,
+              "costoSecundario": 75000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Debilidad de gobernanza estructural al operar la contabilidad diaria de GSL sin un…",
+              "factores": [
+                "Estructura Organizacional",
+                "Vacíos de Control en Contraloría"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 117500,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 183500,
+                "dias": 60,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 242500,
+                "dias": 48,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Definir el organigrama financiero interno propuesto",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Validar y formalizar el organigrama ante la asamblea",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Operar la contabilidad bajo gobierno interno validado",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir el organigrama financiero interno propuesto",
+              "Identificar funciones de contraloría hoy ausentes",
+              "Presentar la estructura para validación de asamblea",
+              "Validar y formalizar el organigrama ante la asamblea"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Finanzas",
+              "cuerpo": "Hallazgo H17 (GRAVE) en Finanzas y Contabilidad. Exposición estimada de $255K en 60 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         },
         {
@@ -898,6 +2289,87 @@
               "Medir días de cierre como KPI",
               "Auditar la calidad y oportunidad de la información"
             ]
+          },
+          "analisis": {
+            "confianza": 88,
+            "impacto": {
+              "costoNoActuar": 65000,
+              "ventanaDias": 90,
+              "costoSecundario": 15000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Cierres contables mensuales lentos (del 10 al 14 de cada mes) derivados de conciliaciones…",
+              "factores": [
+                "Cierre Extemporáneo",
+                "Falta de Información Concurrente",
+                "Control de Caja"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 30000,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 47000,
+                "dias": 90,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 62000,
+                "dias": 78,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Mapear las conciliaciones manuales que retrasan el cierre",
+                "estado": "En seguimiento",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Automatizar conciliaciones bancarias y por proyecto",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Lograr cierres contables concurrentes y oportunos",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear las conciliaciones manuales que retrasan el cierre",
+              "Fijar la meta de cierre contable (día hábil objetivo)",
+              "Digitalizar la captura de evidencias para conciliación",
+              "Automatizar conciliaciones bancarias y por proyecto"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Finanzas",
+              "cuerpo": "Hallazgo H18 (MEDIO) en Finanzas y Contabilidad. Exposición estimada de $65K en 90 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         },
         {
@@ -921,6 +2393,87 @@
               "Reducir la dependencia del proveedor contable",
               "Auditar la integridad de la información migrada"
             ]
+          },
+          "analisis": {
+            "confianza": 80,
+            "impacto": {
+              "costoNoActuar": 65000,
+              "ventanaDias": 90,
+              "costoSecundario": 15000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Resistencia del despacho externo a transferir el control histórico de las cuentas por…",
+              "factores": [
+                "Dependencia de Proveedor Contable",
+                "Retraso de la Autonomía de Gobierno"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 30000,
+                "dias": 120,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 47000,
+                "dias": 90,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 62000,
+                "dias": 78,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Financiera",
+                "accion": "Solicitar formalmente al despacho la entrega del histórico por proyecto",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Migrar el control histórico de cuentas a la empresa",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Operar con autonomía contable plena",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Solicitar formalmente al despacho la entrega del histórico por proyecto",
+              "Documentar la dependencia y los riesgos asociados",
+              "Definir el plan y calendario de transferencia",
+              "Migrar el control histórico de cuentas a la empresa"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Finanzas",
+              "cuerpo": "Hallazgo H19 (MEDIO) en Finanzas y Contabilidad. Exposición estimada de $65K en 90 días. Activar plan de mitigación con Área Financiera."
+            }
           }
         }
       ]
@@ -954,6 +2507,87 @@
               "Medir el cumplimiento fiscal como KPI",
               "Auditar la situación fiscal trimestralmente"
             ]
+          },
+          "analisis": {
+            "confianza": 76,
+            "impacto": {
+              "costoNoActuar": 240000,
+              "ventanaDias": 60,
+              "costoSecundario": 60000,
+              "costoSecundarioLabel": "Multas y recargos potenciales"
+            },
+            "causaRaiz": {
+              "titulo": "Práctica de realizar pagos provisionales de declaraciones mensuales incompletas ante el SAT…",
+              "factores": [
+                "Contingencia Fiscal",
+                "Parálisis de la Cobranza Comercial"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 110500,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 173000,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 228000,
+                "dias": 48,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Fiscal",
+                "accion": "Cuantificar el rezago de declaraciones provisionales incompletas",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Regularizar declaraciones y diferencias con el SAT",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Automatizar el calendario y alertas fiscales",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Cuantificar el rezago de declaraciones provisionales incompletas",
+              "Suspender la práctica de pagos parciales por liquidez",
+              "Definir un plan de regularización fiscal",
+              "Regularizar declaraciones y diferencias con el SAT"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Fiscal",
+              "cuerpo": "Hallazgo H20 (GRAVE) en Fiscal. Exposición estimada de $240K en 60 días. Activar plan de mitigación con Área Fiscal."
+            }
           }
         },
         {
@@ -977,6 +2611,88 @@
               "Automatizar alertas de cumplimiento fiscal",
               "Asegurar la continuidad de facturación en portales"
             ]
+          },
+          "analisis": {
+            "confianza": 77,
+            "impacto": {
+              "costoNoActuar": 280000,
+              "ventanaDias": 60,
+              "costoSecundario": 50000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Bloqueo inmediato de facturación en portales de clientes globales por registrar opiniones…",
+              "factores": [
+                "Continuidad Comercial",
+                "Congelamiento de Flujo por Incumplimiento"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 129000,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 201500,
+                "dias": 60,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 266000,
+                "dias": 48,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Fiscal",
+                "accion": "Revisar la opinión de cumplimiento fiscal vigente",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Regularizar las obligaciones que afectan la opinión",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Mantener opinión positiva de forma sostenida",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Revisar la opinión de cumplimiento fiscal vigente",
+              "Identificar las obligaciones que generan opinión negativa",
+              "Comunicar el riesgo a dirección y clientes globales",
+              "Regularizar las obligaciones que afectan la opinión"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Fiscal",
+              "cuerpo": "Hallazgo H21 (GRAVE) en Fiscal. Exposición estimada de $280K en 60 días. Activar plan de mitigación con Área Fiscal."
+            }
           }
         },
         {
@@ -1000,6 +2716,88 @@
               "Medir exposición a riesgo penal como KPI",
               "Resguardar evidencia de cumplimiento"
             ]
+          },
+          "analisis": {
+            "confianza": 76,
+            "impacto": {
+              "costoNoActuar": 275000,
+              "ventanaDias": 60,
+              "costoSecundario": 45000,
+              "costoSecundarioLabel": "Contingencia legal estimada"
+            },
+            "causaRaiz": {
+              "titulo": "Exposición a delitos penales de defraudación fiscal por carecer de una herramienta que…",
+              "factores": [
+                "Legal Penal",
+                "Responsabilidad Solidaria de Socios"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 126500,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 198000,
+                "dias": 60,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 261500,
+                "dias": 48,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Fiscal",
+                "accion": "Implementar validación de proveedores contra listas EFOS/EDOS del SAT",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Automatizar la validación de listas negras en altas de proveedor",
+                "estado": "Por escalar",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Auditar periódicamente la cartera de proveedores",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Implementar validación de proveedores contra listas EFOS/EDOS del SAT",
+              "Revisar proveedores actuales contra listas negras",
+              "Definir política de no operar con EFOS",
+              "Automatizar la validación de listas negras en altas de proveedor"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Fiscal",
+              "cuerpo": "Hallazgo H22 (GRAVE) en Fiscal. Exposición estimada de $275K en 60 días. Activar plan de mitigación con Área Fiscal."
+            }
           }
         }
       ]
@@ -1033,6 +2831,88 @@
               "Medir merma y exactitud de inventario como KPI",
               "Realizar conteos cíclicos programados"
             ]
+          },
+          "analisis": {
+            "confianza": 84,
+            "impacto": {
+              "costoNoActuar": 270000,
+              "ventanaDias": 60,
+              "costoSecundario": 45000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de Controles Físicos y Contables en Almacén",
+              "factores": [
+                "Pérdida de Activos",
+                "Desabasto Operativo",
+                "Dilución de Utilidad Bruta"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 124000,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 194500,
+                "dias": 60,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 256500,
+                "dias": 48,
+                "prob": 61,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Realizar inventario físico inicial del almacén",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Logística",
+                "accion": "Implementar bitácoras y control de entradas/salidas",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Operar control de inventarios permanente y auditable",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Realizar inventario físico inicial del almacén",
+              "Definir stocks mínimos y puntos de reorden de insumos críticos",
+              "Asignar responsable de control de almacén",
+              "Implementar bitácoras y control de entradas/salidas"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Inventarios",
+              "cuerpo": "Hallazgo H23 (GRAVE) en Logística de Inventarios. Exposición estimada de $270K en 60 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1056,6 +2936,88 @@
               "Medir merma de activos como KPI",
               "Integrar el control con videovigilancia y bitácoras"
             ]
+          },
+          "analisis": {
+            "confianza": 75,
+            "impacto": {
+              "costoNoActuar": 290000,
+              "ventanaDias": 60,
+              "costoSecundario": 50000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Riesgo de merma nocturna de herramientas críticas de izaje (lonas, eslingas, escaleras) por…",
+              "factores": [
+                "Pérdida Patrimonial de Activos de Trabajo e Informalidad en Patios",
+                "Debilidad de control interno"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 133500,
+                "dias": 90,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 209000,
+                "dias": 60,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 275500,
+                "dias": 48,
+                "prob": 61,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar registro y firma de entrega de llaves de patio",
+                "estado": "En seguimiento",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Logística",
+                "accion": "Instalar control de acceso y resguardo de herramienta crítica",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Auditar periódicamente el inventario de izaje",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Implementar registro y firma de entrega de llaves de patio",
+              "Inventariar herramientas críticas de izaje",
+              "Restringir accesos al patio fuera de horario",
+              "Instalar control de acceso y resguardo de herramienta crítica"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Inventarios",
+              "cuerpo": "Hallazgo H24 (GRAVE) en Logística de Inventarios. Exposición estimada de $290K en 60 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         }
       ]
@@ -1089,6 +3051,88 @@
               "Optimizar campañas por desempeño",
               "Reducir la dependencia de un solo cliente"
             ]
+          },
+          "analisis": {
+            "confianza": 87,
+            "impacto": {
+              "costoNoActuar": 220000,
+              "ventanaDias": 60,
+              "costoSecundario": 80000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Ventaja competitiva nula en llamadas en frío frente a competidores de menor infraestructura (ej",
+              "factores": [
+                "Desplazamiento Comercial",
+                "Monocliente",
+                "Pérdida de Cuota Abierta"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 101000,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 158500,
+                "dias": 60,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 209000,
+                "dias": 48,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Diagnosticar la presencia digital frente a competidores",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Marketing",
+                "accion": "Lanzar campañas digitales segmentadas (SEO/SEM)",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir cuota de mercado y leads digitales como KPI",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar la presencia digital frente a competidores",
+              "Crear/optimizar la ficha y sitio web de GSL",
+              "Definir propuesta de valor diferenciada",
+              "Lanzar campañas digitales segmentadas (SEO/SEM)"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Marketing",
+              "cuerpo": "Hallazgo H25 (GRAVE) en Marketing / Redes Sociales / Publicidad. Exposición estimada de $220K en 60 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1112,6 +3156,89 @@
               "Diversificar la cartera más allá de recomendaciones",
               "Optimizar el embudo comercial"
             ]
+          },
+          "analisis": {
+            "confianza": 87,
+            "impacto": {
+              "costoNoActuar": 90000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de prospección comercial en frío; el crecimiento de GSL se encuentra limitado…",
+              "factores": [
+                "Dependencia Comercial",
+                "Falta de Campañas Activas",
+                "Monocliente"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 41500,
+                "dias": 120,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 65000,
+                "dias": 90,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 85500,
+                "dias": 78,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Definir el perfil de cliente objetivo para prospección",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Marketing",
+                "accion": "Implementar campañas activas de prospección",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir nuevos clientes por prospección como KPI",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir el perfil de cliente objetivo para prospección",
+              "Construir una base de prospectos en frío",
+              "Asignar metas de prospección al equipo de ventas",
+              "Implementar campañas activas de prospección"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Marketing",
+              "cuerpo": "Hallazgo H26 (MEDIO) en Marketing / Redes Sociales / Publicidad. Exposición estimada de $90K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1135,6 +3262,87 @@
               "Optimizar la inversión publicitaria por resultados",
               "Fortalecer el posicionamiento de marca"
             ]
+          },
+          "analisis": {
+            "confianza": 85,
+            "impacto": {
+              "costoNoActuar": 95000,
+              "ventanaDias": 90,
+              "costoSecundario": 35000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Exposición al estancamiento de marca por la nula participación del equipo de ventas dentro…",
+              "factores": [
+                "Desconexión Comercial-Marketing",
+                "Pautas Publicitarias Ineficientes"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 43500,
+                "dias": 120,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 68500,
+                "dias": 90,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 90500,
+                "dias": 78,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Integrar a ventas en la planeación de campañas web",
+                "estado": "Por escalar",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Marketing",
+                "accion": "Coordinar reuniones periódicas ventas-marketing",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Institucionalizar el comité ventas-marketing",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Integrar a ventas en la planeación de campañas web",
+              "Definir mensajes alineados a la realidad comercial",
+              "Revisar las pautas publicitarias vigentes",
+              "Coordinar reuniones periódicas ventas-marketing"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Marketing",
+              "cuerpo": "Hallazgo H27 (MEDIO) en Marketing / Redes Sociales / Publicidad. Exposición estimada de $95K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         }
       ]
@@ -1168,6 +3376,86 @@
               "Medir ingresos de comercio exterior como KPI",
               "Formalizar el plan de sucesión"
             ]
+          },
+          "analisis": {
+            "confianza": 73,
+            "impacto": {
+              "costoNoActuar": 65000,
+              "ventanaDias": 90,
+              "costoSecundario": 15000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Subutilización de las competencias técnicas especializadas en aduanas y comercio exterior…",
+              "factores": [
+                "Estructura de Relevo Generacional",
+                "Subutilización de Perfil Corporativo"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 30000,
+                "dias": 120,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 47000,
+                "dias": 90,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 62000,
+                "dias": 78,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Mapear las competencias del sucesor en aduanas y comercio exterior",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Asignar proyectos de comercio exterior al sucesor",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Consolidar la unidad internacional con el perfil idóneo",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear las competencias del sucesor en aduanas y comercio exterior",
+              "Definir un rol que aproveche ese perfil",
+              "Identificar oportunidades en mercados internacionales",
+              "Asignar proyectos de comercio exterior al sucesor"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Mercados Int.",
+              "cuerpo": "Hallazgo H28 (MEDIO) en Mercados Internacionales. Exposición estimada de $65K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1191,6 +3479,88 @@
               "Reducir el hermetismo directivo",
               "Monitorear la continuidad de la unidad"
             ]
+          },
+          "analisis": {
+            "confianza": 89,
+            "impacto": {
+              "costoNoActuar": 85000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Riesgo de parálisis total en la Unidad de Distribución ante fallas de comunicación por el…",
+              "factores": [
+                "Hermetismo Directivo",
+                "Falta de Trazabilidad Sucesoria",
+                "Monocliente Oculto"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 39000,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 61000,
+                "dias": 90,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 81000,
+                "dias": 78,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Documentar los canales de comunicación director-fundador",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Formalizar canales y minutas de decisiones clave",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Institucionalizar la comunicación de gobierno",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Documentar los canales de comunicación director-fundador",
+              "Definir respaldos y protocolos ante fallas de comunicación",
+              "Mapear el riesgo de parálisis en Distribución",
+              "Formalizar canales y minutas de decisiones clave"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Mercados Int.",
+              "cuerpo": "Hallazgo H29 (MEDIO) en Mercados Internacionales. Exposición estimada de $85K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         }
       ]
@@ -1224,6 +3594,88 @@
               "Medir disponibilidad y siniestralidad como KPI",
               "Institucionalizar el gobierno operativo"
             ]
+          },
+          "analisis": {
+            "confianza": 77,
+            "impacto": {
+              "costoNoActuar": 650000,
+              "ventanaDias": 30,
+              "costoSecundario": 115000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de Auditoría Interna y Control sobre las Condiciones Óptimas del Activo Principal",
+              "factores": [
+                "Integridad Patrimonial",
+                "Responsabilidad Civil e Inexistencia de Gobierno Operativo"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 299000,
+                "dias": 60,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 468000,
+                "dias": 30,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 617500,
+                "dias": 21,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Inspeccionar condiciones óptimas del activo principal (grúas)",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Crear programa de mantenimiento preventivo del activo principal",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar periódicamente la integridad del activo core",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Inspeccionar condiciones óptimas del activo principal (grúas)",
+              "Implementar checklist de operatividad antes de cada servicio",
+              "Designar responsable de control del activo core",
+              "Crear programa de mantenimiento preventivo del activo principal"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H30 (CRÍTICO) en Operaciones. Exposición estimada de $650K en 30 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1247,6 +3699,87 @@
               "Medir siniestralidad y robo como KPI",
               "Optimizar rutas y seguros por riesgo"
             ]
+          },
+          "analisis": {
+            "confianza": 76,
+            "impacto": {
+              "costoNoActuar": 775000,
+              "ventanaDias": 30,
+              "costoSecundario": 265000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de un Protocolo Institucional de Control de Ruta y Blindaje de Activos en…",
+              "factores": [
+                "Integridad de Capital Humano",
+                "Pérdida de Activos Core por Inseguridad Vial",
+                "Vacíos de Gobernanza Operativa"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 356500,
+                "dias": 60,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 558000,
+                "dias": 30,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 736500,
+                "dias": 21,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Definir un protocolo de control de ruta y tramos de alto riesgo",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Establecer convenios de seguridad y rutas seguras",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar el cumplimiento del protocolo de ruta",
+                "estado": "Notificado",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir un protocolo de control de ruta y tramos de alto riesgo",
+              "Implementar monitoreo GPS y reporte de incidencias",
+              "Capacitar a operadores en blindaje de activos en ruta",
+              "Establecer convenios de seguridad y rutas seguras"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H31 (CRÍTICO) en Operaciones. Exposición estimada de $775K en 30 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1270,6 +3803,88 @@
               "Medir desvalorización de activos evitada",
               "Institucionalizar la cultura de control"
             ]
+          },
+          "analisis": {
+            "confianza": 74,
+            "impacto": {
+              "costoNoActuar": 675000,
+              "ventanaDias": 30,
+              "costoSecundario": 180000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Ausencia de Control Interno y Gestión Operativa Basada en la Confianza (Falta de Listas de…",
+              "factores": [
+                "Desvalorización de Activos",
+                "Negligencia por Costumbre e Inexistencia de Procesos de Auditoría Interna"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 310500,
+                "dias": 60,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 486000,
+                "dias": 30,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 641500,
+                "dias": 21,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar listas de verificación en procesos operativos clave",
+                "estado": "En seguimiento",
+                "canales": [
+                  "WhatsApp",
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Documentar procedimientos operativos estándar",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar el cumplimiento de procesos periódicamente",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Implementar listas de verificación en procesos operativos clave",
+              "Definir un sistema de control interno estructurado",
+              "Asignar responsables de control por proceso",
+              "Documentar procedimientos operativos estándar"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H32 (CRÍTICO) en Operaciones. Exposición estimada de $675K en 30 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1293,6 +3908,89 @@
               "Reducir accidentes en sitio como KPI",
               "Optimizar la coordinación comercial-operativa"
             ]
+          },
+          "analisis": {
+            "confianza": 85,
+            "impacto": {
+              "costoNoActuar": 300000,
+              "ventanaDias": 60,
+              "costoSecundario": 95000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Graves fallas técnicas en el traspaso de información comercial a patio.",
+              "factores": [
+                "Ineficiencia Operativa",
+                "Capacidad Ociosa",
+                "Accidentes en Sitio"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 138000,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 216000,
+                "dias": 60,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 285000,
+                "dias": 48,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Mapear el traspaso de información comercial a patio",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Digitalizar el flujo comercial → patio",
+                "estado": "Por escalar",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Integrar el flujo al sistema y medir capacidad ociosa",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear el traspaso de información comercial a patio",
+              "Estandarizar el formato de orden de servicio a patio",
+              "Identificar las fallas técnicas recurrentes",
+              "Digitalizar el flujo comercial → patio"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H33 (GRAVE) en Operaciones. Exposición estimada de $300K en 60 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1316,6 +4014,88 @@
               "Optimizar la capacidad del taller",
               "Auditar el cumplimiento de mantenimientos"
             ]
+          },
+          "analisis": {
+            "confianza": 76,
+            "impacto": {
+              "costoNoActuar": 230000,
+              "ventanaDias": 60,
+              "costoSecundario": 55000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Retrasos mecánicos mayores por operar un taller pesado con una plantilla reducida a un solo…",
+              "factores": [
+                "Infraestructura de Taller Insuficiente",
+                "Cuellos de Botella Mecánicos"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 106000,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 165500,
+                "dias": 60,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 218500,
+                "dias": 48,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Dimensionar la carga de trabajo del taller pesado",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Contratar/contratar temporalmente personal de taller",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir disponibilidad de flota y cuellos de botella",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Dimensionar la carga de trabajo del taller pesado",
+              "Definir necesidades de plantilla mecánica y eléctrica",
+              "Priorizar mantenimientos críticos de flota",
+              "Contratar/contratar temporalmente personal de taller"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H34 (GRAVE) en Operaciones. Exposición estimada de $230K en 60 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1339,6 +4119,89 @@
               "Medir órdenes de trabajo cumplidas como KPI",
               "Reducir el desgaste prematuro de la flota"
             ]
+          },
+          "analisis": {
+            "confianza": 84,
+            "impacto": {
+              "costoNoActuar": 70000,
+              "ventanaDias": 90,
+              "costoSecundario": 25000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Incumplimiento sistemático de los programas del taller mecánico por desvíos en ruta foránea…",
+              "factores": [
+                "Desalineación Ventas-Taller",
+                "Desgaste de Flota",
+                "Órdenes de Trabajo Omisas"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 32000,
+                "dias": 120,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 50500,
+                "dias": 90,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 66500,
+                "dias": 78,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Documentar los programas del taller y su incumplimiento",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Implementar órdenes de trabajo obligatorias",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar el cumplimiento de los programas de taller",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Documentar los programas del taller y su incumplimiento",
+              "Prohibir desvíos en ruta no autorizados por mantenimiento",
+              "Definir flujo de autorización ventas-taller",
+              "Implementar órdenes de trabajo obligatorias"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H35 (MEDIO) en Operaciones. Exposición estimada de $70K en 90 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1362,6 +4225,88 @@
               "Institucionalizar esquema de turnos saludable",
               "Auditar la seguridad física del personal"
             ]
+          },
+          "analisis": {
+            "confianza": 84,
+            "impacto": {
+              "costoNoActuar": 75000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Desgaste físico del personal de monitoreo por extender sus tareas de control de forma…",
+              "factores": [
+                "Fatiga Crónica de Personal",
+                "Desgaste de Línea",
+                "Seguridad Física"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 34500,
+                "dias": 120,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 54000,
+                "dias": 90,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 71500,
+                "dias": 78,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Diagnosticar la carga horaria del personal de monitoreo",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Reorganizar los turnos de monitoreo",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir fatiga y rotación del personal como KPI",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar la carga horaria del personal de monitoreo",
+              "Definir turnos y límites de jornada",
+              "Habilitar respaldos para el monitoreo 24h",
+              "Reorganizar los turnos de monitoreo"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H36 (MEDIO) en Operaciones. Exposición estimada de $75K en 90 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1385,6 +4330,89 @@
               "Medir egresos imprevistos evitados",
               "Actualizar el inventario de planta periódicamente"
             ]
+          },
+          "analisis": {
+            "confianza": 91,
+            "impacto": {
+              "costoNoActuar": 95000,
+              "ventanaDias": 90,
+              "costoSecundario": 25000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de un inventario físico de activos viales, baños, patios y oficinas para…",
+              "factores": [
+                "Infraestructura Civil Deficiente",
+                "Falta de Inventario de Planta",
+                "Egresos Imprevistos"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 43500,
+                "dias": 120,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 68500,
+                "dias": 90,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 90500,
+                "dias": 78,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Levantar inventario físico de activos viales, baños, patios y oficinas",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Definir programa de obra civil preventiva",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Ejecutar el plan de mantenimiento preventivo",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Levantar inventario físico de activos viales, baños, patios y oficinas",
+              "Identificar necesidades de obra civil preventiva",
+              "Priorizar reparaciones críticas de planta",
+              "Definir programa de obra civil preventiva"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H37 (MEDIO) en Operaciones. Exposición estimada de $95K en 90 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         },
         {
@@ -1408,6 +4436,87 @@
               "Medir tiempos muertos como KPI",
               "Optimizar la productividad en patio"
             ]
+          },
+          "analisis": {
+            "confianza": 91,
+            "impacto": {
+              "costoNoActuar": 90000,
+              "ventanaDias": 90,
+              "costoSecundario": 30000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Duplicidad de tiempos en patio por falta de estandarización e inspección previa en el…",
+              "factores": [
+                "Ingeniería de Izaje Empírica",
+                "Tiempos Muertos de Preparación"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 41500,
+                "dias": 120,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 65000,
+                "dias": 90,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 85500,
+                "dias": 78,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Operaciones",
+                "accion": "Estandarizar el armado técnico de eslingas de izaje",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Seguridad y Riesgos",
+                "accion": "Capacitar al personal en ingeniería de izaje estándar",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar el cumplimiento del estándar de izaje",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Estandarizar el armado técnico de eslingas de izaje",
+              "Implementar inspección previa al armado",
+              "Documentar tiempos de preparación actuales",
+              "Capacitar al personal en ingeniería de izaje estándar"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Operaciones",
+              "cuerpo": "Hallazgo H38 (MEDIO) en Operaciones. Exposición estimada de $90K en 90 días. Activar plan de mitigación con Área de Operaciones."
+            }
           }
         }
       ]
@@ -1441,6 +4550,88 @@
               "Medir fricciones de mando como KPI cualitativo",
               "Auditar el respeto a la cadena de mando"
             ]
+          },
+          "analisis": {
+            "confianza": 80,
+            "impacto": {
+              "costoNoActuar": 305000,
+              "ventanaDias": 60,
+              "costoSecundario": 75000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Vacío de autoridad en la Dirección General por relevo sucesorio informal sustentado solo en…",
+              "factores": [
+                "Gobernanza Familiar",
+                "Pérdida de Autoridad",
+                "Fricción de Sucesión"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 140500,
+                "dias": 90,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 219500,
+                "dias": 60,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 290000,
+                "dias": 48,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Formalizar la autoridad de la Dirección General",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Documentar el plan de sucesión y relevo generacional",
+                "estado": "Por escalar",
+                "canales": [
+                  "Calendar",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Institucionalizar el gobierno familiar y la sucesión",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Formalizar la autoridad de la Dirección General",
+              "Definir la cadena de mando y comunicación oficial",
+              "Prohibir la triangulación de mandos por chats privados",
+              "Documentar el plan de sucesión y relevo generacional"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H39 (GRAVE) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $305K en 60 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -1464,6 +4655,87 @@
               "Medir cumplimiento de compromisos como KPI",
               "Auditar la eficiencia de la gestión familiar"
             ]
+          },
+          "analisis": {
+            "confianza": 80,
+            "impacto": {
+              "costoNoActuar": 240000,
+              "ventanaDias": 60,
+              "costoSecundario": 60000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Opacidad en la rendición de cuentas operativa entre los hermanos directores por temor a…",
+              "factores": [
+                "Gestión Familiar",
+                "Falta de Rendición de Cuentas e Ineficiencia Corporativa"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 110500,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 173000,
+                "dias": 60,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 228000,
+                "dias": 48,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Definir mecanismos de rendición de cuentas entre directores",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Implementar reuniones formales de dirección con minutas",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Institucionalizar la rendición de cuentas corporativa",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir mecanismos de rendición de cuentas entre directores",
+              "Establecer reportes operativos periódicos",
+              "Separar la dinámica familiar de la corporativa",
+              "Implementar reuniones formales de dirección con minutas"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H40 (GRAVE) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $240K en 60 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -1487,6 +4759,89 @@
               "Medir incidencias de fuga de autoridad",
               "Consolidar la estructura de mandos intermedios"
             ]
+          },
+          "analisis": {
+            "confianza": 89,
+            "impacto": {
+              "costoNoActuar": 260000,
+              "ventanaDias": 60,
+              "costoSecundario": 80000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Anarquía y desacreditación de mandos intermedios debido a que los operadores triangulan…",
+              "factores": [
+                "Disciplina Laboral",
+                "Duplicidad de Instrucciones",
+                "Fuga de Autoridad"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 119500,
+                "dias": 90,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 187000,
+                "dias": 60,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 247000,
+                "dias": 48,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Reforzar la autoridad de los mandos intermedios",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Comunicar y capacitar en la cadena de mando",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Auditar la disciplina laboral y la cadena de mando",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Reforzar la autoridad de los mandos intermedios",
+              "Prohibir la triangulación de permisos con directores",
+              "Definir el flujo oficial de autorización de permisos",
+              "Comunicar y capacitar en la cadena de mando"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H41 (GRAVE) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $260K en 60 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -1510,6 +4865,89 @@
               "Auditar el cumplimiento de acuerdos",
               "Medir la efectividad de las sesiones"
             ]
+          },
+          "analisis": {
+            "confianza": 83,
+            "impacto": {
+              "costoNoActuar": 200000,
+              "ventanaDias": 60,
+              "costoSecundario": 65000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Pérdida de la figura de Gobierno Corporativo al operar las sesiones de junta de socios de…",
+              "factores": [
+                "Informalidad en Gobernanza",
+                "Ausencia de Actas",
+                "Vacíos de Acuerdo"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 92000,
+                "dias": 90,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 144000,
+                "dias": 60,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 190000,
+                "dias": 48,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Reinstaurar las sesiones formales de junta de socios",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Levantar minutas y actas de todos los acuerdos",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Institucionalizar el órgano de gobierno corporativo",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Reinstaurar las sesiones formales de junta de socios",
+              "Definir el calendario y el orden del día de sesiones",
+              "Designar responsable de actas y acuerdos",
+              "Levantar minutas y actas de todos los acuerdos"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H42 (GRAVE) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $200K en 60 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -1533,6 +4971,89 @@
               "Medir gasto de personal optimizado como KPI",
               "Institucionalizar la política de talento familiar"
             ]
+          },
+          "analisis": {
+            "confianza": 85,
+            "impacto": {
+              "costoNoActuar": 80000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Ausencia de requisitos y perfiles mínimos de meritocracia para el ingreso de miembros de la…",
+              "factores": [
+                "Nepotismo Organizacional",
+                "Falta de Meritocracia",
+                "Gasto de Personal Inflado"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 37000,
+                "dias": 120,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 57500,
+                "dias": 90,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 76000,
+                "dias": 78,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Definir perfiles y requisitos mínimos por puesto",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Implementar evaluación de perfil para nuevos ingresos",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Auditar el cumplimiento de la meritocracia",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir perfiles y requisitos mínimos por puesto",
+              "Establecer criterios de meritocracia para ingreso familiar",
+              "Documentar la política de incorporación a nómina",
+              "Implementar evaluación de perfil para nuevos ingresos"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H43 (MEDIO) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $80K en 90 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -1556,6 +5077,88 @@
               "Asegurar la fuente de fondeo del plan",
               "Revisar el plan periódicamente"
             ]
+          },
+          "analisis": {
+            "confianza": 89,
+            "impacto": {
+              "costoNoActuar": 65000,
+              "ventanaDias": 90,
+              "costoSecundario": 25000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Inseguridad patrimonial para la esposa del fundador ante un esquema de pensión informal que…",
+              "factores": [
+                "Plan de Retiro Informal",
+                "Fricciones Fratricidas",
+                "Caja Comprometida"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 30000,
+                "dias": 120,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 47000,
+                "dias": 90,
+                "prob": 72,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 62000,
+                "dias": 78,
+                "prob": 65,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Diagnosticar el esquema de pensión informal del fundador",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Diseñar un plan de retiro formal y financiado",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Formalizar e instrumentar el plan de retiro",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar el esquema de pensión informal del fundador",
+              "Cuantificar el riesgo patrimonial para la esposa",
+              "Definir alternativas formales de retiro",
+              "Diseñar un plan de retiro formal y financiado"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H44 (MEDIO) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $65K en 90 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         },
         {
@@ -1579,6 +5182,88 @@
               "Consolidar la cultura organizacional",
               "Auditar el cumplimiento de manuales"
             ]
+          },
+          "analisis": {
+            "confianza": 82,
+            "impacto": {
+              "costoNoActuar": 65000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Resistencia psicológica al cambio por parte de los operadores de patio antiguos ante los…",
+              "factores": [
+                "Cultura Organizacional Precaria",
+                "Boicot a Procesos e Informalidad de Patio"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 30000,
+                "dias": 120,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 47000,
+                "dias": 90,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 62000,
+                "dias": 78,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Diagnosticar la resistencia al cambio en patio",
+                "estado": "Notificado",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Implementar gestión del cambio y capacitación",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Legal",
+                "accion": "Medir la adopción de procesos como KPI",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar la resistencia al cambio en patio",
+              "Comunicar el propósito de los nuevos manuales",
+              "Identificar líderes de opinión entre operadores",
+              "Implementar gestión del cambio y capacitación"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Partes Relacionadas",
+              "cuerpo": "Hallazgo H45 (MEDIO) en Partes Relacionadas y Conflictos de Interés. Exposición estimada de $65K en 90 días. Activar plan de mitigación con Área de Gobierno Corporativo."
+            }
           }
         }
       ]
@@ -1612,6 +5297,88 @@
               "Monitorear KPIs y desviaciones mensualmente",
               "Ajustar la estrategia por resultados"
             ]
+          },
+          "analisis": {
+            "confianza": 90,
+            "impacto": {
+              "costoNoActuar": 225000,
+              "ventanaDias": 60,
+              "costoSecundario": 80000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Gestión enteramente reactiva al \"bomberazo\" diario; la empresa opera sin rumbo de negocio…",
+              "factores": [
+                "Operación Reactiva",
+                "Falta de Visión Corporativa",
+                "Desalineación Operativa"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 103500,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 162000,
+                "dias": 60,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 214000,
+                "dias": 48,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Dirección General",
+                "accion": "Definir el rumbo de negocio y objetivos institucionales",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Gobierno Corporativo",
+                "accion": "Documentar el plan estratégico con metas y responsables",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Institucionalizar la planeación estratégica anual",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir el rumbo de negocio y objetivos institucionales",
+              "Construir un set inicial de KPIs mensuales de rentabilidad",
+              "Establecer reuniones de seguimiento operativo",
+              "Documentar el plan estratégico con metas y responsables"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Planeación",
+              "cuerpo": "Hallazgo H46 (GRAVE) en Planeación Estratégica. Exposición estimada de $225K en 60 días. Activar plan de mitigación con Dirección General."
+            }
           }
         }
       ]
@@ -1645,6 +5412,88 @@
               "Optimizar el portafolio por rentabilidad",
               "Auditar la aplicación del catálogo"
             ]
+          },
+          "analisis": {
+            "confianza": 87,
+            "impacto": {
+              "costoNoActuar": 65000,
+              "ventanaDias": 90,
+              "costoSecundario": 10000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Indefinición técnica en el portafolio; se comercializan fletes de proyectos altamente…",
+              "factores": [
+                "Estructuración de Catálogo Comercial",
+                "Omisión de Cargos Técnicos"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 30000,
+                "dias": 120,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 47000,
+                "dias": 90,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 62000,
+                "dias": 78,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Definir técnicamente el portafolio de servicios",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Estructurar un catálogo comercial con tarifas por complejidad",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir el margen recuperado por cargos técnicos",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir técnicamente el portafolio de servicios",
+              "Diferenciar fletes de proyecto de la renta básica por evento",
+              "Mapear los cargos técnicos hoy omitidos",
+              "Estructurar un catálogo comercial con tarifas por complejidad"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Productos",
+              "cuerpo": "Hallazgo H47 (MEDIO) en Productos y Servicios. Exposición estimada de $65K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1668,6 +5517,89 @@
               "Proteger el estatus de garantía de seguridad",
               "Medir incidencias de aliados como KPI"
             ]
+          },
+          "analisis": {
+            "confianza": 78,
+            "impacto": {
+              "costoNoActuar": 75000,
+              "ventanaDias": 90,
+              "costoSecundario": 20000,
+              "costoSecundarioLabel": "Daño reputacional estimado"
+            },
+            "causaRaiz": {
+              "titulo": "Riesgo reputacional y pérdida del estatus de \"garantía de seguridad\" al subcontratar…",
+              "factores": [
+                "Canibalización de Marca",
+                "Tercerización Informal",
+                "Calidad de Flota Aliada"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 34500,
+                "dias": 120,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 54000,
+                "dias": 90,
+                "prob": 74,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 71500,
+                "dias": 78,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Definir criterios de certificación de transportistas aliados",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar un padrón de aliados certificados",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar periódicamente a los aliados",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir criterios de certificación de transportistas aliados",
+              "Auditar la flota de los subcontratistas del \"Producto B\"",
+              "Suspender la subcontratación de aliados sin certificar",
+              "Implementar un padrón de aliados certificados"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Productos",
+              "cuerpo": "Hallazgo H48 (MEDIO) en Productos y Servicios. Exposición estimada de $75K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         }
       ]
@@ -1701,6 +5633,88 @@
               "Optimizar la estructura de capital humano",
               "Auditar la calidad de la información de personal"
             ]
+          },
+          "analisis": {
+            "confianza": 73,
+            "impacto": {
+              "costoNoActuar": 290000,
+              "ventanaDias": 60,
+              "costoSecundario": 110000,
+              "costoSecundarioLabel": "Multas y recargos potenciales"
+            },
+            "causaRaiz": {
+              "titulo": "Cuello de botella y sobrecarga administrativa al operar el área de personal con una sola…",
+              "factores": [
+                "Saturación Administrativa de Capital Humano",
+                "Errores de Registro"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 133500,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 209000,
+                "dias": 60,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 275500,
+                "dias": 48,
+                "prob": 64,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Dimensionar la carga administrativa del área de personal",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Automatizar procesos de RRHH (incidencias, nómina)",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir errores de registro y carga como KPI",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Dimensionar la carga administrativa del área de personal",
+              "Priorizar y redistribuir tareas rutinarias",
+              "Digitalizar el registro de incidencias",
+              "Automatizar procesos de RRHH (incidencias, nómina)"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · RRHH",
+              "cuerpo": "Hallazgo H49 (GRAVE) en Recursos Humanos. Exposición estimada de $290K en 60 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         },
         {
@@ -1724,6 +5738,88 @@
               "Medir rotación y desempeño como KPI",
               "Institucionalizar el reclutamiento por competencias"
             ]
+          },
+          "analisis": {
+            "confianza": 75,
+            "impacto": {
+              "costoNoActuar": 265000,
+              "ventanaDias": 60,
+              "costoSecundario": 90000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Reclutamiento descentralizado y empírico; el jefe de área contrata operarios de grúas…",
+              "factores": [
+                "Deficiencia Operativa",
+                "Falta de Especialización",
+                "Fricción de Línea"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 122000,
+                "dias": 90,
+                "prob": 92,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 191000,
+                "dias": 60,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 252000,
+                "dias": 48,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Definir perfiles técnicos para operadores de grúas pesadas",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar filtros y pruebas técnicas de selección",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Auditar la calidad de las contrataciones",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir perfiles técnicos para operadores de grúas pesadas",
+              "Centralizar el reclutamiento en RRHH",
+              "Documentar el proceso de selección",
+              "Implementar filtros y pruebas técnicas de selección"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · RRHH",
+              "cuerpo": "Hallazgo H50 (GRAVE) en Recursos Humanos. Exposición estimada de $265K en 60 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         },
         {
@@ -1747,6 +5843,89 @@
               "Auditar el cumplimiento del onboarding",
               "Mejorar el programa por retroalimentación"
             ]
+          },
+          "analisis": {
+            "confianza": 86,
+            "impacto": {
+              "costoNoActuar": 85000,
+              "ventanaDias": 90,
+              "costoSecundario": 30000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Inexistencia de un programa formal de inducción (Onboarding) bajo la premisa subjetiva de…",
+              "factores": [
+                "Inducción Informal",
+                "Falta de Alineación",
+                "Siniestralidad Menor en Patio"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 39000,
+                "dias": 120,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 61000,
+                "dias": 90,
+                "prob": 73,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 81000,
+                "dias": 78,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Diseñar un programa formal de inducción (onboarding)",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Email",
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar el onboarding para nuevos ingresos",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir siniestralidad de nuevos ingresos como KPI",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diseñar un programa formal de inducción (onboarding)",
+              "Definir contenidos mínimos de seguridad y operación",
+              "Asignar responsable del onboarding",
+              "Implementar el onboarding para nuevos ingresos"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · RRHH",
+              "cuerpo": "Hallazgo H51 (MEDIO) en Recursos Humanos. Exposición estimada de $85K en 90 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         },
         {
@@ -1770,6 +5949,86 @@
               "Auditar competencias técnicas del personal",
               "Institucionalizar el plan anual de capacitación"
             ]
+          },
+          "analisis": {
+            "confianza": 82,
+            "impacto": {
+              "costoNoActuar": 85000,
+              "ventanaDias": 90,
+              "costoSecundario": 30000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Fallas constantes en la capacitación técnica y regulatoria debido a la dispersión horaria…",
+              "factores": [
+                "Capacitación Extemporánea",
+                "Horarios Cruzados e Ineficiencia Técnica"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 39000,
+                "dias": 120,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 61000,
+                "dias": 90,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 81000,
+                "dias": 78,
+                "prob": 61,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Mapear las necesidades de capacitación técnica y regulatoria",
+                "estado": "Por escalar",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar capacitación por turnos y modalidades flexibles",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir cobertura de capacitación como KPI",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear las necesidades de capacitación técnica y regulatoria",
+              "Definir un calendario que contemple la operación 24/7",
+              "Priorizar capacitaciones críticas",
+              "Implementar capacitación por turnos y modalidades flexibles"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · RRHH",
+              "cuerpo": "Hallazgo H52 (MEDIO) en Recursos Humanos. Exposición estimada de $85K en 90 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         },
         {
@@ -1793,6 +6052,87 @@
               "Auditar la calidad de los filtros técnicos",
               "Optimizar el proceso de selección operativa"
             ]
+          },
+          "analisis": {
+            "confianza": 81,
+            "impacto": {
+              "costoNoActuar": 35000,
+              "ventanaDias": 120,
+              "costoSecundario": 15000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Exposición a la contratación de perfiles ineficientes por delegar las entrevistas técnicas…",
+              "factores": [
+                "Filtros Técnicos Laxos",
+                "Vicios de Manejo de Flota e Inflación de Diésel"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 16000,
+                "dias": 150,
+                "prob": 90,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 25000,
+                "dias": 120,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 33500,
+                "dias": 108,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Definir filtros técnicos estandarizados de entrevista",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar pruebas de manejo y desempeño de flota",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir eficiencia de conductores y diésel como KPI",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Definir filtros técnicos estandarizados de entrevista",
+              "Complementar la entrevista de jefes con evaluación técnica",
+              "Documentar criterios de contratación",
+              "Implementar pruebas de manejo y desempeño de flota"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · RRHH",
+              "cuerpo": "Hallazgo H53 (BAJO) en Recursos Humanos. Exposición estimada de $35K en 120 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         },
         {
@@ -1816,6 +6156,87 @@
               "Reducir la dependencia del cliente ancla",
               "Preservar la memoria operativa"
             ]
+          },
+          "analisis": {
+            "confianza": 74,
+            "impacto": {
+              "costoNoActuar": 35000,
+              "ventanaDias": 120,
+              "costoSecundario": 10000,
+              "costoSecundarioLabel": "Pérdida patrimonial expuesta"
+            },
+            "causaRaiz": {
+              "titulo": "Incremento en la rotación imprevista de la plantilla operativa en Distribución ante bajas…",
+              "factores": [
+                "Despidos por Capacidad Ociosa",
+                "Pérdida de Memoria Operativa"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 16000,
+                "dias": 150,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 25000,
+                "dias": 120,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 33500,
+                "dias": 108,
+                "prob": 58,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Analizar la rotación ligada a bajas de volumen del cliente ancla",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Diversificar la base de clientes para estabilizar volumen",
+                "estado": "Notificado",
+                "canales": [
+                  "Email",
+                  "Reporte semanal"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir rotación operativa como KPI",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Analizar la rotación ligada a bajas de volumen del cliente ancla",
+              "Definir esquemas de flexibilidad de plantilla",
+              "Mapear el conocimiento operativo en riesgo",
+              "Diversificar la base de clientes para estabilizar volumen"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · RRHH",
+              "cuerpo": "Hallazgo H54 (BAJO) en Recursos Humanos. Exposición estimada de $35K en 120 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         }
       ]
@@ -1849,6 +6270,88 @@
               "Alinear la RSE con la imagen corporativa",
               "Institucionalizar el programa anualmente"
             ]
+          },
+          "analisis": {
+            "confianza": 78,
+            "impacto": {
+              "costoNoActuar": 30000,
+              "ventanaDias": 120,
+              "costoSecundario": 5000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Carencia de un programa de Responsabilidad Social Empresarial (RSE) que regionalice los…",
+              "factores": [
+                "Imagen Corporativa",
+                "Falta de Programa RSE",
+                "Desalineación Social"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 14000,
+                "dias": 150,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 21500,
+                "dias": 120,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 28500,
+                "dias": 108,
+                "prob": 61,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Recursos Humanos",
+                "accion": "Diagnosticar los impactos industriales del taller en el entorno",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Implementar las primeras iniciativas de RSE",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Área de Comunicación",
+                "accion": "Medir el impacto del programa de RSE",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar los impactos industriales del taller en el entorno",
+              "Definir un programa básico de RSE",
+              "Identificar acciones de bajo costo y alto impacto",
+              "Implementar las primeras iniciativas de RSE"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · RSE",
+              "cuerpo": "Hallazgo H55 (BAJO) en Responsabilidad Social y Filantropía. Exposición estimada de $30K en 120 días. Activar plan de mitigación con Área de Recursos Humanos."
+            }
           }
         }
       ]
@@ -1882,6 +6385,88 @@
               "Medir continuidad y tiempos de soporte como KPI",
               "Auditar la seguridad y respaldos del ERP"
             ]
+          },
+          "analisis": {
+            "confianza": 88,
+            "impacto": {
+              "costoNoActuar": 90000,
+              "ventanaDias": 90,
+              "costoSecundario": 35000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Vulnerabilidad y dependencia total ante la empresa proveedora del software ERP (Fusion) al…",
+              "factores": [
+                "Dependencia Tecnológica de Terceros",
+                "Vacíos de Soporte de TI"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 41500,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 65000,
+                "dias": 90,
+                "prob": 75,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 85500,
+                "dias": 78,
+                "prob": 63,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área de Sistemas / TI",
+                "accion": "Diagnosticar la dependencia del proveedor del ERP (Fusion)",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Teams",
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área Financiera",
+                "accion": "Crear capacidad de soporte de TI interna o contratada",
+                "estado": "Por escalar",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Reducir la dependencia tecnológica de terceros",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Diagnosticar la dependencia del proveedor del ERP (Fusion)",
+              "Definir respaldos y accesos críticos del sistema",
+              "Identificar competencias de TI necesarias",
+              "Crear capacidad de soporte de TI interna o contratada"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Sistemas",
+              "cuerpo": "Hallazgo H56 (MEDIO) en Sistemas. Exposición estimada de $90K en 90 días. Activar plan de mitigación con Área de Sistemas / TI."
+            }
           }
         }
       ]
@@ -1915,6 +6500,87 @@
               "Diversificar la cartera de clientes",
               "Asegurar la continuidad ante salida de vendedores"
             ]
+          },
+          "analisis": {
+            "confianza": 91,
+            "impacto": {
+              "costoNoActuar": 630000,
+              "ventanaDias": 30,
+              "costoSecundario": 145000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Alta concentración del ingreso comercial (80%) en una base reducida de \"clientes casa\"…",
+              "factores": [
+                "Concentración de Ingresos",
+                "Desplazamiento de Mercado"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 290000,
+                "dias": 60,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 453500,
+                "dias": 30,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 598500,
+                "dias": 21,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Documentar las especificaciones de los \"clientes casa\" fuera de la memoria de vendedores",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Trasladar el know-how comercial a expedientes/CRM",
+                "estado": "Notificado",
+                "canales": [
+                  "Reporte semanal",
+                  "WhatsApp"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir la concentración de ingresos como KPI",
+                "estado": "Notificado",
+                "canales": [
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Documentar las especificaciones de los \"clientes casa\" fuera de la memoria de vendedores",
+              "Cuantificar la concentración de ingresos (80%)",
+              "Definir una estrategia de diversificación comercial",
+              "Trasladar el know-how comercial a expedientes/CRM"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Ventas",
+              "cuerpo": "Hallazgo H57 (CRÍTICO) en Ventas y Posventa. Exposición estimada de $630K en 30 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1938,6 +6604,89 @@
               "Medir fuga de margen bruto como KPI",
               "Auditar el cumplimiento del tarifario"
             ]
+          },
+          "analisis": {
+            "confianza": 81,
+            "impacto": {
+              "costoNoActuar": 290000,
+              "ventanaDias": 60,
+              "costoSecundario": 100000,
+              "costoSecundarioLabel": "Costo financiero acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Opacidad y fuga de margen por el uso de \"machotes\" de Excel individuales e independientes…",
+              "factores": [
+                "Discrecionalidad en Tarifas",
+                "Opacidad de Precios",
+                "Fuga de Margen Bruto"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 133500,
+                "dias": 90,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 209000,
+                "dias": 60,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 275500,
+                "dias": 48,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Inventariar los \"machotes\" de Excel de cotización individuales",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email",
+                  "WhatsApp"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar un cotizador estándar con tarifas validadas",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Integrar el cotizador al sistema y monitorear márgenes",
+                "estado": "Notificado",
+                "canales": [
+                  "Teams",
+                  "Email"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Inventariar los \"machotes\" de Excel de cotización individuales",
+              "Definir una plantilla y tarifario estándar de cotización",
+              "Centralizar la formulación de cotizaciones",
+              "Implementar un cotizador estándar con tarifas validadas"
+            ],
+            "alerta": {
+              "canal": "WhatsApp",
+              "titulo": "GSL · Alerta · Ventas",
+              "cuerpo": "Hallazgo H58 (GRAVE) en Ventas y Posventa. Exposición estimada de $290K en 60 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1961,6 +6710,88 @@
               "Medir cobertura de capacitación como KPI",
               "Auditar la consistencia de cotizaciones técnicas"
             ]
+          },
+          "analisis": {
+            "confianza": 86,
+            "impacto": {
+              "costoNoActuar": 70000,
+              "ventanaDias": 90,
+              "costoSecundario": 10000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Centralización del \"know-how\" de cubicación e ingeniería de izaje industrial en la memoria…",
+              "factores": [
+                "Centralización de Conocimiento e Informalidad en Capacitación de Ventas",
+                "Oportunidad de mejora desatendida"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 32000,
+                "dias": 120,
+                "prob": 89,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 50500,
+                "dias": 90,
+                "prob": 76,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 66500,
+                "dias": 78,
+                "prob": 62,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Documentar el know-how de cubicación e ingeniería de izaje",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Reporte semanal",
+                  "Email"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Crear guías y herramientas de cubicación estándar",
+                "estado": "Notificado",
+                "canales": [
+                  "Calendar",
+                  "Email"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Institucionalizar el conocimiento técnico de ventas",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Documentar el know-how de cubicación e ingeniería de izaje",
+              "Identificar a los vendedores senior con conocimiento crítico",
+              "Iniciar la transferencia de conocimiento",
+              "Crear guías y herramientas de cubicación estándar"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Ventas",
+              "cuerpo": "Hallazgo H59 (MEDIO) en Ventas y Posventa. Exposición estimada de $70K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -1984,6 +6815,89 @@
               "Reducir leads desatendidos",
               "Optimizar la fuerza de ventas por trazabilidad"
             ]
+          },
+          "analisis": {
+            "confianza": 84,
+            "impacto": {
+              "costoNoActuar": 70000,
+              "ventanaDias": 90,
+              "costoSecundario": 25000,
+              "costoSecundarioLabel": "Multas y recargos potenciales"
+            },
+            "causaRaiz": {
+              "titulo": "Pérdida de trazabilidad por asignación aleatoria y manual de llamadas de re-contratación…",
+              "factores": [
+                "Trazabilidad Comercial",
+                "Desatención de Leads",
+                "Fricción de Fuerza de Ventas"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 32000,
+                "dias": 120,
+                "prob": 91,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 50500,
+                "dias": 90,
+                "prob": 78,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 66500,
+                "dias": 78,
+                "prob": 60,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Mapear el flujo de asignación de leads en el conmutador",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar un CRM para trazabilidad de leads",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email",
+                  "Calendar"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir conversión y atención de leads como KPI",
+                "estado": "Pendiente de acción",
+                "canales": [
+                  "Teams",
+                  "Calendar"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Mapear el flujo de asignación de leads en el conmutador",
+              "Definir reglas de asignación de re-contrataciones",
+              "Registrar los leads entrantes",
+              "Implementar un CRM para trazabilidad de leads"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Ventas",
+              "cuerpo": "Hallazgo H60 (MEDIO) en Ventas y Posventa. Exposición estimada de $70K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         },
         {
@@ -2007,6 +6921,88 @@
               "Optimizar la estructura de ventas",
               "Aprovechar plenamente el talento senior"
             ]
+          },
+          "analisis": {
+            "confianza": 79,
+            "impacto": {
+              "costoNoActuar": 90000,
+              "ventanaDias": 90,
+              "costoSecundario": 15000,
+              "costoSecundarioLabel": "Costo de oportunidad acumulado"
+            },
+            "causaRaiz": {
+              "titulo": "Rezago en prospección técnica de cuentas de infraestructura pesada por enfocar a los…",
+              "factores": [
+                "Estructura de Ventas Ineficiente",
+                "Talento Senior Subutilizado"
+              ]
+            },
+            "escenarios": [
+              {
+                "nombre": "Conservador",
+                "monto": 41500,
+                "dias": 120,
+                "prob": 88,
+                "recomendado": false
+              },
+              {
+                "nombre": "Recomendado",
+                "monto": 65000,
+                "dias": 90,
+                "prob": 77,
+                "recomendado": true
+              },
+              {
+                "nombre": "Agresivo",
+                "monto": 85500,
+                "dias": 78,
+                "prob": 59,
+                "recomendado": false
+              }
+            ],
+            "responsables": [
+              {
+                "area": "Área Comercial",
+                "accion": "Liberar a perfiles senior de labor de campo para prospección técnica",
+                "estado": "En seguimiento",
+                "canales": [
+                  "Calendar",
+                  "Reporte semanal"
+                ],
+                "t": "T+0"
+              },
+              {
+                "area": "Área de Operaciones",
+                "accion": "Implementar prospección técnica estructurada",
+                "estado": "Por escalar",
+                "canales": [
+                  "WhatsApp",
+                  "Teams"
+                ],
+                "t": "T+15min"
+              },
+              {
+                "area": "Dirección General",
+                "accion": "Medir cuentas nuevas de infraestructura como KPI",
+                "estado": "Por escalar",
+                "canales": [
+                  "Email",
+                  "Teams"
+                ],
+                "t": "T+30min"
+              }
+            ],
+            "acciones": [
+              "Liberar a perfiles senior de labor de campo para prospección técnica",
+              "Definir cuentas de infraestructura pesada objetivo",
+              "Asignar metas de prospección técnica",
+              "Implementar prospección técnica estructurada"
+            ],
+            "alerta": {
+              "canal": "Email",
+              "titulo": "GSL · Alerta · Ventas",
+              "cuerpo": "Hallazgo H61 (MEDIO) en Ventas y Posventa. Exposición estimada de $90K en 90 días. Activar plan de mitigación con Área Comercial."
+            }
           }
         }
       ]
